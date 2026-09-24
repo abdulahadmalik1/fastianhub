@@ -186,7 +186,7 @@ export default function PastPapersPage() {
       <header className="topbar">
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <Link
-            href="/"
+            href="/timetable"
             className="icon-btn"
             aria-label="Back to Timetable"
             title="Back to Timetable"
