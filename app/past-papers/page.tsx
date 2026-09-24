@@ -63,7 +63,6 @@ export default function PastPapersPage() {
   const [selectedCourse, setSelectedCourse] = useState<CourseGroup | null>(null);
   const [sheetFilter, setSheetFilter] = useState<string>('all');
   const [sheetSearch, setSheetSearch] = useState('');
-  const [copiedUrl, setCopiedUrl] = useState<string | null>(null);
 
   // Compile all courses (excluding readmes)
   const allCourses = useMemo((): CourseGroup[] => {
@@ -180,14 +179,6 @@ export default function PastPapersPage() {
 
     return files;
   }, [selectedCourse, sheetFilter, sheetSearch]);
-
-  const copyFileLink = (filePath: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    const url = `${window.location.origin}/api/papers?path=${encodeURIComponent(filePath)}`;
-    navigator.clipboard.writeText(url);
-    setCopiedUrl(filePath);
-    setTimeout(() => setCopiedUrl(null), 1800);
-  };
 
   return (
     <div className="app-shell" style={{ paddingBottom: 64 }}>
@@ -463,23 +454,6 @@ export default function PastPapersPage() {
                         </div>
 
                         <div className="paper-file-actions">
-                          {/* Copy link */}
-                          <button
-                            className="paper-action-icon-btn"
-                            title="Copy Direct Link"
-                            onClick={(e) => copyFileLink(file.path, e)}
-                            aria-label="Copy file link"
-                          >
-                            {copiedUrl === file.path ? (
-                              <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--green)' }}>✓</span>
-                            ) : (
-                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                              </svg>
-                            )}
-                          </button>
-
                           {/* View in new tab (Proxied through FastiFlex API) */}
                           <a
                             href={viewUrl}

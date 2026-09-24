@@ -1,5 +1,5 @@
-import TimetablePage from '@/components/TimetablePage';
+import LandingPage from '@/components/LandingPage';
 
 export default function Home() {
-  return <TimetablePage />;
+  return <LandingPage />;
 }
