@@ -1,9 +1,10 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Credits · FastianHub',
-  description: 'Credits and attribution for open-source past paper archives across FAST-NUCES campuses.',
-};
+export const metadata = pageMetadata(
+  'Past Paper Archive Contributors & Credits | FastianHub',
+  'Meet the student contributors behind FAST NUCES past paper archives for Islamabad, Karachi, Lahore and Chiniot-Faisalabad on FastianHub.',
+  '/credits',
+);
 
 export default function CreditsLayout({
   children,

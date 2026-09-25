@@ -853,7 +853,7 @@ async function main() {
   if (fs.existsSync(existingPath)) {
     try {
       prevData = JSON.parse(fs.readFileSync(existingPath, 'utf8'));
-    } catch (e) {}
+    } catch { /* The live trees can still rebuild a missing or invalid snapshot. */ }
   }
 
   let islamabadCampusData;

@@ -101,7 +101,7 @@ export async function GET(req: NextRequest) {
       status: 200,
       headers,
     });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error('[Papers Proxy Error]:', err);
     return new NextResponse('Failed to retrieve file', { status: 502 });
   }

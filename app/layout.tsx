@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { isSiteIndexable, SITE_NAME, SITE_URL } from '@/lib/site-config';
+import { HOME_DESCRIPTION, HOME_TITLE } from '@/lib/seo';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -9,9 +11,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'FastianHub · Past Papers & Resources',
-  description: 'Verified past examination papers, midterm sessionals, finals, quizzes, and course materials across FAST Islamabad, Karachi, Lahore & CFD campuses.',
-  keywords: ['FAST', 'NUCES', 'past papers', 'exams', 'Islamabad', 'Karachi', 'Lahore', 'CFD'],
+  metadataBase: new URL(SITE_URL),
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
+  applicationName: SITE_NAME,
+  robots: isSiteIndexable()
+    ? { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 } }
+    : { index: false, follow: false },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+    other: process.env.BING_SITE_VERIFICATION ? { 'msvalidate.01': process.env.BING_SITE_VERIFICATION } : undefined,
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },

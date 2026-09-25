@@ -38,7 +38,7 @@ A modern, high-performance web portal for FAST-NUCES students to browse, search,
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 22.18+ recommended for the SEO verification script (Next.js requires 20.9+)
 - npm, pnpm, or yarn
 
 ### Installation
@@ -63,6 +63,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 npm run build
 npm start
 ```
+
+For the domain, indexing controls, campus URLs and launch checks, see [DEPLOYMENT.md](./DEPLOYMENT.md). Run `npm run check:seo` against the running production build before deployment.
 
 ### Data Pipeline
 

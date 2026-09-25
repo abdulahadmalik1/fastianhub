@@ -8,7 +8,8 @@
     "build": "next build",
     "build:papers": "node scripts/buildPastPapers.js",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:seo": "node scripts/checkSeo.mjs"
   },
   "dependencies": {
     "next": "16.3.6",

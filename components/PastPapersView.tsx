@@ -9,13 +9,13 @@ import CourseCard from './CourseCard';
 import CourseDetailsSheet from './CourseDetailsSheet';
 import Icon from './Icon';
 import { CampusId, CourseGroup, CampusMetadata, PaperFile } from '@/lib/papers';
+import { campusOptions, type SupportedCampusId } from '@/lib/campuses';
 
 const campuses = pastPapersData.campuses as unknown as Record<CampusId, CampusMetadata>;
-const campusOptions: { id: CampusId; name: string }[] = [{ id: 'islamabad', name: 'Islamabad' }, { id: 'karachi', name: 'Karachi' }, { id: 'lahore', name: 'Lahore' }, { id: 'cfd', name: 'Chiniot–Faisalabad' }];
 const cleanFiles = (files: PaperFile[]) => files.filter(file => !/^readme/i.test(file.fileName) && !/\.md$/i.test(file.fileName) && file.fileName !== '.gitkeep');
 
-export default function PastPapersView() {
-  const [activeCampus, setActiveCampus] = useState<CampusId>('islamabad');
+export default function PastPapersView({ initialCampus }: { initialCampus?: SupportedCampusId }) {
+  const [activeCampus, setActiveCampus] = useState<CampusId>(initialCampus || 'islamabad');
   const [selectedFilter, setSelectedFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [view, setView] = useState<'browse' | 'saved'>('browse');
@@ -34,12 +34,13 @@ export default function PastPapersView() {
       const savedCampus = campus === 'central' ? 'lahore' : campus;
       const savedBookmarks = JSON.parse(localStorage.getItem('fastianhub_bookmarked_courses') || localStorage.getItem('fastiflex_bookmarked_courses') || '[]');
       frame = requestAnimationFrame(() => {
-        if (campusOptions.some(option => option.id === savedCampus)) setActiveCampus(savedCampus as CampusId);
+        // A search landing URL opens its campus; the homepage keeps restoring preferences.
+        if (!initialCampus && campusOptions.some(option => option.id === savedCampus)) setActiveCampus(savedCampus as CampusId);
         if (Array.isArray(savedBookmarks)) setBookmarks(savedBookmarks.filter(value => typeof value === 'string'));
       });
     } catch { /* Browsing remains available without local storage. */ }
     return () => { if (frame !== undefined) cancelAnimationFrame(frame); };
-  }, []);
+  }, [initialCampus]);
 
   const allCourses = useMemo(() => {
     const campus = campuses[activeCampus];
