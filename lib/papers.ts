@@ -85,3 +85,12 @@ export function getCourseDescription(courseName: string): string {
   }
   return 'Curated collection of midterm sessionals, quizzes, assignments, and past final papers.';
 }
+
+export function toCourseSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}

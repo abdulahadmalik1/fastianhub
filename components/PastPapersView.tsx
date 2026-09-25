@@ -2,19 +2,21 @@
 
 import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import pastPapersData from '@/data/pastPapers.json';
 import SubmitRepoModal from './SubmitRepoModal';
 import FeedbackModal from './FeedbackModal';
 import CourseCard from './CourseCard';
 import CourseDetailsSheet from './CourseDetailsSheet';
 import Icon from './Icon';
-import { CampusId, CourseGroup, CampusMetadata, PaperFile } from '@/lib/papers';
+import { CampusId, CourseGroup, CampusMetadata, PaperFile, toCourseSlug } from '@/lib/papers';
 import { campusOptions, type SupportedCampusId } from '@/lib/campuses';
 
 const campuses = pastPapersData.campuses as unknown as Record<CampusId, CampusMetadata>;
 const cleanFiles = (files: PaperFile[]) => files.filter(file => !/^readme/i.test(file.fileName) && !/\.md$/i.test(file.fileName) && file.fileName !== '.gitkeep');
 
 export default function PastPapersView({ initialCampus }: { initialCampus?: SupportedCampusId }) {
+  const router = useRouter();
   const [activeCampus, setActiveCampus] = useState<CampusId>(initialCampus || 'islamabad');
   const [selectedFilter, setSelectedFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
@@ -81,6 +83,69 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
   const resetFilters = () => { setSearchQuery(''); setSelectedFilter('all'); setVisibleCount(12); };
+  const handleCampusChange = (campus: CampusId) => {
+    const target = campusOptions.find(opt => opt.id === campus);
+    if (!target) return;
+    setActiveCampus(campus);
+    resetFilters();
+    setSelectedCourse(null);
+    try { localStorage.setItem('fastianhub_past_papers_campus', campus); } catch { /* Campus changes still work. */ }
+    router.push(`/campus/${target.slug}`, { scroll: false });
+  };
+
+  const openCourse = (course: CourseGroup) => {
+    setSelectedCourse(course);
+    if (typeof window !== 'undefined') {
+      const slug = toCourseSlug(course.course);
+      const url = new URL(window.location.href);
+      url.searchParams.set('course', slug);
+      window.history.pushState({ course: slug }, '', `${url.pathname}?${url.searchParams.toString()}`);
+    }
+  };
+
+  const closeCourse = () => {
+    setSelectedCourse(null);
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      if (url.searchParams.has('course')) {
+        url.searchParams.delete('course');
+        const nextUrl = url.searchParams.toString() ? `${url.pathname}?${url.searchParams.toString()}` : url.pathname;
+        window.history.pushState({}, '', nextUrl);
+      }
+    }
+  };
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const courseSlug = params.get('course');
+      if (!courseSlug) {
+        setSelectedCourse(null);
+      } else {
+        const normalized = courseSlug.toLowerCase().trim();
+        const match = allCourses.find(c => toCourseSlug(c.course) === normalized || c.course.toLowerCase().trim() === normalized);
+        if (match) setSelectedCourse(match);
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [allCourses]);
+
+  useEffect(() => {
+    let frame: number | undefined;
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const courseSlug = params.get('course');
+      if (courseSlug) {
+        const normalized = courseSlug.toLowerCase().trim();
+        const match = allCourses.find(c => toCourseSlug(c.course) === normalized || c.course.toLowerCase().trim() === normalized);
+        if (match) {
+          frame = requestAnimationFrame(() => setSelectedCourse(match));
+        }
+      }
+    } catch { /* Deep linking is client-only */ }
+    return () => { if (frame !== undefined) cancelAnimationFrame(frame); };
+  }, [allCourses]);
   const navigation = <>
     <button className={view === 'browse' ? 'nav-item active' : 'nav-item'} aria-current={view === 'browse' ? 'page' : undefined} onClick={() => switchView('browse')}><Icon name="book" size={19} />Past papers</button>
     <button className={view === 'saved' ? 'nav-item active' : 'nav-item'} aria-current={view === 'saved' ? 'page' : undefined} onClick={() => switchView('saved')}><Icon name="bookmark" size={18} />Saved courses{savedCount > 0 && <span className="nav-count">{savedCount}</span>}</button>
@@ -102,7 +167,7 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
         <div className="search-filter-row">
           <div className="search-wrap"><Icon name="search" size={22} /><input ref={searchRef} id="past-papers-search-input" type="search" className="search-input" value={searchQuery} onChange={event => { setSearchQuery(event.target.value); setVisibleCount(12); }} placeholder="Search a course or paper…" aria-label="Search courses and papers" />{searchQuery && <button className="icon-btn" onClick={() => { setSearchQuery(''); searchRef.current?.focus(); }} aria-label="Clear search"><Icon name="close" size={18} /></button>}</div>
           <div className="select-filters">
-            <label className="select-field campus-field"><span>Campus</span><select aria-label="Campus" value={activeCampus} onChange={event => { const campus = event.target.value as CampusId; setActiveCampus(campus); resetFilters(); try { localStorage.setItem('fastianhub_past_papers_campus', campus); } catch { /* Campus changes still work. */ } }}>{campusOptions.map(campus => <option value={campus.id} key={campus.id}>{campus.name}</option>)}</select></label>
+            <label className="select-field campus-field"><span>Campus</span><select aria-label="Campus" value={activeCampus} onChange={event => handleCampusChange(event.target.value as CampusId)}>{campusOptions.map(campus => <option value={campus.id} key={campus.id}>{campus.name}</option>)}</select></label>
             <label className="select-field mobile-semester"><span>Semester</span><select aria-label="Semester" value={selectedFilter} onChange={event => { setSelectedFilter(event.target.value); setVisibleCount(12); }}>{semesterOptions.map(option => <option key={option.value} value={option.value}>{option.label}</option>)}</select></label>
           </div>
         </div>
@@ -110,14 +175,14 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
       </section>
       <section className="courses-section" aria-labelledby="courses-title">
         <div className="section-heading"><div><h2 id="courses-title">{view === 'saved' ? 'Saved courses' : selectedFilter === 'all' ? 'Explore courses' : selectedFilter === 'outlines' ? 'Course outlines' : `Semester ${selectedFilter}`} <span className="result-count">{filteredCourses.length}</span></h2><p aria-live="polite">{searchQuery ? `Results for “${searchQuery}”` : view === 'saved' ? 'A shortcut to the courses you come back to.' : 'A head start for whatever’s next.'}</p></div>{(searchQuery || selectedFilter !== 'all') ? <button className="text-button" onClick={resetFilters}>Clear filters</button> : <span className="campus-caption"><Icon name="pin" size={15} />{campusOptions.find(campus => campus.id === activeCampus)?.name}</span>}</div>
-        {filteredCourses.length ? <><div className="course-grid">{filteredCourses.slice(0, visibleCount).map(course => <CourseCard key={`${course.semesterNum}:${course.course}`} course={course} isBookmarked={isSaved(course.course)} onOpen={setSelectedCourse} onToggleBookmark={toggleBookmark} />)}</div><div className="load-more"><p>Showing {Math.min(visibleCount, filteredCourses.length)} of {filteredCourses.length} courses</p>{visibleCount < filteredCourses.length && <button className="secondary-button" onClick={() => setVisibleCount(count => count + 12)}>Show more courses <Icon name="arrow" size={17} /></button>}</div></> : <div className="empty-state"><span className="empty-icon"><Icon name={view === 'saved' ? 'bookmark' : 'search'} size={28} /></span><h3>{view === 'saved' && !savedCount ? 'Keep your courses close.' : 'No courses found.'}</h3><p>{view === 'saved' && !savedCount ? 'Tap Save on a course to find it here next time.' : 'Try another course name, semester, or campus.'}</p><button className="primary-button" onClick={() => { resetFilters(); if (view === 'saved') setView('browse'); }}>{view === 'saved' ? 'Browse courses' : 'Clear filters'}</button></div>}
+        {filteredCourses.length ? <><div className="course-grid">{filteredCourses.slice(0, visibleCount).map(course => <CourseCard key={`${course.semesterNum}:${course.course}`} course={course} isBookmarked={isSaved(course.course)} onOpen={openCourse} onToggleBookmark={toggleBookmark} />)}</div><div className="load-more"><p>Showing {Math.min(visibleCount, filteredCourses.length)} of {filteredCourses.length} courses</p>{visibleCount < filteredCourses.length && <button className="secondary-button" onClick={() => setVisibleCount(count => count + 12)}>Show more courses <Icon name="arrow" size={17} /></button>}</div></> : <div className="empty-state"><span className="empty-icon"><Icon name={view === 'saved' ? 'bookmark' : 'search'} size={28} /></span><h3>{view === 'saved' && !savedCount ? 'Keep your courses close.' : 'No courses found.'}</h3><p>{view === 'saved' && !savedCount ? 'Tap Save on a course to find it here next time.' : 'Try another course name, semester, or campus.'}</p><button className="primary-button" onClick={() => { resetFilters(); if (view === 'saved') setView('browse'); }}>{view === 'saved' ? 'Browse courses' : 'Clear filters'}</button></div>}
       </section>
       <aside className="community-note"><span className="community-icon"><Icon name="heart" size={22} /></span><div><h2>Good notes deserve good company.</h2><p>Have a past-paper collection? Help the next Fastian out.</p></div><button className="text-button" onClick={() => setModal('contribute')}>Contribute papers <Icon name="arrow" size={18} /></button></aside>
     </main>
     <footer className="container site-footer"><p>Made for the days before the exam.</p><nav aria-label="Community links"><Link href="/credits">Credits</Link><button onClick={() => setModal('feedback')}>Feedback</button><a href="#browse">Back to top ↑</a></nav></footer>
     <nav className="mobile-nav" aria-label="Main navigation">{navigation}</nav>
     <span className="sr-only" role="status">{announcement}</span>
-    {selectedCourse && <CourseDetailsSheet key={`${selectedCourse.campus}:${selectedCourse.course}`} course={selectedCourse} campusShortName={campusOptions.find(campus => campus.id === activeCampus)?.name || activeCampus} activeCampus={activeCampus} isBookmarked={isSaved(selectedCourse.course)} onClose={() => setSelectedCourse(null)} onToggleBookmark={toggleBookmark} />}
+    {selectedCourse && <CourseDetailsSheet key={`${selectedCourse.campus}:${selectedCourse.course}`} course={selectedCourse} campusShortName={campusOptions.find(campus => campus.id === activeCampus)?.name || activeCampus} activeCampus={activeCampus} isBookmarked={isSaved(selectedCourse.course)} onClose={closeCourse} onToggleBookmark={toggleBookmark} />}
     {modal === 'contribute' && <SubmitRepoModal isOpen onClose={() => setModal(null)} />}
     {modal === 'feedback' && <FeedbackModal isOpen onClose={() => setModal(null)} />}
   </div>;
