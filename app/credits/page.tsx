@@ -1,180 +1,22 @@
 'use client';
-
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import rawContributors from '@/data/contributors.json';
 import pastPapersData from '@/data/pastPapers.json';
 import SubmitRepoModal from '@/components/SubmitRepoModal';
-import FeedbackModal from '@/components/FeedbackModal';
-
-interface CreditEntry {
-  id: string;
-  name: string;
-  profileUrl?: string;
-  sourceUrl: string;
-  paperCount: number;
-  campusId?: string;
-  verified: boolean;
-}
+import Icon from '@/components/Icon';
+import type { CampusMetadata } from '@/lib/papers';
 
 export default function CreditsPage() {
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
-  const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
-
-  // Sync real paper counts and sort descending by paperCount
-  const sortedCredits = useMemo(() => {
-    const papers = pastPapersData as any;
-    const campuses = papers?.campuses || {};
-
-    const list: CreditEntry[] = (rawContributors as CreditEntry[])
-      .filter((c) => c.verified !== false)
-      .map((c) => {
-        let liveCount = c.paperCount;
-        if (c.campusId && campuses[c.campusId]?.totalFiles) {
-          liveCount = campuses[c.campusId].totalFiles;
-        }
-        return {
-          ...c,
-          paperCount: liveCount
-        };
-      });
-
-    list.sort((a, b) => b.paperCount - a.paperCount);
-    return list;
-  }, []);
-
-  return (
-    <div className="app-shell" style={{ paddingBottom: 40 }}>
-      {/* Topbar */}
-      <header className="topbar">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <Link
-            href="/"
-            style={{
-              textDecoration: 'none',
-              display: 'flex',
-              alignItems: 'center',
-              gap: 10,
-              color: 'inherit'
-            }}
-            id="credits-back-home"
-            title="Back to Past Papers"
-          >
-            <div>
-              <h1 className="topbar-title">FastianHub Credits</h1>
-              <p className="topbar-sub">Archive Leaderboard</p>
-            </div>
-          </Link>
-        </div>
-
-        <div className="topbar-actions">
-          <Link
-            href="/"
-            className="topbar-feedback-btn"
-            id="back-to-papers-btn"
-            title="Browse all past papers"
-            style={{ textDecoration: 'none' }}
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <line x1="19" y1="12" x2="5" y2="12" />
-              <polyline points="12 19 5 12 12 5" />
-            </svg>
-            <span>Papers</span>
-          </Link>
-
-          <button
-            className="submit-repo-toggle"
-            onClick={() => setIsSubmitModalOpen(true)}
-            id="open-submit-repo-btn"
-            title="Contribute a repository"
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="12" y1="5" x2="12" y2="19" />
-              <line x1="5" y1="12" x2="19" y2="12" />
-            </svg>
-            <span>Contribute</span>
-          </button>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main style={{ maxWidth: 860, margin: '28px auto 0', padding: '0 20px', width: '100%' }}>
-        <div style={{ marginBottom: 18 }}>
-          <h2 style={{ fontSize: 22, fontWeight: 800, color: 'var(--ink-1)', margin: 0, letterSpacing: -0.4 }}>
-            Credits
-          </h2>
-          <p style={{ fontSize: 13, color: 'var(--ink-2)', margin: '4px 0 0' }}>
-            Contributors ranked by indexed papers.
-          </p>
-        </div>
-
-        {/* Leaderboard Table */}
-        {sortedCredits.length === 0 ? (
-          <div className="fac-empty-state">
-            <h3 style={{ fontSize: 15, fontWeight: 700, margin: '8px 0 4px', color: 'var(--ink-1)' }}>
-              No credits yet
-            </h3>
-            <p style={{ fontSize: 13, color: 'var(--ink-3)', margin: 0 }}>
-              Be the first to contribute an archive.
-            </p>
-            <button
-              className="fac-reset-btn"
-              onClick={() => setIsSubmitModalOpen(true)}
-              style={{ marginTop: 14 }}
-            >
-              + Submit Repository
-            </button>
-          </div>
-        ) : (
-          <div className="lb-table-wrapper">
-            <table className="lb-table">
-              <thead>
-                <tr>
-                  <th className="lb-th lb-th-rank">#</th>
-                  <th className="lb-th lb-th-url">URL</th>
-                  <th className="lb-th lb-th-papers">Papers</th>
-                </tr>
-              </thead>
-              <tbody>
-                {sortedCredits.map((c, index) => {
-                  const rank = index + 1;
-                  return (
-                    <tr key={c.id} className="lb-tr">
-                      <td className="lb-td lb-td-rank">
-                        <span className={`lb-rank-badge rank-${rank <= 3 ? rank : 'other'}`}>
-                          {rank}
-                        </span>
-                      </td>
-
-                      <td className="lb-td lb-td-url">
-                        <span className="lb-url-text">
-                          {c.sourceUrl.replace(/^https?:\/\//, '')}
-                        </span>
-                      </td>
-
-                      <td className="lb-td lb-td-papers">
-                        <span className="lb-papers-val">
-                          {c.paperCount.toLocaleString()}
-                        </span>
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        )}
-      </main>
-
-      {/* Modals */}
-      <SubmitRepoModal
-        isOpen={isSubmitModalOpen}
-        onClose={() => setIsSubmitModalOpen(false)}
-      />
-      <FeedbackModal
-        isOpen={isFeedbackModalOpen}
-        onClose={() => setIsFeedbackModalOpen(false)}
-      />
-    </div>
-  );
+  const campuses = pastPapersData.campuses as unknown as Record<string, CampusMetadata>;
+  const contributors = rawContributors.filter(contributor => contributor.verified).map(contributor => ({ ...contributor, paperCount: campuses[contributor.campusId]?.totalFiles || contributor.paperCount }));
+  return <div className="app-shell credits-page">
+    <header className="site-header"><div className="container header-inner"><Link href="/" className="brand" aria-label="FastianHub home"><span className="brand-mark"><Icon name="book" size={22} /></span><span>Fastian<span className="brand-light">Hub</span><small>THE STUDENT ARCHIVE</small></span></Link><Link href="/" className="text-button">Past papers <Icon name="arrow" size={18} /></Link></div></header>
+    <main className="container"><section className="credits-intro"><p className="eyebrow">THE PEOPLE BEHIND THE PAPERS</p><h1>A shared effort.<br /><em>A little gratitude.</em></h1><p>This archive exists because students shared what helped them. Meet the contributors keeping those resources within reach.</p></section>
+      <div className="credits-grid">{contributors.map(contributor => <article key={contributor.id} className="credit-card"><span className="course-icon"><Icon name="book" size={20} /></span><h2>{contributor.name}</h2><p>{contributor.paperCount.toLocaleString()} files in the collection</p><p>{contributor.sourceUrl.replace(/^https?:\/\//, '')}</p><a href={contributor.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-button">Visit collection <Icon name="external" size={15} /></a></article>)}</div>
+      <aside className="community-note"><div><h2>Your collection could help someone, too.</h2><p>Share a repository of papers or notes with the community.</p></div><button className="text-button" onClick={() => setIsSubmitModalOpen(true)}>Contribute papers <Icon name="arrow" size={18} /></button></aside>
+    </main><footer className="container site-footer"><p>By Fastians, for Fastians.</p><Link className="text-button" href="/">Back to past papers</Link></footer>
+    {isSubmitModalOpen && <SubmitRepoModal isOpen onClose={() => setIsSubmitModalOpen(false)} />}
+  </div>;
 }

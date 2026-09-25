@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import Modal from './Modal';
 
 interface FeedbackModalProps {
   isOpen: boolean;
@@ -23,27 +24,6 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
-
-  // Close on Escape key
-  useEffect(() => {
-    if (!isOpen) return;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, onClose]);
-
-  // Reset form when modal re-opens
-  useEffect(() => {
-    if (isOpen) {
-      setIsSuccess(false);
-      setSubmitError(null);
-      setErrors({});
-    }
-  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -92,8 +72,8 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
 
       setIsSuccess(true);
       setMessage('');
-    } catch (err: any) {
-      setSubmitError(err.message || 'Network error occurred. Please try again later.');
+    } catch (err: unknown) {
+      setSubmitError(err instanceof Error ? err.message : 'Network error occurred. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -112,15 +92,7 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
   };
 
   return (
-    <div
-      className="repo-modal-overlay"
-      onClick={(e) => {
-        if (e.target === e.currentTarget && !isSubmitting) onClose();
-      }}
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="feedback-modal-title"
-    >
+    <Modal labelledBy="feedback-modal-title" onClose={onClose} dismissible={!isSubmitting}>
       <div className="repo-modal">
         {/* Header */}
         <div className="repo-modal-header">
@@ -177,7 +149,7 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
         ) : (
           <form onSubmit={handleSubmit} noValidate>
             {submitError && (
-              <div className="repo-modal-alert error">
+              <div className="repo-modal-alert error" role="alert">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
                   <line x1="12" y1="8" x2="12" y2="12" />
@@ -197,7 +169,7 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
                     type="button"
                     className={`feedback-pill ${feedbackType === t.id ? 'active' : ''}`}
                     onClick={() => setFeedbackType(t.id)}
-                    title={t.desc}
+                    title={t.desc} aria-pressed={feedbackType === t.id}
                   >
                     <span className="feedback-pill-icon">{t.icon}</span>
                     <span className="feedback-pill-label">{t.label}</span>
@@ -229,7 +201,7 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
                 disabled={isSubmitting}
                 autoFocus
               />
-              {errors.message && <p className="repo-field-error">{errors.message}</p>}
+              {errors.message && <p className="repo-field-error" role="alert">{errors.message}</p>}
             </div>
 
             {/* Actions */}
@@ -261,6 +233,7 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
           </form>
         )}
       </div>
-    </div>
+    </Modal>
   );
 }
+

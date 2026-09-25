@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import Modal from './Modal';
 
 interface SubmitRepoModalProps {
   isOpen: boolean;
@@ -13,27 +14,6 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
-
-  // Close on Escape key
-  useEffect(() => {
-    if (!isOpen) return;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, onClose]);
-
-  // Reset form when modal re-opens
-  useEffect(() => {
-    if (isOpen) {
-      setIsSuccess(false);
-      setSubmitError(null);
-      setErrors({});
-    }
-  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -83,23 +63,15 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
 
       setIsSuccess(true);
       setRepoUrl('');
-    } catch (err: any) {
-      setSubmitError(err.message || 'Network error occurred. Please try again later.');
+    } catch (err: unknown) {
+      setSubmitError(err instanceof Error ? err.message : 'Network error occurred. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <div
-      className="repo-modal-overlay"
-      onClick={(e) => {
-        if (e.target === e.currentTarget && !isSubmitting) onClose();
-      }}
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="submit-repo-title"
-    >
+    <Modal labelledBy="submit-repo-title" onClose={onClose} dismissible={!isSubmitting}>
       <div className="repo-modal">
         {/* Header */}
         <div className="repo-modal-header">
@@ -156,7 +128,7 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
         ) : (
           <form onSubmit={handleSubmit} noValidate>
             {submitError && (
-              <div className="repo-modal-alert error">
+              <div className="repo-modal-alert error" role="alert">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
                   <line x1="12" y1="8" x2="12" y2="12" />
@@ -190,7 +162,7 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
                   autoFocus
                 />
               </div>
-              {errors.repoUrl && <p className="repo-field-error">{errors.repoUrl}</p>}
+              {errors.repoUrl && <p className="repo-field-error" role="alert">{errors.repoUrl}</p>}
             </div>
 
             {/* Actions */}
@@ -222,6 +194,7 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
           </form>
         )}
       </div>
-    </div>
+    </Modal>
   );
 }
+
