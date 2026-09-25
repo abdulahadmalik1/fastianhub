@@ -1,10 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const RAW_REPO_BASE = 'https://raw.githubusercontent.com/malikhacks/fsc-past-papers/main';
+const ISLAMABAD_RAW_BASE = 'https://raw.githubusercontent.com/malikhacks/fsc-past-papers/main';
+const KARACHI_RAW_BASE = 'https://raw.githubusercontent.com/malikhacks/PastPaper-FAST-NUCES/main';
+const LAHORE_RAW_BASE = 'https://raw.githubusercontent.com/malikhacks/past-papers/main';
+const CFD_RAW_BASE = 'https://raw.githubusercontent.com/malikhacks/FAST-NUCES-CFD/master';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const filePath = searchParams.get('path');
+  const source = (searchParams.get('source') || 'islamabad').toLowerCase();
   const isDownload = searchParams.get('download') === 'true';
 
   if (!filePath) {
@@ -13,8 +17,17 @@ export async function GET(req: NextRequest) {
 
   // Prevent directory traversal or unauthorized access
   const normalizedPath = filePath.replace(/\\/g, '/').replace(/\.\./g, '').replace(/^\/+/, '');
-  if (!normalizedPath.startsWith('semester-') && !normalizedPath.startsWith('Course Outlines/')) {
+  if (!normalizedPath || normalizedPath.startsWith('.')) {
     return new NextResponse('Invalid file path', { status: 403 });
+  }
+
+  let rawBase = ISLAMABAD_RAW_BASE;
+  if (source === 'karachi') {
+    rawBase = KARACHI_RAW_BASE;
+  } else if (source === 'lahore' || source === 'central' || source === 'time-machine') {
+    rawBase = LAHORE_RAW_BASE;
+  } else if (source === 'cfd' || source === 'faisalabad') {
+    rawBase = CFD_RAW_BASE;
   }
 
   // Encode each segment for safe fetch
@@ -23,7 +36,7 @@ export async function GET(req: NextRequest) {
     .map(encodeURIComponent)
     .join('/');
 
-  const targetUrl = `${RAW_REPO_BASE}/${encodedPath}`;
+  const targetUrl = `${rawBase}/${encodedPath}`;
 
   try {
     const upstreamRes = await fetch(targetUrl, {
@@ -45,10 +58,32 @@ export async function GET(req: NextRequest) {
       contentType = 'image/png';
     } else if (lowerPath.endsWith('.jpg') || lowerPath.endsWith('.jpeg')) {
       contentType = 'image/jpeg';
+    } else if (lowerPath.endsWith('.webp')) {
+      contentType = 'image/webp';
+    } else if (lowerPath.endsWith('.doc')) {
+      contentType = 'application/msword';
     } else if (lowerPath.endsWith('.docx')) {
       contentType = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+    } else if (lowerPath.endsWith('.ppt')) {
+      contentType = 'application/vnd.ms-powerpoint';
+    } else if (lowerPath.endsWith('.pptx')) {
+      contentType = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
     } else if (lowerPath.endsWith('.zip')) {
       contentType = 'application/zip';
+    } else if (
+      lowerPath.endsWith('.txt') ||
+      lowerPath.endsWith('.c') ||
+      lowerPath.endsWith('.cpp') ||
+      lowerPath.endsWith('.java') ||
+      lowerPath.endsWith('.py') ||
+      lowerPath.endsWith('.asm') ||
+      lowerPath.endsWith('.html') ||
+      lowerPath.endsWith('.xml') ||
+      lowerPath.endsWith('.csv') ||
+      lowerPath.endsWith('.json') ||
+      lowerPath.endsWith('.sql')
+    ) {
+      contentType = 'text/plain; charset=utf-8';
     }
 
     const fileName = normalizedPath.split('/').pop() || 'document.pdf';

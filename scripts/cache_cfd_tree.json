@@ -1,0 +1,3241 @@
+[
+  {
+    "path": ".gitattributes",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c1c84c4b5e4823c9e748946834bdc6e33bb09455",
+    "size": 36,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c1c84c4b5e4823c9e748946834bdc6e33bb09455"
+  },
+  {
+    "path": "1st Semester",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d5d3e64bc84775df4e87f6a012823c1ae29ca475",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/d5d3e64bc84775df4e87f6a012823c1ae29ca475"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "83dc985b56e2841e07fe9c0a15032f17561123d2",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/83dc985b56e2841e07fe9c0a15032f17561123d2"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/C++ Programming From Problem Analysis to Program Design 8th.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "61e7bee6f347097b19d1bc39499c09c1f3b58615",
+    "size": 55321231,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/61e7bee6f347097b19d1bc39499c09c1f3b58615"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "efd2e97f939cfc48f135ac5162d9d241bff03734",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/efd2e97f939cfc48f135ac5162d9d241bff03734"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0e8f03bb3c449780cdd13b53a090ab0f21d9f0e3",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/0e8f03bb3c449780cdd13b53a090ab0f21d9f0e3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8113dc52ba84943b33cc9ba608b7860e2163761d",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/8113dc52ba84943b33cc9ba608b7860e2163761d"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "88ceb76f66c2b7055d33f76e49f920766effdf32",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/88ceb76f66c2b7055d33f76e49f920766effdf32"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/.vs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b344551c08fa0f881bef40c9f2e9ed26476752bb",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/b344551c08fa0f881bef40c9f2e9ed26476752bb"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/.vs/Assignent4 Final Version",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5a857f56fcafa8d6f3e56911bdead7b08590f8ef",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/5a857f56fcafa8d6f3e56911bdead7b08590f8ef"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/.vs/Assignent4 Final Version/FileContentIndex",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "17c633289b90d0c727b3f343ad3a91effc7ea81b",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/17c633289b90d0c727b3f343ad3a91effc7ea81b"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/.vs/Assignent4 Final Version/FileContentIndex/8ed5cd30-45ae-4895-b1ca-b63e5c506d45.vsidx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c4027b9408b92b4e5b77b6a757bcd6f0201a211d",
+    "size": 8364,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c4027b9408b92b4e5b77b6a757bcd6f0201a211d"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/.vs/Assignent4 Final Version/FileContentIndex/f3891c06-52ac-4765-8199-ba86da901382.vsidx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2682d879f1e6d5616b6367b28c6b1036bc589455",
+    "size": 3900,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/2682d879f1e6d5616b6367b28c6b1036bc589455"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/.vs/Assignent4 Final Version/FileContentIndex/read.lock",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/.vs/Assignent4 Final Version/v17",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "22e2b6fc60e2e3fab33394ab63b648d3b2e8e555",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/22e2b6fc60e2e3fab33394ab63b648d3b2e8e555"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/.vs/Assignent4 Final Version/v17/Browse.VC.db",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a701b623c6d71c05dcb762a99fea5ab2e0ccd600",
+    "size": 16670720,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a701b623c6d71c05dcb762a99fea5ab2e0ccd600"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d7e4bd2a93c3c5c26c27637946e700a01db529d8",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/d7e4bd2a93c3c5c26c27637946e700a01db529d8"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "76fdff23db9f6a8f717cd00488b4eef42f1ac2af",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/76fdff23db9f6a8f717cd00488b4eef42f1ac2af"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d9efed671b1278fff58051635b60fc9dacdc33a5",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/d9efed671b1278fff58051635b60fc9dacdc33a5"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Assignen.7fc89f82.tlog",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b6cb2390076add9286adabbfa34ad6872ee619a8",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/b6cb2390076add9286adabbfa34ad6872ee619a8"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Assignen.7fc89f82.tlog/CL.command.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d9a3b9f88a0e212fd388a533e32a6cff21bbb4f1",
+    "size": 10642,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/d9a3b9f88a0e212fd388a533e32a6cff21bbb4f1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Assignen.7fc89f82.tlog/CL.write.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "23123b80a2534ca116adf37642fa33451d963945",
+    "size": 19874,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/23123b80a2534ca116adf37642fa33451d963945"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Assignen.7fc89f82.tlog/link.command.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c0a151bdf8e64e2aba4b0eaa98fe12feadc84323",
+    "size": 4046,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c0a151bdf8e64e2aba4b0eaa98fe12feadc84323"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Assignen.7fc89f82.tlog/link.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b71e4e937ca5d3fcdb73a2e6d0e1681de066728f",
+    "size": 8064,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b71e4e937ca5d3fcdb73a2e6d0e1681de066728f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Assignen.7fc89f82.tlog/link.write.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7082ae89d1327c2a4331933741999cddfa6390b2",
+    "size": 2900,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/7082ae89d1327c2a4331933741999cddfa6390b2"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Assignent4 Final Version.ilk",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bb8a64e6ad275eab036fec906f135f8ee4bdd00c",
+    "size": 691888,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/bb8a64e6ad275eab036fec906f135f8ee4bdd00c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Assignent4 Final Version.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "81334ae9fd277245a270e8fd58c30bccc53b6914",
+    "size": 75810,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/81334ae9fd277245a270e8fd58c30bccc53b6914"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Question6.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0de99ed1257372035473a86e8fed0df4b781bae1",
+    "size": 1309,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0de99ed1257372035473a86e8fed0df4b781bae1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/Source.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d5f1f6ce9455a54d1d15d024f7fa41b55a7a5248",
+    "size": 92497,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/d5f1f6ce9455a54d1d15d024f7fa41b55a7a5248"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/rhombus.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b7e5dd29677fed806c3d5ec88a1e08ecdd1c93bf",
+    "size": 1303,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b7e5dd29677fed806c3d5ec88a1e08ecdd1c93bf"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/vc143.idb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "45d0e2918a5a7c38b13903915240067fcda1505c",
+    "size": 289792,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/45d0e2918a5a7c38b13903915240067fcda1505c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/Assignent4 Final Version/x64/Debug/vc143.pdb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6aab2d4f490d621c9b75daf76789e9da51bcf7e4",
+    "size": 471040,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6aab2d4f490d621c9b75daf76789e9da51bcf7e4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/x64",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cb52fb0a09a69bae013c362aebdd4184b8e5fef2",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/cb52fb0a09a69bae013c362aebdd4184b8e5fef2"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/x64/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d6f04ad92495d1a443ccab01167d543fdb47fc0e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/d6f04ad92495d1a443ccab01167d543fdb47fc0e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/Assigment4/Assignent4 Final Version/x64/Debug/Assignent4 Final Version.pdb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "031833beb74982cce64660abffc09ed2a3a99973",
+    "size": 4780032,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/031833beb74982cce64660abffc09ed2a3a99973"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "73c8aeb130040fff15d53a9a7486ce7fda82dbd7",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/73c8aeb130040fff15d53a9a7486ce7fda82dbd7"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "207a8df342f85aa430a458abbc3602790b1ed9a7",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/207a8df342f85aa430a458abbc3602790b1ed9a7"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2e4012c8afd0365420f29fbf5eabc38ca651e221",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/2e4012c8afd0365420f29fbf5eabc38ca651e221"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "117b219f4061fea31c6e74f0b95451834abd9713",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/117b219f4061fea31c6e74f0b95451834abd9713"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b2de9ac88a99b95b93b00c082723146c3a4768de",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/b2de9ac88a99b95b93b00c082723146c3a4768de"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/Browse.VC.db",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b2db2475f6eee28d2cc10118108fd314e80d68a6",
+    "size": 16326656,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b2db2475f6eee28d2cc10118108fd314e80d68a6"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bca93e48869b07891d6482510c6dfca8f2fd307c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/bca93e48869b07891d6482510c6dfca8f2fd307c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3a74ea4dea891ad5d4adcadbfa2b84d83e2a3c64",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/3a74ea4dea891ad5d4adcadbfa2b84d83e2a3c64"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/14955f6ca1454bd6",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "67cc4c988bdea890d12e015f0e285e776ebb32a4",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/67cc4c988bdea890d12e015f0e285e776ebb32a4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/14955f6ca1454bd6/19)_COUNTING.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6736b07fa2d10f1971bb1b082f40ac644c68e413",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6736b07fa2d10f1971bb1b082f40ac644c68e413"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/2222e96895cbfdbd",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5a8db7f806584dfb1a9862fdc5f0bd911135f047",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/5a8db7f806584dfb1a9862fdc5f0bd911135f047"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/2222e96895cbfdbd/17)_SPLIT.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "28669b318dee9845073585568581afe8f6896c7c",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/28669b318dee9845073585568581afe8f6896c7c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/2d638ab768628d38",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e267f14e84e6d91a24ce8eda1b240f6ab6c80855",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/e267f14e84e6d91a24ce8eda1b240f6ab6c80855"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/2d638ab768628d38/4)_COPY.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2d54d136b745197193f263b5ec2c5c26ec27557e",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/2d54d136b745197193f263b5ec2c5c26ec27557e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/2f83e1088caf9252",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "796e90765f331e50c8ee5c51a0016775b54051c7",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/796e90765f331e50c8ee5c51a0016775b54051c7"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/2f83e1088caf9252/16)_.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "53b78763ecccc76feb778b437f8f81e5b68bb6d3",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/53b78763ecccc76feb778b437f8f81e5b68bb6d3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/3e301d72862c2411",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f420129c7ebd63b2591fae023c05a85d64b7a63c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/f420129c7ebd63b2591fae023c05a85d64b7a63c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/3e301d72862c2411/1)_SWAPPING.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "33aeb11929813fe61469cb66a17083776a0bf152",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/33aeb11929813fe61469cb66a17083776a0bf152"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/459d92374d0a3738",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f44f2926fa19bfbc494231772d4ef1653785941f",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/f44f2926fa19bfbc494231772d4ef1653785941f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/459d92374d0a3738/2)_ SUBSTRING.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0ae1ee28e3de528efa54beb5a4f52f4cb49c9bf4",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0ae1ee28e3de528efa54beb5a4f52f4cb49c9bf4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/739a840db303c062",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f26fbe37138b67c7291ad0d88e76d145713de8ec",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/f26fbe37138b67c7291ad0d88e76d145713de8ec"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/739a840db303c062/19)_COUNTING.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "af33a6c0b9ce266fadb2ed2a2ed20fed5dd4371e",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/af33a6c0b9ce266fadb2ed2a2ed20fed5dd4371e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/7c52f9e3385ce0d5",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "14ac3a0d8c5d4e6f830058b08a4972fad2b7ee1a",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/14ac3a0d8c5d4e6f830058b08a4972fad2b7ee1a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/7c52f9e3385ce0d5/7)_LOWECASE.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "23cb6276411a18b78b01aead17deca520d1fef16",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/23cb6276411a18b78b01aead17deca520d1fef16"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/81f4ea6a6df86bcd",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "08d0745489f09c43bbd6deeca77825ed14071660",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/08d0745489f09c43bbd6deeca77825ed14071660"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/81f4ea6a6df86bcd/1)_SWAPPING.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cb302a3fdf658edf868f276b8957eed79bdd8112",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/cb302a3fdf658edf868f276b8957eed79bdd8112"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/84c12640083a12d9",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "fd6f0526542c99a3784c742c37ab7b1c802fe000",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/fd6f0526542c99a3784c742c37ab7b1c802fe000"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/84c12640083a12d9/16)_REND.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "986214b2b88c7343a45894fccebf32d10c7dff72",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/986214b2b88c7343a45894fccebf32d10c7dff72"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/8ab143c40ac2022f",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ea44406a42001dab55e30cb32e17c044cf18abc8",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/ea44406a42001dab55e30cb32e17c044cf18abc8"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/8ab143c40ac2022f/19)_RESIZE.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "42605a5923057d62eb3298e0da717ba30b151ab8",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/42605a5923057d62eb3298e0da717ba30b151ab8"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/8fd9b3b2fb3520a7",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e396679aa6eb160b65a4a2d38914af5b8224b52a",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/e396679aa6eb160b65a4a2d38914af5b8224b52a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/8fd9b3b2fb3520a7/19)_.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "40c563a04a8baf6ddf6343771ba495a6a8985249",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/40c563a04a8baf6ddf6343771ba495a6a8985249"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/917483a9364af7ac",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "869cab074c3726e0f543635a9eb9786e4da6946a",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/869cab074c3726e0f543635a9eb9786e4da6946a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/917483a9364af7ac/10)_RESIZE.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "511d65b6adfb4ad35669f128a7bebc3b0f7a8324",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/511d65b6adfb4ad35669f128a7bebc3b0f7a8324"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/91c2135ff8912c32",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f966a6def3176381ae18fa8bb06f055f7055a5bd",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/f966a6def3176381ae18fa8bb06f055f7055a5bd"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/91c2135ff8912c32/5)_LENGTH.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "79f7ae1513627dfb0d31b1f37b432724770f0553",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/79f7ae1513627dfb0d31b1f37b432724770f0553"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/9a1664396fadd2c6",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ee1b2084157afff82093eb5853b77a4526786672",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/ee1b2084157afff82093eb5853b77a4526786672"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/9a1664396fadd2c6/15)_REMOVE SPECIAL CHARACTERS.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b5fc9e289a4faa7b2eea2612a866281ab84dbc5",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5b5fc9e289a4faa7b2eea2612a866281ab84dbc5"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/9cf3bce008fce60f",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cff54a26ce66d7238a59025c26ccac0548c1f066",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/cff54a26ce66d7238a59025c26ccac0548c1f066"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/9cf3bce008fce60f/13)_STRING SIZE.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3bbf6692633dca58d5833488d48d6cfbaab4b2e",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f3bbf6692633dca58d5833488d48d6cfbaab4b2e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/bfb9493d9c70b6b3",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c771cd2a77dad3835a4b1e7344557d4838ff3dc2",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c771cd2a77dad3835a4b1e7344557d4838ff3dc2"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/bfb9493d9c70b6b3/6)_UPPERCASE.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ccde0fb6448fd4466e7f3105f2e95974d1c56476",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ccde0fb6448fd4466e7f3105f2e95974d1c56476"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/ca008fe2b50fcb0a",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "15bed2dc5a15929a32f8ab8069105c0bc3517180",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/15bed2dc5a15929a32f8ab8069105c0bc3517180"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/ca008fe2b50fcb0a/11)_CONCATINATE.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6c05608917d43ce7ae28fe38abc74a0f885262a4",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6c05608917d43ce7ae28fe38abc74a0f885262a4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/f05b21314787e1d6",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9fc9d0d2bf5096271f8590f1d531a2410e55f389",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/9fc9d0d2bf5096271f8590f1d531a2410e55f389"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/f05b21314787e1d6/3)_POPBACK.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "450730b55a5309c8864768367ee61e3eb386f7c1",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/450730b55a5309c8864768367ee61e3eb386f7c1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/f949c74c5ab7d0f2",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c9274e09d62f374564b32f3ca2d8375649de01a3",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c9274e09d62f374564b32f3ca2d8375649de01a3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/.vs/String Functios/v17/ipch/AutoPCH/f949c74c5ab7d0f2/8)_POSITION.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "78eb27cc097646d855b0b0c0693d7b388819ddae",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/78eb27cc097646d855b0b0c0693d7b388819ddae"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9f9c3b57d141841f95f3a10fcfab8f42cdfbada1",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/9f9c3b57d141841f95f3a10fcfab8f42cdfbada1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios/x64",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "47ce24c9ff18631046a37d0c8fb821a69dcfe737",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/47ce24c9ff18631046a37d0c8fb821a69dcfe737"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios/x64/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "935b8f89dfd33f032ed6fabca5a6532caf500fea",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/935b8f89dfd33f032ed6fabca5a6532caf500fea"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios/x64/Debug/String Functios.tlog",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "82acd4f6876fe6236a026dc28c14026c3b92450a",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/82acd4f6876fe6236a026dc28c14026c3b92450a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios/x64/Debug/String Functios.tlog/CL.command.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e0ce7f9090061c5bbd346069b45bf695148c172f",
+    "size": 33926,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e0ce7f9090061c5bbd346069b45bf695148c172f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios/x64/Debug/String Functios.tlog/link-cvtres.write.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46b134b197f35e75e0784bedbf94a8dd124693b1",
+    "size": 2,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/46b134b197f35e75e0784bedbf94a8dd124693b1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios/x64/Debug/String Functios.tlog/link-rc.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46b134b197f35e75e0784bedbf94a8dd124693b1",
+    "size": 2,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/46b134b197f35e75e0784bedbf94a8dd124693b1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios/x64/Debug/String Functios.tlog/link.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8f456aba0c1b60adf72a63d6a793223ee090e1ce",
+    "size": 9770,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/8f456aba0c1b60adf72a63d6a793223ee090e1ce"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF Coursesigment 3/String Functios/String Functios/x64/Debug/String Functios.tlog/unsuccessfulbuild",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7c88aece34f0b5815260eba8fe8375165eb2836c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/7c88aece34f0b5815260eba8fe8375165eb2836c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "dea1eb33871d4194ad52d3e75a7159f8e5b11c4d",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/dea1eb33871d4194ad52d3e75a7159f8e5b11c4d"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "600b5781c5e8ffc454bffea9daa61e94592a4c08",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/600b5781c5e8ffc454bffea9daa61e94592a4c08"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "643c5c4ef8bbb1cdec8a55818f9d85f60af53a75",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/643c5c4ef8bbb1cdec8a55818f9d85f60af53a75"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/FileContentIndex",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "133d4ccaf4604f5b5fd73d2c464cbc5c9bcf8c6c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/133d4ccaf4604f5b5fd73d2c464cbc5c9bcf8c6c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/FileContentIndex/b29c67fc-f320-4907-817a-11bd992d34aa.vsidx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "565d385773610e8e7998139e7b4a0c81445f254f",
+    "size": 11512,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/565d385773610e8e7998139e7b4a0c81445f254f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/FileContentIndex/read.lock",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/v17",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "98039fc924b2a864c3279cbc9b68fa8ef37af3e8",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/98039fc924b2a864c3279cbc9b68fa8ef37af3e8"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/v17/.suo",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ea0b455fdce0a6d3ab4dd2f827f8ea0408d0773a",
+    "size": 78336,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ea0b455fdce0a6d3ab4dd2f827f8ea0408d0773a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/v17/Browse.VC.db",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a39e947965997fa08c662a5ddb225e1a7fea46f3",
+    "size": 16556032,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a39e947965997fa08c662a5ddb225e1a7fea46f3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/v17/ipch",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2d3971b1580307559416886fa1c7af359a2d6161",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/2d3971b1580307559416886fa1c7af359a2d6161"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/v17/ipch/AutoPCH",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2d0dcf0812ea081485dd904480931f604be3eaa0",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/2d0dcf0812ea081485dd904480931f604be3eaa0"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/v17/ipch/AutoPCH/c025dfc01de6bf66",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "64d5e20f2b3c71840aa26d0628a4a6e5a77cb531",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/64d5e20f2b3c71840aa26d0628a4a6e5a77cb531"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/.vs/Assignment_3_PF/v17/ipch/AutoPCH/c025dfc01de6bf66/TASK4.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "750a689a07e25ca2a481cc07895b6086c18a5925",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/750a689a07e25ca2a481cc07895b6086c18a5925"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8c0279e72184fd296ee70989e2d7ba531dceada9",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/8c0279e72184fd296ee70989e2d7ba531dceada9"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a3fe7e3258b954dd2a1022675cbf9f23c2374fe6",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/a3fe7e3258b954dd2a1022675cbf9f23c2374fe6"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "04f7bfea303a62accde6e1e1c453b38af7de0e21",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/04f7bfea303a62accde6e1e1c453b38af7de0e21"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/Assignment_3_PF.ilk",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c5bf7fefa7fbba929c04ef366bda397755f68b4f",
+    "size": 772608,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c5bf7fefa7fbba929c04ef366bda397755f68b4f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/Assignment_3_PF.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "435f9ae10c6a57c7d1aaed9b24fbedef4ce1ce2c",
+    "size": 75589,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/435f9ae10c6a57c7d1aaed9b24fbedef4ce1ce2c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/Assignment_3_PF.tlog",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "087f07807f59be97e69b99d4b39fdf131c5a1a3f",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/087f07807f59be97e69b99d4b39fdf131c5a1a3f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/Assignment_3_PF.tlog/Assignment_3_PF.lastbuildstate",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "468998a00150a43685bf2b262d292f767ac75363",
+    "size": 203,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/468998a00150a43685bf2b262d292f767ac75363"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/Assignment_3_PF.tlog/CL.command.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b02448c4d1d85cfd165df853c04e062b39c90e3a",
+    "size": 12990,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b02448c4d1d85cfd165df853c04e062b39c90e3a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/Assignment_3_PF.tlog/CL.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b35fe36b88e9d1bd1854f01cae8dad637be17c6",
+    "size": 22302,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5b35fe36b88e9d1bd1854f01cae8dad637be17c6"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/Assignment_3_PF.tlog/CL.write.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5a113da5de8c23806909ced0d6b60f726f0ceca1",
+    "size": 32342,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5a113da5de8c23806909ced0d6b60f726f0ceca1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/Assignment_3_PF.tlog/link.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ceeb01bd82e7fb34fdf34815ebe773a9a14f8b6d",
+    "size": 8046,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ceeb01bd82e7fb34fdf34815ebe773a9a14f8b6d"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/rough work.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7c8ef1ddab9fff24ba0997e86cd57c4fcdd4da30",
+    "size": 1290,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/7c8ef1ddab9fff24ba0997e86cd57c4fcdd4da30"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/task 09.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "992ec98b9182e46d3de9b63431e8eb0ab24015b5",
+    "size": 111682,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/992ec98b9182e46d3de9b63431e8eb0ab24015b5"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/task 11.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c120dfa5a34c2c144fed42978bc6349c072e126f",
+    "size": 1279,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c120dfa5a34c2c144fed42978bc6349c072e126f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/task1.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1d4fde4fae65ccbbc924ce51989d781594a524a0",
+    "size": 1273,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/1d4fde4fae65ccbbc924ce51989d781594a524a0"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/task2.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ec48796314f008e10f9ffe5a567953075ebf7067",
+    "size": 1273,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ec48796314f008e10f9ffe5a567953075ebf7067"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/task_7.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f189853c2685204a8513e4d755a2c2ddb27536ce",
+    "size": 1274,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f189853c2685204a8513e4d755a2c2ddb27536ce"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/task_8.obj.enc",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "953bdc227916e4e8270058443b5fb53dfcde10cd",
+    "size": 91236,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/953bdc227916e4e8270058443b5fb53dfcde10cd"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/vc143.idb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fb45743266630f10726ed55ca1c6327b8a09a93e",
+    "size": 306176,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/fb45743266630f10726ed55ca1c6327b8a09a93e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/Assignment_3_PF/x64/Debug/vc143.pdb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4224c6acc5bc89754ac189063b317ebfbff3db4b",
+    "size": 577536,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/4224c6acc5bc89754ac189063b317ebfbff3db4b"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/x64",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c83ccf735356198170ec7439dd5474fa77217f32",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c83ccf735356198170ec7439dd5474fa77217f32"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/x64/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2ccb75c1e03f493ae1df54e2fd038dd5974bb0c3",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/2ccb75c1e03f493ae1df54e2fd038dd5974bb0c3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PF course Assignment2/Assignment_3_PF/x64/Debug/Assignment_3_PF.pdb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "165f339541a640b3960dcf930fe5a61f7916fbf3",
+    "size": 6942720,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/165f339541a640b3960dcf930fe5a61f7916fbf3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b2d2b52d9fbf44f1956f88933f2f58c32068669e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/b2d2b52d9fbf44f1956f88933f2f58c32068669e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "633fb7643b3bdf73c15da726791ac14a90bf60b1",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/633fb7643b3bdf73c15da726791ac14a90bf60b1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c8d94cb4bb9920babbbbf22c4ed2ff702f7c9cbd",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c8d94cb4bb9920babbbbf22c4ed2ff702f7c9cbd"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0cd5dd36272ff4fb7e0970f29777a49784908625",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/0cd5dd36272ff4fb7e0970f29777a49784908625"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a2d3fe4735e7a6c72678e3a1b56e4a0753be2430",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/a2d3fe4735e7a6c72678e3a1b56e4a0753be2430"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6c7c56385bb177c74619fa04637c78902a2c0342",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/6c7c56385bb177c74619fa04637c78902a2c0342"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "89c15b015815c604a8e6301aae44dd513dc81761",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/89c15b015815c604a8e6301aae44dd513dc81761"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/3c30c25e7c165bac",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "59fd4f2c05c183170db8525f9bc579f410b350c0",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/59fd4f2c05c183170db8525f9bc579f410b350c0"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/3c30c25e7c165bac/PROBLEM_6.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2d0c0127fd8a47f219ba2887bfde94e863cf27a0",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/2d0c0127fd8a47f219ba2887bfde94e863cf27a0"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/7eb6c746669a7de9",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5e6cf735861c962adfa5c07b3694004dda851aea",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/5e6cf735861c962adfa5c07b3694004dda851aea"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/7eb6c746669a7de9/PROBLEM_5.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3d96dfb740468dc6df3e03bd58cf08b2ed0915fc",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3d96dfb740468dc6df3e03bd58cf08b2ed0915fc"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/a025af1f3fd6fdf7",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "54b241cdbdcd25f56357cf7b366f32a80b04dc3a",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/54b241cdbdcd25f56357cf7b366f32a80b04dc3a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/a025af1f3fd6fdf7/PROBLEM_3.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ce2bbe8e29a676d1ebf218b0219d708b46cb0ab3",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ce2bbe8e29a676d1ebf218b0219d708b46cb0ab3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/a293e04b4b01deb7",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "74a978bf86313e1024cd7f5c58bb3adafb431902",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/74a978bf86313e1024cd7f5c58bb3adafb431902"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/a293e04b4b01deb7/TASK_3.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c02ee850a47305067ee5059aff076d3fe9bff57c",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c02ee850a47305067ee5059aff076d3fe9bff57c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/a50be2377e61da92",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "549b3161270797c2bb214867869654da6683ee51",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/549b3161270797c2bb214867869654da6683ee51"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/a50be2377e61da92/PROBLEM_4.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1a22e3368e401188fc7f67225b399306b33ff584",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/1a22e3368e401188fc7f67225b399306b33ff584"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/a9e5fc4884f9dea9",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d4057a3e394279fa5f67eaacbd979013e681b564",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/d4057a3e394279fa5f67eaacbd979013e681b564"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/a9e5fc4884f9dea9/SOURCE.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6864c9d962824ed5f76c7f2d964ed6c029a0e36a",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6864c9d962824ed5f76c7f2d964ed6c029a0e36a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/bda0417372336c63",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "142fdb0e6acbc70463766febd32618a7cb5d1bf2",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/142fdb0e6acbc70463766febd32618a7cb5d1bf2"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/bda0417372336c63/CONSOLEAPPLICATION6.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "93fc0f8ead2964d9653f6090e9afb1bc1ae17be6",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/93fc0f8ead2964d9653f6090e9afb1bc1ae17be6"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/c3c8233fd5716103",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "60b839314ce3928597cf0ab5d04db49ba20fbace",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/60b839314ce3928597cf0ab5d04db49ba20fbace"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/c3c8233fd5716103/PROBLEM_7.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "792dffcdd52673016f6eb37801f72a378cdb4617",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/792dffcdd52673016f6eb37801f72a378cdb4617"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/c85edf677f75b3e0",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c52202771089af2da8ca952586100af7236787a5",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c52202771089af2da8ca952586100af7236787a5"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/c85edf677f75b3e0/TASK_2.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "70935a2d48acd3bcf8aa0d0149d2229bfbd51fb5",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/70935a2d48acd3bcf8aa0d0149d2229bfbd51fb5"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/d442f86d86e1d7a9",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c03c05d21e70e76ad5653f0680e455b265ea7cd6",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c03c05d21e70e76ad5653f0680e455b265ea7cd6"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/d442f86d86e1d7a9/TASK_5.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b55a9bdfd6dd058ee916dd7119743f9ac65cdd7a",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b55a9bdfd6dd058ee916dd7119743f9ac65cdd7a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/ebaa6b2a462ff97d",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bec9c0bd8d7b5617046446d278128c436256397d",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/bec9c0bd8d7b5617046446d278128c436256397d"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/.vs/ConsoleApplication6/v17/ipch/AutoPCH/ebaa6b2a462ff97d/TASK.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b40ad26d9b5cd7ae932fd55fb3fde51fa7f4628b",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b40ad26d9b5cd7ae932fd55fb3fde51fa7f4628b"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6c74021fcc06b56216bcbb4e1b95fbeaabd468ea",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/6c74021fcc06b56216bcbb4e1b95fbeaabd468ea"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d97c21f63ee716a53b5cbda2cb89d866def622fe",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/d97c21f63ee716a53b5cbda2cb89d866def622fe"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c7a35f3f91ac249d5b8b5ba84758be34a2c755cf",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c7a35f3f91ac249d5b8b5ba84758be34a2c755cf"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleA.36f2a32c.tlog",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "18f3a055dc8b152f37686cbb02e57371c79fe8d7",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/18f3a055dc8b152f37686cbb02e57371c79fe8d7"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleA.36f2a32c.tlog/CL.command.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c2f7b3a7507d3f9e16a909fe554d3ebf1699b351",
+    "size": 11542,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c2f7b3a7507d3f9e16a909fe554d3ebf1699b351"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleA.36f2a32c.tlog/CL.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "37cc61f8708a4e55204121b77e0abb4b2c74a32c",
+    "size": 20660,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/37cc61f8708a4e55204121b77e0abb4b2c74a32c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleA.36f2a32c.tlog/CL.write.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "635a7601bf79286ffb6b5a93527ce6746c39cda4",
+    "size": 4622,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/635a7601bf79286ffb6b5a93527ce6746c39cda4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleA.36f2a32c.tlog/link.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d6513514f9387315e2760233c6b787485e882dc4",
+    "size": 5436,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/d6513514f9387315e2760233c6b787485e882dc4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleApplication6.exe.recipe",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7286ad4c82e32df74be4246b5ba6197bfcd8767d",
+    "size": 319,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/7286ad4c82e32df74be4246b5ba6197bfcd8767d"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleApplication6.ilk",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1a9cfa5565fc25037a1a95954eeb883319b1e6cc",
+    "size": 781064,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/1a9cfa5565fc25037a1a95954eeb883319b1e6cc"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleApplication6.log",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "da12c34e3ea56ca7668c62269ac186da615d6851",
+    "size": 131,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/da12c34e3ea56ca7668c62269ac186da615d6851"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/ConsoleApplication6.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "22ed1e465690f1a12557d305830667785e9d015a",
+    "size": 253273,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/22ed1e465690f1a12557d305830667785e9d015a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/Problem_4.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a4a4da655eb7716acef630e3e9fe63512b6e853b",
+    "size": 1205,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a4a4da655eb7716acef630e3e9fe63512b6e853b"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/Problem_5.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b718596bac024fab7f9b19421ee9aa7254f1cc2f",
+    "size": 105124,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b718596bac024fab7f9b19421ee9aa7254f1cc2f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/Source.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b868b079b57ac363e0ecb478ba9a48da127232b4",
+    "size": 1190,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b868b079b57ac363e0ecb478ba9a48da127232b4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/Task.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6cb6023d73605826891a01378fe39ba416a27776",
+    "size": 105107,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6cb6023d73605826891a01378fe39ba416a27776"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/Task_3.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0a6dc4421af6c3282f46e7ce19792f2d7f619b13",
+    "size": 1190,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0a6dc4421af6c3282f46e7ce19792f2d7f619b13"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/Task_5.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "69ac2d4e666648a397e005f030a0343e33edd728",
+    "size": 105117,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/69ac2d4e666648a397e005f030a0343e33edd728"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/vc143.idb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f3bcf8354e015e9c8826bd69732ede285204d7c1",
+    "size": 289792,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f3bcf8354e015e9c8826bd69732ede285204d7c1"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/ConsoleApplication6/ConsoleApplication6/x64/Debug/vc143.pdb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "84cdd27a2eb77e70533f73fbebfe3648cad533c9",
+    "size": 454656,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/84cdd27a2eb77e70533f73fbebfe3648cad533c9"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "91a4d7bdcfb71dc3760b15eaa7014958dd00b1f3",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/91a4d7bdcfb71dc3760b15eaa7014958dd00b1f3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3d0f982af878457758fea25202e971769f963c0f",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/3d0f982af878457758fea25202e971769f963c0f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/.vs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3b48831ae7d88fcbc5563e93eabf561316cf5a2e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/3b48831ae7d88fcbc5563e93eabf561316cf5a2e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/.vs/ConsoleApplication1",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "001e99711def64ba55c89b1ac290c10cfb28a3dc",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/001e99711def64ba55c89b1ac290c10cfb28a3dc"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/.vs/ConsoleApplication1/v17",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "99361d9dad304e23c093ffded72234d43912ad1c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/99361d9dad304e23c093ffded72234d43912ad1c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/.vs/ConsoleApplication1/v17/Browse.VC.db",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6f6d03198604e8ac3ded522a3ad2b1a86913f5ce",
+    "size": 16670720,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6f6d03198604e8ac3ded522a3ad2b1a86913f5ce"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7af7af162df90395f0ac3aece23679ef20f05115",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/7af7af162df90395f0ac3aece23679ef20f05115"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1/x64",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "32f69fca78dc383fb3510645160cde98d5177f68",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/32f69fca78dc383fb3510645160cde98d5177f68"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1/x64/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7d2273dd24ee4564da83a2dfc740f48a9f2fa308",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/7d2273dd24ee4564da83a2dfc740f48a9f2fa308"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1/x64/Debug/ConsoleA.c6127c55.tlog",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "754dba5030ff774b8b7069f36390ed10c28ae4be",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/754dba5030ff774b8b7069f36390ed10c28ae4be"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1/x64/Debug/ConsoleA.c6127c55.tlog/CL.command.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9ebe39903135fc1d0aca861c4ede89b908d73e2e",
+    "size": 1026,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/9ebe39903135fc1d0aca861c4ede89b908d73e2e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1/x64/Debug/ConsoleA.c6127c55.tlog/CL.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0061c8a5b736167a93c3303262de849316c0a5ff",
+    "size": 20016,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0061c8a5b736167a93c3303262de849316c0a5ff"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1/x64/Debug/ConsoleA.c6127c55.tlog/CL.write.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b36ff5f3fac00563cd35c8fb7e750d55f6180901",
+    "size": 1024,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b36ff5f3fac00563cd35c8fb7e750d55f6180901"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1/x64/Debug/ConsoleApplication1.exe.recipe",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8c38211ea0034913acb7a619cc4080ed49f54b00",
+    "size": 358,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/8c38211ea0034913acb7a619cc4080ed49f54b00"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/PFcourseAssignent_5/lab14/ConsoleApplication1/ConsoleApplication1/x64/Debug/ConsoleApplication1.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "425273b2b7f916983593e44f537345ca95a9a72a",
+    "size": 257210,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/425273b2b7f916983593e44f537345ca95a9a72a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "78582f24e971e45f177bfd500974964dc4a2038e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/78582f24e971e45f177bfd500974964dc4a2038e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "42e0306123b23e5bea4523c77e88d678568e5110",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/42e0306123b23e5bea4523c77e88d678568e5110"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4e50c6505dd6fe04630403369b552f4de1cd7cfc",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/4e50c6505dd6fe04630403369b552f4de1cd7cfc"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "fe41ebe89f610501bf8b98146d5b93f7a0da24ff",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/fe41ebe89f610501bf8b98146d5b93f7a0da24ff"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4cf8d541dcd095fcae81ef10ecfab4b043ec0098",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/4cf8d541dcd095fcae81ef10ecfab4b043ec0098"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/Browse.VC.db",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "83701d50a973776b07c64003295259aa67a72134",
+    "size": 16318464,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/83701d50a973776b07c64003295259aa67a72134"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e1287efcc56e98bac6b930582a52ea456e35b67c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/e1287efcc56e98bac6b930582a52ea456e35b67c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "70142868a02276634233885c93e991c96dbfc8e5",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/70142868a02276634233885c93e991c96dbfc8e5"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/194b31368ae1768f",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6ffbd6025eb73d0962a5fbba4f0d2d0fc487084f",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/6ffbd6025eb73d0962a5fbba4f0d2d0fc487084f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/194b31368ae1768f/SOURCE.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "41100a5489652df7da0775d39d0c370d87bc79be",
+    "size": 37879808,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/41100a5489652df7da0775d39d0c370d87bc79be"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/44ef51db61b955ac",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6e33a7003fd764ec86ceda02d8f57256231f255b",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/6e33a7003fd764ec86ceda02d8f57256231f255b"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/44ef51db61b955ac/SOURCE5.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2c7450690493e8f5bcf28918bdb664a1024a24c5",
+    "size": 37617664,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/2c7450690493e8f5bcf28918bdb664a1024a24c5"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/72be7bb5a630d1c8",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "eb07a5f434b2c4af4bcb7a8db9f8c9ed03620195",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/eb07a5f434b2c4af4bcb7a8db9f8c9ed03620195"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/72be7bb5a630d1c8/TASK_4(PART-A).ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a8efdd0a3ad560ad0499af1dcfa3f8b1d8dcbc43",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a8efdd0a3ad560ad0499af1dcfa3f8b1d8dcbc43"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/782b3dbd41ee2b20",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3df455a43117c2fae6b0b33cf11e6928c5988e10",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/3df455a43117c2fae6b0b33cf11e6928c5988e10"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/782b3dbd41ee2b20/SOURCE1.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c7c4f2036a4b6d5ed531374dc8788c17daa3026f",
+    "size": 37617664,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c7c4f2036a4b6d5ed531374dc8788c17daa3026f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/79e6a7ff154ca9ee",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ce7f370d14b2e46fadafbc448906588f773ea2f7",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/ce7f370d14b2e46fadafbc448906588f773ea2f7"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/79e6a7ff154ca9ee/SOURCE10.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dc61d9bad080e712152ac98fd270d117b6f48502",
+    "size": 37617664,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/dc61d9bad080e712152ac98fd270d117b6f48502"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/825a0429938a221e",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e3c375ceb6442301bd8c7d131a963e6277eb86ab",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/e3c375ceb6442301bd8c7d131a963e6277eb86ab"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/825a0429938a221e/WIKJZEGL..ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ac4f33f279bab639c410d566bcecbd20a442510d",
+    "size": 36569088,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ac4f33f279bab639c410d566bcecbd20a442510d"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/8405d6d932d35ccb",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "77c77b2426bb21b6ad5fa73d18842164b2a3c39c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/77c77b2426bb21b6ad5fa73d18842164b2a3c39c"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/8405d6d932d35ccb/SOURCE11.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2f463adda2b64dfde2ac60785395eb49c3fca2c5",
+    "size": 37617664,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/2f463adda2b64dfde2ac60785395eb49c3fca2c5"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/8e97270d47d48afe",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3c4d5489aa90092416cb4995c8143e8370cc2361",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/3c4d5489aa90092416cb4995c8143e8370cc2361"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/8e97270d47d48afe/TASK_4.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3acafad1aa51d5c8e8b2ba0e74e9721d8ee2e929",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3acafad1aa51d5c8e8b2ba0e74e9721d8ee2e929"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/980ef98f4ddb4d83",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "aea3bfa2780b191a3014899ff43126250af1502e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/aea3bfa2780b191a3014899ff43126250af1502e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/980ef98f4ddb4d83/CONSOLEAPPLICATION4.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "40ce82eae64df1fe47969aad3b034b0e7c854055",
+    "size": 37617664,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/40ce82eae64df1fe47969aad3b034b0e7c854055"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/adca71b46404d492",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "265c213dc5b6c6a5da55fb7e25f7ade8e8d5e4f6",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/265c213dc5b6c6a5da55fb7e25f7ade8e8d5e4f6"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/adca71b46404d492/SOURCE7.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9c3da65af27a236447753b3a88eace50806a5aeb",
+    "size": 37617664,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/9c3da65af27a236447753b3a88eace50806a5aeb"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/c29cca6d3ebcf471",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c62fddad503b23809566e2451a33dfddd3fce562",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c62fddad503b23809566e2451a33dfddd3fce562"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/c29cca6d3ebcf471/TASK_!.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e5ad50c0e2bfb9e0fc39fcc0e96fefc01ff90364",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e5ad50c0e2bfb9e0fc39fcc0e96fefc01ff90364"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/cc86b2bcbb145b03",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c0fe975395a6d30760d37a6939afef2c37496963",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c0fe975395a6d30760d37a6939afef2c37496963"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/.vs/ConsoleApplication4/v17/ipch/AutoPCH/cc86b2bcbb145b03/SOURCE4.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "27ee4635f34188233f4446c547a00b97ccda064b",
+    "size": 37617664,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/27ee4635f34188233f4446c547a00b97ccda064b"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "7b019d1b770a38710f07480f16cbca2fec06221e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/7b019d1b770a38710f07480f16cbca2fec06221e"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "44e7e71edacc93237f019411a620e53a0c485e67",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/44e7e71edacc93237f019411a620e53a0c485e67"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9e3ce36f572cc7038ba173a9e4b7b91fd8ece073",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/9e3ce36f572cc7038ba173a9e4b7b91fd8ece073"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64/Debug/ConsoleA.2ba7b157.tlog",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f961e057ee1d31397da6339b7d3f44b2566c6fc4",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/f961e057ee1d31397da6339b7d3f44b2566c6fc4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64/Debug/ConsoleA.2ba7b157.tlog/CL.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "29d055a0a8098c6e3cc22852fa9c60606b608aca",
+    "size": 21436,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/29d055a0a8098c6e3cc22852fa9c60606b608aca"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64/Debug/ConsoleA.2ba7b157.tlog/CL.write.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "102ae5f1664190d20f385a50bcf08d51e162d55f",
+    "size": 6894,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/102ae5f1664190d20f385a50bcf08d51e162d55f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64/Debug/ConsoleA.2ba7b157.tlog/link.command.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "141f70e72f1bf4b5a32dce6a8180e9adf31a31c0",
+    "size": 6690,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/141f70e72f1bf4b5a32dce6a8180e9adf31a31c0"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64/Debug/ConsoleA.2ba7b157.tlog/link.read.1.tlog",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bede6ef0848c0530cccb153a34133fa4b5e77da3",
+    "size": 6722,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/bede6ef0848c0530cccb153a34133fa4b5e77da3"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64/Debug/Source7.obj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ec5c0f3bbbadd9a0e710eac2286fdad553b26265",
+    "size": 1139,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ec5c0f3bbbadd9a0e710eac2286fdad553b26265"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/pf_course last Assgnment/course assignment 6/ConsoleApplication4/x64/Debug/vc143.pdb",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "718245ec3277f83112870bc3e214ed5ba20f594f",
+    "size": 503808,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/718245ec3277f83112870bc3e214ed5ba20f594f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "23f633c9a46ca5d44c06a6cbf7128d549038d7a8",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/23f633c9a46ca5d44c06a6cbf7128d549038d7a8"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e53de04d74056e5cc8232d65007cfb4938e31083",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/e53de04d74056e5cc8232d65007cfb4938e31083"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6870dc9c352ae10db634d7ad9ad04cbbd4447479",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/6870dc9c352ae10db634d7ad9ad04cbbd4447479"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs/String Function",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c63dc36ddd43276aa65d59c4184733d117267a48",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c63dc36ddd43276aa65d59c4184733d117267a48"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs/String Function/v17",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "24462dfdbe091f6e415a88aed43c351ae0561788",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/24462dfdbe091f6e415a88aed43c351ae0561788"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs/String Function/v17/.suo",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a80c543f3c7f74de555d119457ab036ad56537bf",
+    "size": 20480,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a80c543f3c7f74de555d119457ab036ad56537bf"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs/String Function/v17/Browse.VC.db",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4bb12019f4d5184221b69c6aa00f489996cc6a94",
+    "size": 16424960,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/4bb12019f4d5184221b69c6aa00f489996cc6a94"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs/String Function/v17/ipch",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cc9ae0012056738d9e0b16f352258424d71b34b4",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/cc9ae0012056738d9e0b16f352258424d71b34b4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs/String Function/v17/ipch/AutoPCH",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "57ce19cd46192164bc5940e204628ecd25aad2a8",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/57ce19cd46192164bc5940e204628ecd25aad2a8"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs/String Function/v17/ipch/AutoPCH/88161e555c0b5153",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b45cbfc702245f9f2fe7efbdfacdba9f8e96dbb7",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/b45cbfc702245f9f2fe7efbdfacdba9f8e96dbb7"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF Assignments/Assig_ Code Fall_22/string Functions/String Function/.vs/String Function/v17/ipch/AutoPCH/88161e555c0b5153/STRING FUNCTION.ipch",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4f3ea2d621ae14e7028dec9214963ea965aadf38",
+    "size": 37355520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/4f3ea2d621ae14e7028dec9214963ea965aadf38"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b057bd7f5d875ed694592b6cfe5809608ead614f",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/b057bd7f5d875ed694592b6cfe5809608ead614f"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "503309d7454915022bd976c0d0ead286e7bb3bb4",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/503309d7454915022bd976c0d0ead286e7bb3bb4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "cc2e7decd5a7a3be066b125d4a19e44aaf3c25eb",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/cc2e7decd5a7a3be066b125d4a19e44aaf3c25eb"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 10 shapes nested loops.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4a57dd8a6330885bc0f7949e618d0d954ef2fab6",
+    "size": 396300,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/4a57dd8a6330885bc0f7949e618d0d954ef2fab6"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 13.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ad9a94e9212437338164b474b2a111568ebffdf",
+    "size": 316986,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3ad9a94e9212437338164b474b2a111568ebffdf"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 14 (1).docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "91546ce145c700cbbcb5b8d9f4358c12232c1dfb",
+    "size": 183023,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/91546ce145c700cbbcb5b8d9f4358c12232c1dfb"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 15.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "29a504f4ebe2ce0db6612db85e23e01eaadc9fb4",
+    "size": 185653,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/29a504f4ebe2ce0db6612db85e23e01eaadc9fb4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 3 BCS 1C.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ff95f0ea89bff65af0dbb438c111e725279dd57a",
+    "size": 255588,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ff95f0ea89bff65af0dbb438c111e725279dd57a"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 4 BCS 1B.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fe309e92f708c07bb76c53c9eff32a2b9b7e41b4",
+    "size": 872688,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/fe309e92f708c07bb76c53c9eff32a2b9b7e41b4"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 5 BCS 1C - updated.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4fc2f57fc76d3ad2ee0b461cf7245c966dfc5563",
+    "size": 284485,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/4fc2f57fc76d3ad2ee0b461cf7245c966dfc5563"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 8 BCS 1C.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dc9bb182994217da7ae70ff79b17bfa60e7744b8",
+    "size": 329711,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/dc9bb182994217da7ae70ff79b17bfa60e7744b8"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/Lab 9 BCS 1C.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "518dd08d912abfefccd19d19c8cf0d67b09a0993",
+    "size": 355424,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/518dd08d912abfefccd19d19c8cf0d67b09a0993"
+  },
+  {
+    "path": "1st Semester/1. PF_(Programming Fundamental)_/PF LAB TASKS/More Tasks/LABS CS-1C_Fall23/updated LAB Task CS-1C.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0388396446f4e931a038bb861e42178c490bb342",
+    "size": 276702,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0388396446f4e931a038bb861e42178c490bb342"
+  },
+  {
+    "path": "1st Semester/Applied Physics",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5ea654297ff87621034f098069b66ff56023ef4d",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/5ea654297ff87621034f098069b66ff56023ef4d"
+  },
+  {
+    "path": "1st Semester/Applied Physics/Book",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f1099a150ea924d502fef433366efbb260eb6d5c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/f1099a150ea924d502fef433366efbb260eb6d5c"
+  },
+  {
+    "path": "1st Semester/Applied Physics/Book/Book...(Halliday  Resnick Fundamentals of Physics, 11th Edition).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e1748373a69f1b78eb2f9e818501fefa9cd8bb60",
+    "size": 31639698,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e1748373a69f1b78eb2f9e818501fefa9cd8bb60"
+  },
+  {
+    "path": "1st Semester/Applied Physics/Book/Solution Applied  Physics 9thEd  Resnick, Walker, and Halliday ( PDFDrive ).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3c232a45fe03e88e397707df932d23513fe009f2",
+    "size": 19352956,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3c232a45fe03e88e397707df932d23513fe009f2"
+  },
+  {
+    "path": "1st Semester/Applied Physics/slides",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6ccad99d21ce5a3eb4c9e3859e98e5d6f524f739",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/6ccad99d21ce5a3eb4c9e3859e98e5d6f524f739"
+  },
+  {
+    "path": "1st Semester/Applied Physics/slides/chap_15 (1).pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0cfd8dcd62adf45f662320ee6f017b17a8b9d1a1",
+    "size": 4424360,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0cfd8dcd62adf45f662320ee6f017b17a8b9d1a1"
+  },
+  {
+    "path": "1st Semester/DLD",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8a92b02133034800350f37e2120fb7908a6f1fea",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/8a92b02133034800350f37e2120fb7908a6f1fea"
+  },
+  {
+    "path": "1st Semester/DLD/Notes",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1589b89f9ab5125ecdb7a03a12c98ceb92a7f751",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/1589b89f9ab5125ecdb7a03a12c98ceb92a7f751"
+  },
+  {
+    "path": "1st Semester/DLD/Notes/Slides of DLD.zip",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ec145676abe73a2720ce179587aefddfb7a6e3eb",
+    "size": 11621251,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ec145676abe73a2720ce179587aefddfb7a6e3eb"
+  },
+  {
+    "path": "1st Semester/DLD/books",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6d69a40a68759a3ea8c004d02be94faa3e28766f",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/6d69a40a68759a3ea8c004d02be94faa3e28766f"
+  },
+  {
+    "path": "1st Semester/DLD/books/Engineering circuit analysis by Hayt.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8fcb497ec11d6fff42ad2e84f61fc965edeb93e5",
+    "size": 22610426,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/8fcb497ec11d6fff42ad2e84f61fc965edeb93e5"
+  },
+  {
+    "path": "1st Semester/ICT Lab",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5a4a1dfdaf92786b4bb3a56ee4e980bbc56b9210",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/5a4a1dfdaf92786b4bb3a56ee4e980bbc56b9210"
+  },
+  {
+    "path": "1st Semester/ICT Lab/IICT slides.zip",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "871805440b22d8ccae357d3bcb71418182dd4b96",
+    "size": 42587991,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/871805440b22d8ccae357d3bcb71418182dd4b96"
+  },
+  {
+    "path": "1st Semester/Islamic Studies",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "87dba570146570bf2ca2eb42b568fab4ef322551",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/87dba570146570bf2ca2eb42b568fab4ef322551"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "58bc657537b70b2bf5357c17401b93400aa1e785",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/58bc657537b70b2bf5357c17401b93400aa1e785"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/DOCTRINES OF ISLAM ANGELS.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "70f0eea50e6b701bea57c476d693680854a4af9c",
+    "size": 82002,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/70f0eea50e6b701bea57c476d693680854a4af9c"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/DOCTRINES OF ISLAM TOWHEED.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b5f32399e1b3735c4ad92e7a6a2e277f2a5bc1fe",
+    "size": 1085792,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/b5f32399e1b3735c4ad92e7a6a2e277f2a5bc1fe"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Doctrines of Islam The Prophets.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6fac832e40ebba93f5d199f42306f82ef61468a0",
+    "size": 110365,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6fac832e40ebba93f5d199f42306f82ef61468a0"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Fasting 2.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "33fd302b671132b40a2fb735ee43c06fda20d979",
+    "size": 769110,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/33fd302b671132b40a2fb735ee43c06fda20d979"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Hadith  Latest [Autosaved].pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c905e689f547dc0fc7293a415882bb10abe618de",
+    "size": 356772,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c905e689f547dc0fc7293a415882bb10abe618de"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Introduction to Islam.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "59e27b20c8e020943c860a6f9575839a978805a5",
+    "size": 265572,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/59e27b20c8e020943c860a6f9575839a978805a5"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Introduction to Qiyas.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9a318574bf006d9e72a9f811bdd3f0ea08d79e98",
+    "size": 157766,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/9a318574bf006d9e72a9f811bdd3f0ea08d79e98"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Introduction to Qur_an and [Autosaved].pptm",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3c58e44bf15dc3df045e251bfd9bd98dc460dec5",
+    "size": 2074749,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3c58e44bf15dc3df045e251bfd9bd98dc460dec5"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Introduction to Religion latest (1).pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ad99140debc5b608f6b3cf7060850bc64c04cb72",
+    "size": 1098056,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ad99140debc5b608f6b3cf7060850bc64c04cb72"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/PREACHING OF ISLAM _ JIHAAD.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "842097906e57c4ba4d0a02b76cb78bf1c7948b9b",
+    "size": 187480,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/842097906e57c4ba4d0a02b76cb78bf1c7948b9b"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Western Civilization- An Article (1).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fc52432ba1a17d88054f86c1940752d10e8bd88d",
+    "size": 944960,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/fc52432ba1a17d88054f86c1940752d10e8bd88d"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/Worships plus prayer.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ea72ac59be3c204e00f503df8a793fcbe65ec90",
+    "size": 190347,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3ea72ac59be3c204e00f503df8a793fcbe65ec90"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/charity.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c32d7ee50c7994e6747579027c52f0e94300c505",
+    "size": 331844,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c32d7ee50c7994e6747579027c52f0e94300c505"
+  },
+  {
+    "path": "1st Semester/Islamic Studies/Ppt extension/intro and copilation of hadith.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "210c31b40bd0b43f9dc7abb1b8439f4f477bc88c",
+    "size": 2328448,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/210c31b40bd0b43f9dc7abb1b8439f4f477bc88c"
+  },
+  {
+    "path": "1st Semester/Pak-studies",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "37756224b0000d1de074367c28a3f79e1c656e04",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/37756224b0000d1de074367c28a3f79e1c656e04"
+  },
+  {
+    "path": "1st Semester/Pak-studies/Books",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "078dd483c565aaa208518666dfd756ae7d1a8f5f",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/078dd483c565aaa208518666dfd756ae7d1a8f5f"
+  },
+  {
+    "path": "1st Semester/Pak-studies/Books/History 6 Class Pak St.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "56f9fa0a7620ad820ed217d3469a2ff654a90a90",
+    "size": 21079592,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/56f9fa0a7620ad820ed217d3469a2ff654a90a90"
+  },
+  {
+    "path": "1st Semester/Pak-studies/additional topics",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f09796e307be57fc2bfa536122d245c2a034c20e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/f09796e307be57fc2bfa536122d245c2a034c20e"
+  },
+  {
+    "path": "1st Semester/Pak-studies/additional topics/Media-Blessing.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "664b784cab88e3a8996024b8b0af93e5968f8c16",
+    "size": 23057828,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/664b784cab88e3a8996024b8b0af93e5968f8c16"
+  },
+  {
+    "path": "1st Semester/Pak-studies/additional topics/Unwrapping-The-Media-Curse-in-Pakistan.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "26a055d3a55d8590fc41512c57d5a7f432d986f8",
+    "size": 23806427,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/26a055d3a55d8590fc41512c57d5a7f432d986f8"
+  },
+  {
+    "path": "1st Semester/Pak-studies/final notes",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3a441d467f4af0f4321d6bd45ec42ada4b973402",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/3a441d467f4af0f4321d6bd45ec42ada4b973402"
+  },
+  {
+    "path": "1st Semester/Pak-studies/final notes/1971 to —-.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9f60f2273f99db39430a337c549bd2e89ee78eb2",
+    "size": 20392336,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/9f60f2273f99db39430a337c549bd2e89ee78eb2"
+  },
+  {
+    "path": "2nd Semester",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "4abe8be5b5b185ac9dd47328212791be21ed8909",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/4abe8be5b5b185ac9dd47328212791be21ed8909"
+  },
+  {
+    "path": "2nd Semester/OOP Course",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d596dc6bcda88e4a932dac0ec3dacd21b058b3ba",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/d596dc6bcda88e4a932dac0ec3dacd21b058b3ba"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP 4th edition.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8659d0bc723b2a6fffe8fd6b3c3e42846cad596b",
+    "size": 8935317,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/8659d0bc723b2a6fffe8fd6b3c3e42846cad596b"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "90d51f6cd3388a62f073a1d3333273972450da21",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/90d51f6cd3388a62f073a1d3333273972450da21"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "2ac84e923ff6aeb3964b8ac906898d6e33a6f040",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/2ac84e923ff6aeb3964b8ac906898d6e33a6f040"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/Final (Q1,Q2,Q3).docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e232c25fd5cb070523b4f2910e78c20b8a35e455",
+    "size": 97433,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e232c25fd5cb070523b4f2910e78c20b8a35e455"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/OOP Lab Solution (2021).docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e06ac89d4574f94d139aceafb3f40a734136dab8",
+    "size": 43150,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e06ac89d4574f94d139aceafb3f40a734136dab8"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/OOP Lab final.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "380fd5311938baabd346642154e1e8304c4e0656",
+    "size": 413175,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/380fd5311938baabd346642154e1e8304c4e0656"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/OOP course paper.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1fbd33999f39973dfbdfbe1b81bbbcd750efb0be",
+    "size": 358713,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/1fbd33999f39973dfbdfbe1b81bbbcd750efb0be"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/OOP sessional 1 solution(1).docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cf9ed58c3e1d54b95feaa559b2513780167c5231",
+    "size": 219802,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/cf9ed58c3e1d54b95feaa559b2513780167c5231"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/OOP-Lab Final v1.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f03108ed0de95fa221ac32624deb7c2adb200937",
+    "size": 21045,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f03108ed0de95fa221ac32624deb7c2adb200937"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/Q1_Final.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "78697c6f1ab090e809187dea868cf54afc3d700d",
+    "size": 3696,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/78697c6f1ab090e809187dea868cf54afc3d700d"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/Q3_Final.txt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5954af9c2d26a44e48ebe261cc23de472f41a99c",
+    "size": 2729,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5954af9c2d26a44e48ebe261cc23de472f41a99c"
+  },
+  {
+    "path": "2nd Semester/OOP Course/OOP PAST PAPERS/LAB+COURSE PAPERS/Question and Solution.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0d15fdc55c913893f2b6f2eb3e8c1939424cbcfd",
+    "size": 318138,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0d15fdc55c913893f2b6f2eb3e8c1939424cbcfd"
+  },
+  {
+    "path": "3rd Semester",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "f1c70fa4b2310f42370d0a7392d1941c8c06f2c0",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/f1c70fa4b2310f42370d0a7392d1941c8c06f2c0"
+  },
+  {
+    "path": "3rd Semester/Data Structures",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ff9ada216c6e59cec72bbf126b3e35bd2e6c7e30",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/ff9ada216c6e59cec72bbf126b3e35bd2e6c7e30"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "737588cb065f6851a9af161ff342eae3bffa560b",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/737588cb065f6851a9af161ff342eae3bffa560b"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "e647358fc934fef3f513ae885b5401b0fcfbbc62",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/e647358fc934fef3f513ae885b5401b0fcfbbc62"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Lab#02.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "39726c58ea16a8f0dfa463c060db33c9f7cf861e",
+    "size": 612101,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/39726c58ea16a8f0dfa463c060db33c9f7cf861e"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "c2014455bbdeab0beff3c49c03f4586b0f43b03e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/c2014455bbdeab0beff3c49c03f4586b0f43b03e"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/22F-3289-bcs3B-ds-LAB8.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3be65419cfc284e49f7a916f50fe54f99ea01dd2",
+    "size": 65379,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3be65419cfc284e49f7a916f50fe54f99ea01dd2"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/22f3289-BCS3B-LAb10.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fbeb84ad881aa3612ffa5e2a66949346c13ca8cf",
+    "size": 82350,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/fbeb84ad881aa3612ffa5e2a66949346c13ca8cf"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/22f3289-bcs3B-DSlab12.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ab2aa10a57b0669489583ef98e715919dab324d9",
+    "size": 84875,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ab2aa10a57b0669489583ef98e715919dab324d9"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/22f3289-bcs3B-dsaLAB7.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "55d3a4be1fb8349b928060ccb6a822d0a634258a",
+    "size": 118709,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/55d3a4be1fb8349b928060ccb6a822d0a634258a"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/22f3289-bcs3B-lab11.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3e4fca2bd590bbadb1e732767b2fa76ee0045cf6",
+    "size": 44615,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3e4fca2bd590bbadb1e732767b2fa76ee0045cf6"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/22f3289-bcs3B-lab9.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "73578db2ff79f26f62b14e91263bb4d7a4f248b9",
+    "size": 149483,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/73578db2ff79f26f62b14e91263bb4d7a4f248b9"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/f223289-bcs3B-dsLab6.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "feaafd54bdff9acf142883715ad91692b2f58963",
+    "size": 102219,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/feaafd54bdff9acf142883715ad91692b2f58963"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/lab 2 sol.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ed6d8c22b74ac315066eb35a8d835883454d8b97",
+    "size": 146326,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ed6d8c22b74ac315066eb35a8d835883454d8b97"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/lab 3 sol.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1e1b4c9b11bddb1db1891f12f1fc48bc1c063960",
+    "size": 61639,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/1e1b4c9b11bddb1db1891f12f1fc48bc1c063960"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/lab 4 sol.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3ff3d199afb098337391db7fff46a4d10d7cfdcb",
+    "size": 81877,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3ff3d199afb098337391db7fff46a4d10d7cfdcb"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/lab 5 sol.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "43f08944e40e1d39e291c0954d013578ed6d73b1",
+    "size": 56514,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/43f08944e40e1d39e291c0954d013578ed6d73b1"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/DS Labs 3B Solutions/lab1 sol(2).pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d1b3f33de69f105a1e75735424e048e99f87ebd8",
+    "size": 44679,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/d1b3f33de69f105a1e75735424e048e99f87ebd8"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/Lab 10 DSA CS.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ae34a06ccb228b85930f86ce173b030f45be9612",
+    "size": 65487,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ae34a06ccb228b85930f86ce173b030f45be9612"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/Lab 11 DSA.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1adf9bf010a9a9b13caf280a3d68e89782fa91e6",
+    "size": 64466,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/1adf9bf010a9a9b13caf280a3d68e89782fa91e6"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/Lab 13 DSA CS.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ce25f1dab52d4c1947d8de87ee95b19f523e3d5f",
+    "size": 63687,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ce25f1dab52d4c1947d8de87ee95b19f523e3d5f"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/Lab 3 DSA tasks(Singly Linked List)-1.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a8dda608098b6fcf33a3b39e4827b758a86d493c",
+    "size": 151290,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a8dda608098b6fcf33a3b39e4827b758a86d493c"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/Lab 8 DSA.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8aafe953a02cea106df2d5b7c1d18b0ac0811f57",
+    "size": 65729,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/8aafe953a02cea106df2d5b7c1d18b0ac0811f57"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/Lab 9 DSA CS.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "13b321995228798b6a28e14ae760b95cd58742cd",
+    "size": 64708,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/13b321995228798b6a28e14ae760b95cd58742cd"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/Lab#01.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f7015232fa6ca5150e4213d3f0b05649a0691d01",
+    "size": 122057,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f7015232fa6ca5150e4213d3f0b05649a0691d01"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/Lab5.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7e8e9681c981a7616febe78a210e7286a275e0e7",
+    "size": 101304,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/7e8e9681c981a7616febe78a210e7286a275e0e7"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/lab No 6.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "96b83729fd7bad2e244947d81ad0a68f32571aa0",
+    "size": 51132,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/96b83729fd7bad2e244947d81ad0a68f32571aa0"
+  },
+  {
+    "path": "3rd Semester/Data Structures/LABS/DS Lab 3B-Fall_23/lab No 7.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0a04259baf7d58a2979083973602d9e57013a254",
+    "size": 411103,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0a04259baf7d58a2979083973602d9e57013a254"
+  },
+  {
+    "path": "3rd Semester/Differential",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "729154c74b9b542736df0b7eaa929ce06c9845b0",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/729154c74b9b542736df0b7eaa929ce06c9845b0"
+  },
+  {
+    "path": "3rd Semester/Differential/notes",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "b61b624cfcd3137f3c6b3394c11280a857bec20e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/b61b624cfcd3137f3c6b3394c11280a857bec20e"
+  },
+  {
+    "path": "3rd Semester/Differential/notes/wowww",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "d0908772d805dae10728883a9a339fd59b1c3d28",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/d0908772d805dae10728883a9a339fd59b1c3d28"
+  },
+  {
+    "path": "3rd Semester/Differential/notes/wowww/Diffrential Equation Mid-1 + Mid-2 + Fianls.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3f95a2029206a957e092ddd999cb9f96c3e57170",
+    "size": 30490485,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/3f95a2029206a957e092ddd999cb9f96c3e57170"
+  },
+  {
+    "path": "3rd Semester/Marketing Management",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "58484b6fd103852a9cf3b690597dc5345195e8c3",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/58484b6fd103852a9cf3b690597dc5345195e8c3"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1884eab2755ad9b49537de4ac3d4b08215311828",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/1884eab2755ad9b49537de4ac3d4b08215311828"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 1.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8755fb86ed1887d697f5a21f25ec8bdf0a506665",
+    "size": 2967524,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/8755fb86ed1887d697f5a21f25ec8bdf0a506665"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 10.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e6e26bcab1e0ed28dcbb9271fe39172019c21893",
+    "size": 722432,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e6e26bcab1e0ed28dcbb9271fe39172019c21893"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 11.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5d0fd0842eea97267fe7e321a6daefd3738c565a",
+    "size": 1000448,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5d0fd0842eea97267fe7e321a6daefd3738c565a"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 12.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f9cbb158f243b9397e926f24725c81717660d646",
+    "size": 951296,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f9cbb158f243b9397e926f24725c81717660d646"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 14.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d857c3eeb704973e8e9a04899568c245d40dc808",
+    "size": 235520,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/d857c3eeb704973e8e9a04899568c245d40dc808"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 3.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6863cb5f49fc72eeca865db2ba26a48aeab7e89d",
+    "size": 182272,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6863cb5f49fc72eeca865db2ba26a48aeab7e89d"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 7.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5410c6c75d19036e93ef4da6ddf6a97117fab31e",
+    "size": 1156608,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5410c6c75d19036e93ef4da6ddf6a97117fab31e"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 8.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ea4fa53330f640be7d7f4bf3613445bb25b68594",
+    "size": 709120,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ea4fa53330f640be7d7f4bf3613445bb25b68594"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/Chapter 9.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dc996b36a86377c171a644d1089ef97e226a753c",
+    "size": 356352,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/dc996b36a86377c171a644d1089ef97e226a753c"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/chapter 2.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6320543539ae57ab1a70a17cb2598a1c897a7e1a",
+    "size": 685568,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6320543539ae57ab1a70a17cb2598a1c897a7e1a"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/chapter 4.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a3fc029b16b3ed218df3f677bdb6a3b8a26e6651",
+    "size": 1230848,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a3fc029b16b3ed218df3f677bdb6a3b8a26e6651"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/chapter 5.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9e717d321683415d928519f63fb6f4b4b3fc13f6",
+    "size": 322048,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/9e717d321683415d928519f63fb6f4b4b3fc13f6"
+  },
+  {
+    "path": "3rd Semester/Marketing Management/Slides/chapter 6.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0ffd46e26059debef7040e2b0663587d21cb8bd7",
+    "size": 556544,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0ffd46e26059debef7040e2b0663587d21cb8bd7"
+  },
+  {
+    "path": "4th Semester",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "83ef48dcdab00bd91975ce946bfdbaba96c777bf",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/83ef48dcdab00bd91975ce946bfdbaba96c777bf"
+  },
+  {
+    "path": "4th Semester/Database Systems",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9159ddb9f64d59bdd172bb23c27c2423a45638db",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/9159ddb9f64d59bdd172bb23c27c2423a45638db"
+  },
+  {
+    "path": "4th Semester/Database Systems/Assignments",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "fd5ca8b33eef72d6bcd9d2593afe0dd5853efaf3",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/fd5ca8b33eef72d6bcd9d2593afe0dd5853efaf3"
+  },
+  {
+    "path": "4th Semester/Database Systems/Assignments/Solution",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0939186cb3d68caa303f3a2f80094032be5734f5",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/0939186cb3d68caa303f3a2f80094032be5734f5"
+  },
+  {
+    "path": "4th Semester/Database Systems/Assignments/Solution/22F-3277_DB_A5.docx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8cbb74ed1857d3c0656bfb202966b3b753da759e",
+    "size": 763513,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/8cbb74ed1857d3c0656bfb202966b3b753da759e"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "489af0f97536cda2f2672170aa9199b1178a4f10",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/489af0f97536cda2f2672170aa9199b1178a4f10"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "806a936aa8d96c9bc188464594fdb6be78535740",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/806a936aa8d96c9bc188464594fdb6be78535740"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/LAB 1",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9476c2df836dc63b62e363c1184b37b8e7ff3f17",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/9476c2df836dc63b62e363c1184b37b8e7ff3f17"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/LAB 1/22F-3277_Taha.pdf",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e34bc1bf04274749d62bda14263bdadd9a39c120",
+    "size": 203044,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e34bc1bf04274749d62bda14263bdadd9a39c120"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/LAB 1/T1.cpp",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0ab24c82e5dab13308486796b85428aa2a442859",
+    "size": 6906,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0ab24c82e5dab13308486796b85428aa2a442859"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "3d7dd149131b5433b94cf59d57fd64babc02d653",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/3d7dd149131b5433b94cf59d57fd64babc02d653"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/.vs",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "090cd3d661edf2ff3f40448711df185dc0bdce34",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/090cd3d661edf2ff3f40448711df185dc0bdce34"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/.vs/RegistrationFormApp",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "a1e550a108756317e3deb65ab07c302c7b9f417c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/a1e550a108756317e3deb65ab07c302c7b9f417c"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/.vs/RegistrationFormApp/FileContentIndex",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9d68a019af1bdb468defaf07e9a1c20a529860bf",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/9d68a019af1bdb468defaf07e9a1c20a529860bf"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/.vs/RegistrationFormApp/FileContentIndex/60eb0efc-d7ff-4265-a340-5a5a55ea71ca.vsidx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "737591d4006e5f56ce01f65d9e4afba34a010bf7",
+    "size": 303,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/737591d4006e5f56ce01f65d9e4afba34a010bf7"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/.vs/RegistrationFormApp/FileContentIndex/a3e5ce45-9d10-4bd1-8d39-b064bc1301c2.vsidx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "901143e8c4b812cf5013fbd0333faf79bc222415",
+    "size": 13581,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/901143e8c4b812cf5013fbd0333faf79bc222415"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/Properties",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "5448dbe8f51c292af3dbff10bad1077051609006",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/5448dbe8f51c292af3dbff10bad1077051609006"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/Properties/Resources.Designer.cs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "175a2c5bc5aca0b59c86a8f0794e0c1fff9364be",
+    "size": 4363,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/175a2c5bc5aca0b59c86a8f0794e0c1fff9364be"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/Properties/Settings.Designer.cs",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e49a7c6af06958418e674405a08598dc13e20e53",
+    "size": 1106,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e49a7c6af06958418e674405a08598dc13e20e53"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/RegistrationFormApp.csproj",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "92f1fb668f4e97ba0adb2b376037750bcc6b4a42",
+    "size": 3967,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/92f1fb668f4e97ba0adb2b376037750bcc6b4a42"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/Resources",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "9da7036e1741954f2c589fdceb2c966ce8f79c4e",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/9da7036e1741954f2c589fdceb2c966ce8f79c4e"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/Resources/image.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "bbc3a3ad8c7eceab4c104ad6e45d2660df0285af",
+    "size": 125984,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/bbc3a3ad8c7eceab4c104ad6e45d2660df0285af"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/Resources/image2.png",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4900117e1b1366d9e6362b7c7864ead9aac7e2fc",
+    "size": 62223,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/4900117e1b1366d9e6362b7c7864ead9aac7e2fc"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/bin",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "98d69c1c448c6bebb2d53495ad083938e480b8a3",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/98d69c1c448c6bebb2d53495ad083938e480b8a3"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/bin/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "8e99ba72fd7238b99a0c3e319b8af07d05f48c60",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/8e99ba72fd7238b99a0c3e319b8af07d05f48c60"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/bin/Debug/RegistrationFormApp.exe",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f87fbd4731cdf4df64606953fee554f80e7aa777",
+    "size": 519168,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f87fbd4731cdf4df64606953fee554f80e7aa777"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/obj",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "6eab790b160dbb5db1d29b4405026ea117d2e8ec",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/6eab790b160dbb5db1d29b4405026ea117d2e8ec"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/obj/Debug",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ccd239d79dcde7c4de9cfa106b31da5fe6ea2232",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/ccd239d79dcde7c4de9cfa106b31da5fe6ea2232"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/obj/Debug/DesignTimeResolveAssemblyReferences.cache",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "686007dc1de371468e0a01721fcc13391f8c4fa3",
+    "size": 2117,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/686007dc1de371468e0a01721fcc13391f8c4fa3"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/obj/Debug/RegistrationFormApp.Form1.resources",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6c05a9776bd7cbae976fdcec7e3a254e93018279",
+    "size": 180,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6c05a9776bd7cbae976fdcec7e3a254e93018279"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/obj/Debug/RegistrationFormApp.Properties.Resources.resources",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fc539197b8612b93400f7b41e0200fae9d504a44",
+    "size": 503723,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/fc539197b8612b93400f7b41e0200fae9d504a44"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/obj/Debug/RegistrationFormApp.csproj.AssemblyReference.cache",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5ceb0fb1e5aa6e02dd95ff2d04deccf5081467ef",
+    "size": 6030,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5ceb0fb1e5aa6e02dd95ff2d04deccf5081467ef"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/obj/Debug/RegistrationFormApp.csproj.SuggestedBindingRedirects.cache",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+    "path": "4th Semester/Database Systems/Labs/SOLUTIONS/RegistrationFormApp/obj/Debug/RegistrationFormApp.exe",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f87fbd4731cdf4df64606953fee554f80e7aa777",
+    "size": 519168,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f87fbd4731cdf4df64606953fee554f80e7aa777"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bcf3cfbaf0d4f1a1c7b16bbb53c0655db0e0f43c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/bcf3cfbaf0d4f1a1c7b16bbb53c0655db0e0f43c"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 1.1.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e2f6717a0be25d9631a691929c79ad97ee440524",
+    "size": 55778,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e2f6717a0be25d9631a691929c79ad97ee440524"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 1.2.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f8806b0c8593fe7778877a29814c5b7e4f51b475",
+    "size": 523657,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f8806b0c8593fe7778877a29814c5b7e4f51b475"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 10.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "46a3456beeae5ca0135a02259cf5ffc0c866116e",
+    "size": 113252,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/46a3456beeae5ca0135a02259cf5ffc0c866116e"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 11.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a731a5ab7d6c83fff764f7b03e7398f26581f274",
+    "size": 126928,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a731a5ab7d6c83fff764f7b03e7398f26581f274"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 12.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "6a55ce7833cfe4f18a9e26b8f5c4664d94b48293",
+    "size": 404684,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/6a55ce7833cfe4f18a9e26b8f5c4664d94b48293"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 2.1.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f89d2a46b46ebf6c4b2c2ddf67d69e557808b928",
+    "size": 147719,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/f89d2a46b46ebf6c4b2c2ddf67d69e557808b928"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 2.2.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0c001aa1601bc9016a0be0ce86dc95a00f6d285a",
+    "size": 414021,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0c001aa1601bc9016a0be0ce86dc95a00f6d285a"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 3.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a81a616e7ce31fd21dcdb85d2413216705b9e675",
+    "size": 361668,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/a81a616e7ce31fd21dcdb85d2413216705b9e675"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 4.1.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8e4d71026a0f32f8d3094da75b67ab4ce557173c",
+    "size": 155063,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/8e4d71026a0f32f8d3094da75b67ab4ce557173c"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 4.2.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c5f33214415a2f2d5187995a34db98e06f1adcaf",
+    "size": 766366,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/c5f33214415a2f2d5187995a34db98e06f1adcaf"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 5.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ccbc256ae0dea8ece6b93779a4d1d98e32687fea",
+    "size": 462796,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/ccbc256ae0dea8ece6b93779a4d1d98e32687fea"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 6.1.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "12e42ce8b71f03bc613a85a2f44b8f538fd93d14",
+    "size": 330460,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/12e42ce8b71f03bc613a85a2f44b8f538fd93d14"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 6.2.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "822ef9d91332b4f6e6f59ff8ed8f5bb8601b3c95",
+    "size": 644849,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/822ef9d91332b4f6e6f59ff8ed8f5bb8601b3c95"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 7.1.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "e8e1f825ec295289bd8976d854c426ef39223c86",
+    "size": 711451,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/e8e1f825ec295289bd8976d854c426ef39223c86"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 7.2.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "55eaaa1d939d30141c97c3e7bd0c87f07afe9604",
+    "size": 980903,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/55eaaa1d939d30141c97c3e7bd0c87f07afe9604"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 8.1.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "455bc08d84bc010ce57da4220956c286a8f8ad25",
+    "size": 1236253,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/455bc08d84bc010ce57da4220956c286a8f8ad25"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/Lecture 9.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dba5d0dbca09ab1d08a2ea06c53134e3be117eb6",
+    "size": 786954,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/dba5d0dbca09ab1d08a2ea06c53134e3be117eb6"
+  },
+  {
+    "path": "4th Semester/Database Systems/Slides/week 16Relational algebra.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5af11684709bb1a284b64d465900a2deb747c206",
+    "size": 2340864,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5af11684709bb1a284b64d465900a2deb747c206"
+  },
+  {
+    "path": "4th Semester/Operating Systems",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "74119e90c02db5a29b9282be8280007ecc7d555d",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/74119e90c02db5a29b9282be8280007ecc7d555d"
+  },
+  {
+    "path": "4th Semester/Operating Systems/Slides",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "1678d8a88a16ded6d0a84fc7a3ca1d6316aaa6f8",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/1678d8a88a16ded6d0a84fc7a3ca1d6316aaa6f8"
+  },
+  {
+    "path": "4th Semester/Operating Systems/Slides/Ms. Nasreen Akhtar",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "bffed77930372931613eb459577f6d5fd6da3694",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/bffed77930372931613eb459577f6d5fd6da3694"
+  },
+  {
+    "path": "4th Semester/Operating Systems/Slides/Ms. Nasreen Akhtar/ch2.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1630c019773284b06d62dc009516775749606d2c",
+    "size": 28204386,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/1630c019773284b06d62dc009516775749606d2c"
+  },
+  {
+    "path": "4th Semester/Operating Systems/Slides/Ms. Nasreen Akhtar/ch3.1.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d3afc59d38ab03a57ffbdcb45864f4c0997b1b59",
+    "size": 4119178,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/d3afc59d38ab03a57ffbdcb45864f4c0997b1b59"
+  },
+  {
+    "path": "5th Semester",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "0a1fe6d68fc7173dd0d6ac8267ac1bb00d745ad1",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/0a1fe6d68fc7173dd0d6ac8267ac1bb00d745ad1"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis",
+    "mode": "040000",
+    "type": "tree",
+    "sha": "ebce97390db869e2419db6508659531be683aa9c",
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/trees/ebce97390db869e2419db6508659531be683aa9c"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 10.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5b3edb1e3f4d2cb195a9876bedd7901c03d3486c",
+    "size": 799232,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/5b3edb1e3f4d2cb195a9876bedd7901c03d3486c"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 11.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d8f551b597092fc7338afcb4e3a5c863cc428694",
+    "size": 4956160,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/d8f551b597092fc7338afcb4e3a5c863cc428694"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 13.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2bbbede52e0c2a853aef2d2d907fb2805d91f70c",
+    "size": 3086848,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/2bbbede52e0c2a853aef2d2d907fb2805d91f70c"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 14.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7200c1d58f8f5e72a312bde47aa8fc5d81694dc6",
+    "size": 696320,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/7200c1d58f8f5e72a312bde47aa8fc5d81694dc6"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 15.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "80a5a5789e9518eebc3cc6bdd4422adb4e4fe680",
+    "size": 790016,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/80a5a5789e9518eebc3cc6bdd4422adb4e4fe680"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 16.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7a8aeba288b1fc2c6abaf185f0c013d51dcc1520",
+    "size": 859814,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/7a8aeba288b1fc2c6abaf185f0c013d51dcc1520"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 17.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cb82b426872ffae69d94a35a2b8fe20d57b9a354",
+    "size": 940544,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/cb82b426872ffae69d94a35a2b8fe20d57b9a354"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 18.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "183fe6f1f6060a22f65c8d6f847d30680781c313",
+    "size": 2572883,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/183fe6f1f6060a22f65c8d6f847d30680781c313"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 19.pptx",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0f8bceaa6794381cd03cfec78a32ab4161c03cdd",
+    "size": 159104,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/0f8bceaa6794381cd03cfec78a32ab4161c03cdd"
+  },
+  {
+    "path": "5th Semester/SDA -Software Design & Analysis/SDA - Lecture 9.ppt",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d06d890af4d77234390997743e75877d1ffa52c9",
+    "size": 2855424,
+    "url": "https://api.github.com/repos/malikhacks/FAST-NUCES-CFD/git/blobs/d06d890af4d77234390997743e75877d1ffa52c9"
+  }
+]

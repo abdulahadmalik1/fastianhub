@@ -1547,6 +1547,222 @@ html {
   border-color: var(--ink-1);
 }
 
+/* Campus Source Dropdown */
+.campus-dropdown-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.campus-source-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 10px 0 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-1);
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.campus-source-toggle:hover {
+  background: var(--raised);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.campus-toggle-arrow {
+  color: var(--ink-3);
+  transition: transform 0.2s ease;
+}
+
+.campus-toggle-arrow.open {
+  transform: rotate(180deg);
+}
+
+.campus-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 250px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-l);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+  z-index: 100;
+  animation: dropdown-pop 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes dropdown-pop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.campus-dropdown-title {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 8px 4px;
+}
+
+.campus-dropdown-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: var(--r-m);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.12s ease;
+}
+
+.campus-dropdown-item:hover {
+  background: var(--raised);
+}
+
+.campus-dropdown-item.active {
+  background: rgba(79, 70, 229, 0.06);
+}
+
+.campus-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.campus-item-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-1);
+}
+
+.campus-dropdown-item.active .campus-item-name {
+  color: var(--indigo);
+}
+
+.campus-item-desc {
+  font-size: 11px;
+  color: var(--ink-3);
+}
+
+.campus-item-check {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--indigo);
+}
+
+/* Material Badges & Identification */
+.mat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1.5px 6.5px;
+  border-radius: var(--r-full);
+  letter-spacing: -0.1px;
+  white-space: nowrap;
+}
+
+.mat-badge-final {
+  color: #4f46e5;
+  background: rgba(79, 70, 229, 0.09);
+  border: 1px solid rgba(79, 70, 229, 0.18);
+}
+
+.mat-badge-sessional {
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.09);
+  border: 1px solid rgba(2, 132, 199, 0.18);
+}
+
+.mat-badge-quiz {
+  color: #d97706;
+  background: rgba(217, 119, 6, 0.09);
+  border: 1px solid rgba(217, 119, 6, 0.18);
+}
+
+.mat-badge-assignment {
+  color: #059669;
+  background: rgba(5, 150, 105, 0.09);
+  border: 1px solid rgba(5, 150, 105, 0.18);
+}
+
+.mat-badge-lab {
+  color: #0d9488;
+  background: rgba(13, 148, 136, 0.09);
+  border: 1px solid rgba(13, 148, 136, 0.18);
+}
+
+.mat-badge-project {
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.09);
+  border: 1px solid rgba(124, 58, 237, 0.18);
+}
+
+.mat-badge-outline {
+  color: #475569;
+  background: rgba(71, 85, 105, 0.09);
+  border: 1px solid rgba(71, 85, 105, 0.18);
+}
+
+.mat-badge-notes {
+  color: #e11d48;
+  background: rgba(225, 29, 72, 0.09);
+  border: 1px solid rgba(225, 29, 72, 0.18);
+}
+
+.mat-badge-additional {
+  color: #52525b;
+  background: rgba(82, 82, 91, 0.09);
+  border: 1px solid rgba(82, 82, 91, 0.18);
+}
+
+.mat-badge-solved {
+  color: #15803d;
+  background: rgba(22, 163, 74, 0.12);
+  border: 1px solid rgba(22, 163, 74, 0.25);
+  font-weight: 700;
+}
+
+/* Course Card Material Preview Chips */
+.ff-card-chip-row {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.ff-card-chip {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1.5px 6.5px;
+  border-radius: var(--r-full);
+  background: var(--raised);
+  color: var(--ink-2);
+  border: 1px solid var(--line);
+}
+
+
 /* ─── FastiFlex Landing Page Styles ──────────────────────────────────── */
 .landing-page {
   min-height: 100dvh;

@@ -63,17 +63,17 @@ export default function LandingPage() {
           <div className="landing-feature-content">
             <span className="landing-feature-tag">01 · Academic Archive</span>
             <h2 className="landing-feature-heading">
-              500+ Past Papers & Course Outlines
+              6,900+ Past Papers & Exam Resources
             </h2>
             <p className="landing-feature-text">
-              Fully indexed archive across Semesters 1 through 8. Find midterms, sessionals,
-              quizzes, terminal finals, and official course outlines with direct 1-click downloads.
+              Comprehensive university archive across FAST Islamabad, Karachi, Lahore, and CFD campuses.
+              Find midterms, sessionals, quizzes, terminal finals, course outlines, and lab assignments with direct 1-click downloads.
             </p>
 
             <ul className="landing-feature-list">
               <li>
                 <span className="landing-check-icon">✓</span>
-                <span>Organized semester-by-semester across CS, SE, AI, DS & CY</span>
+                <span>Multi-campus support: FAST Islamabad, Karachi, Lahore & CFD Campuses</span>
               </li>
               <li>
                 <span className="landing-check-icon">✓</span>
@@ -81,7 +81,7 @@ export default function LandingPage() {
               </li>
               <li>
                 <span className="landing-check-icon">✓</span>
-                <span>Zero rate limits — statically bundled for instant 0ms loads</span>
+                <span>Zero rate limits — statically indexed for instant 0ms loads</span>
               </li>
             </ul>
 
