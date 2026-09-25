@@ -3,6 +3,8 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import pastPapersData from '@/data/pastPapers.json';
+import SubmitRepoModal from '@/components/SubmitRepoModal';
+import FeedbackModal from '@/components/FeedbackModal';
 
 export type CampusId = 'islamabad' | 'karachi' | 'lahore' | 'cfd' | 'central';
 
@@ -85,6 +87,9 @@ export default function PastPapersPage() {
   const [selectedCourse, setSelectedCourse] = useState<CourseGroup | null>(null);
   const [sheetFilter, setSheetFilter] = useState<string>('all');
   const [sheetSearch, setSheetSearch] = useState('');
+  const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+  const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
+  const [bookmarkedCourses, setBookmarkedCourses] = useState<string[]>([]);
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -94,6 +99,17 @@ export default function PastPapersPage() {
       const saved = localStorage.getItem('fastiflex_past_papers_campus') as CampusId;
       if (saved === 'islamabad' || saved === 'karachi' || saved === 'lahore' || saved === 'cfd' || saved === 'central') {
         setActiveCampus(saved === 'central' ? 'lahore' : saved);
+      }
+    } catch (e) {}
+
+    // Load saved bookmarks from localStorage
+    try {
+      const savedBookmarks = localStorage.getItem('fastiflex_bookmarked_courses');
+      if (savedBookmarks) {
+        const parsed = JSON.parse(savedBookmarks);
+        if (Array.isArray(parsed)) {
+          setBookmarkedCourses(parsed);
+        }
       }
     } catch (e) {}
 
@@ -118,6 +134,18 @@ export default function PastPapersPage() {
     setSearchQuery('');
     setSheetSearch('');
     setIsCampusMenuOpen(false);
+  };
+
+  const toggleBookmark = (courseName: string) => {
+    setBookmarkedCourses((prev) => {
+      const next = prev.includes(courseName)
+        ? prev.filter((c) => c !== courseName)
+        : [...prev, courseName];
+      try {
+        localStorage.setItem('fastiflex_bookmarked_courses', JSON.stringify(next));
+      } catch (e) {}
+      return next;
+    });
   };
 
   // Extract campus payload from JSON
@@ -214,7 +242,9 @@ export default function PastPapersPage() {
   const filteredCourses = useMemo(() => {
     let result = allCourses;
 
-    if (selectedFilter === 'outlines') {
+    if (selectedFilter === 'starred') {
+      result = result.filter((c) => bookmarkedCourses.includes(c.course));
+    } else if (selectedFilter === 'outlines') {
       result = result.filter((c) => c.semesterNum === 'outlines');
     } else if (selectedFilter !== 'all') {
       const semNum = parseInt(selectedFilter, 10);
@@ -235,7 +265,11 @@ export default function PastPapersPage() {
     }
 
     return result;
-  }, [allCourses, selectedFilter, searchQuery]);
+  }, [allCourses, selectedFilter, searchQuery, bookmarkedCourses]);
+
+  const starredCountInCampus = useMemo(() => {
+    return allCourses.filter((c) => bookmarkedCourses.includes(c.course)).length;
+  }, [allCourses, bookmarkedCourses]);
 
   // Dynamic available categories for the selected course sheet
   const availableCourseCategories = useMemo(() => {
@@ -295,28 +329,74 @@ export default function PastPapersPage() {
     <div className="app-shell" style={{ paddingBottom: 64 }}>
       {/* Top Header */}
       <header className="topbar">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <Link
-            href="/timetable"
-            className="icon-btn"
-            aria-label="Back to Timetable"
-            title="Back to Timetable"
-            id="back-home-btn"
+            href="/"
+            style={{
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 10,
+              color: 'inherit'
+            }}
+            id="app-home-link"
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M19 12H5M12 19l-7-7 7-7" />
-            </svg>
+            <div
+              style={{
+                width: 34,
+                height: 34,
+                borderRadius: 'var(--r-m)',
+                background: 'linear-gradient(135deg, #4f46e5 0%, #3730a3 100%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#ffffff',
+                boxShadow: '0 2px 8px rgba(79, 70, 229, 0.28)',
+                flexShrink: 0
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <div className="topbar-left">
+              <h1 className="topbar-title">FastiFlex Past Papers</h1>
+              <p className="topbar-sub">
+                {currentCampusData.name}
+              </p>
+            </div>
           </Link>
-          <div className="topbar-left">
-            <h1 className="topbar-title">Past Papers & Resources</h1>
-            <p className="topbar-sub">
-              {currentCampusData.name}
-            </p>
-          </div>
         </div>
 
-        {/* Minimalistic Campus Source Dropdown Button */}
+        {/* Minimalistic Campus Source Dropdown Button & Submit Repo Button */}
         <div className="topbar-actions">
+          <button
+            className="submit-repo-toggle"
+            onClick={() => setIsSubmitModalOpen(true)}
+            id="open-submit-repo-btn"
+            title="Contribute a past paper repository"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+            </svg>
+            <span>Contribute Repo</span>
+          </button>
+
+          {/* Feedback & Material / Tool Request Button */}
+          <button
+            className="topbar-feedback-btn"
+            onClick={() => setIsFeedbackModalOpen(true)}
+            id="open-feedback-btn"
+            title="Suggestions, feedback, or request new tools"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span>Feedback</span>
+          </button>
+
           <div className="campus-dropdown-wrap" ref={dropdownRef}>
             <button
               className="campus-source-toggle"
@@ -408,6 +488,24 @@ export default function PastPapersPage() {
         >
           <span className="day-name">All</span>
         </button>
+        {bookmarkedCourses.length > 0 && (
+          <button
+            id="paper-starred-tab"
+            className={`day-btn${selectedFilter === 'starred' ? ' active' : ''}`}
+            onClick={() => setSelectedFilter('starred')}
+            title="View bookmarked courses"
+            style={
+              selectedFilter === 'starred'
+                ? { background: '#6366f1', borderColor: '#6366f1', color: '#ffffff' }
+                : { color: '#6366f1', background: 'rgba(99, 102, 241, 0.06)', borderColor: 'rgba(99, 102, 241, 0.22)' }
+            }
+          >
+            <span className="day-name" style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+              <span style={{ fontSize: 13, lineHeight: 1 }}>★</span>
+              <span>Saved{starredCountInCampus > 0 ? ` (${starredCountInCampus})` : ''}</span>
+            </span>
+          </button>
+        )}
         {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
           <button
             key={sem}
@@ -462,21 +560,26 @@ export default function PastPapersPage() {
       <main style={{ padding: '0 20px' }}>
         {filteredCourses.length === 0 ? (
           <div className="fac-empty-state">
-            <div className="fac-empty-icon">📁</div>
+            <div className="fac-empty-icon">{selectedFilter === 'starred' ? '🔖' : '📁'}</div>
             <h3 style={{ fontSize: 16, fontWeight: 700, margin: '8px 0 4px', color: 'var(--ink-1)' }}>
-              No courses found
+              {selectedFilter === 'starred' ? 'No saved bookmarks' : 'No courses found'}
             </h3>
             <p style={{ fontSize: 13, color: 'var(--ink-3)', margin: 0 }}>
-              {searchQuery
+              {selectedFilter === 'starred'
+                ? 'You have not bookmarked any courses yet. Click the star icon on any course box to save it here.'
+                : searchQuery
                 ? `No courses matching "${searchQuery}" in ${currentCampusData.name}.`
                 : 'No documents in this semester filter.'}
             </p>
-            {searchQuery && (
+            {(searchQuery || selectedFilter === 'starred') && (
               <button
                 className="fac-reset-btn"
-                onClick={() => setSearchQuery('')}
+                onClick={() => {
+                  setSearchQuery('');
+                  setSelectedFilter('all');
+                }}
               >
-                Clear Search
+                {selectedFilter === 'starred' ? 'Browse All Courses' : 'Clear Search'}
               </button>
             )}
           </div>
@@ -484,6 +587,7 @@ export default function PastPapersPage() {
           <div className="ff-card-grid">
             {filteredCourses.map((group) => {
               const desc = getCourseDescription(group.course);
+              const isBookmarked = bookmarkedCourses.includes(group.course);
 
               return (
                 <article
@@ -498,8 +602,34 @@ export default function PastPapersPage() {
                   tabIndex={0}
                   aria-label={group.course}
                 >
-                  {/* Course Title */}
-                  <h2 className="ff-card-title">{group.course}</h2>
+                  {/* Card Header: Course Title & Star Bookmark Button */}
+                  <div className="ff-card-top-row">
+                    <h2 className="ff-card-title">{group.course}</h2>
+                    <button
+                      type="button"
+                      className={`ff-star-btn ${isBookmarked ? 'starred' : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleBookmark(group.course);
+                      }}
+                      aria-label={isBookmarked ? `Unstar ${group.course}` : `Star ${group.course}`}
+                      title={isBookmarked ? 'Remove bookmark' : 'Bookmark this course'}
+                      id={`star-btn-${group.course.replace(/\s+/g, '-').toLowerCase()}`}
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill={isBookmarked ? '#6366f1' : 'none'}
+                        stroke={isBookmarked ? '#6366f1' : 'currentColor'}
+                        strokeWidth="2.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    </button>
+                  </div>
 
                   {/* Course Description */}
                   <p className="ff-card-desc">{desc}</p>
@@ -550,14 +680,38 @@ export default function PastPapersPage() {
                 </div>
               </div>
 
-              <button
-                className="icon-btn"
-                onClick={() => setSelectedCourse(null)}
-                aria-label="Close"
-                title="Close"
-              >
-                ✕
-              </button>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <button
+                  type="button"
+                  className={`ff-star-btn ${bookmarkedCourses.includes(selectedCourse.course) ? 'starred' : ''}`}
+                  onClick={() => toggleBookmark(selectedCourse.course)}
+                  aria-label={bookmarkedCourses.includes(selectedCourse.course) ? `Unstar ${selectedCourse.course}` : `Star ${selectedCourse.course}`}
+                  title={bookmarkedCourses.includes(selectedCourse.course) ? 'Remove bookmark' : 'Bookmark this course'}
+                  style={{ width: 32, height: 32 }}
+                >
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 24 24"
+                    fill={bookmarkedCourses.includes(selectedCourse.course) ? '#6366f1' : 'none'}
+                    stroke={bookmarkedCourses.includes(selectedCourse.course) ? '#6366f1' : 'currentColor'}
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </button>
+
+                <button
+                  className="icon-btn"
+                  onClick={() => setSelectedCourse(null)}
+                  aria-label="Close"
+                  title="Close"
+                >
+                  ✕
+                </button>
+              </div>
             </div>
 
             {/* Dynamic Category Filter Tabs (Only show materials that exist!) */}
@@ -712,6 +866,18 @@ export default function PastPapersPage() {
           </div>
         </div>
       )}
+
+      {/* Submit Repo Modal */}
+      <SubmitRepoModal
+        isOpen={isSubmitModalOpen}
+        onClose={() => setIsSubmitModalOpen(false)}
+      />
+
+      {/* Feedback & Suggestions Modal */}
+      <FeedbackModal
+        isOpen={isFeedbackModalOpen}
+        onClose={() => setIsFeedbackModalOpen(false)}
+      />
     </div>
   );
 }

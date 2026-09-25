@@ -1,5 +1,5 @@
-import LandingPage from '@/components/LandingPage';
+import PastPapersPage from '@/app/past-papers/page';
 
 export default function Home() {
-  return <LandingPage />;
+  return <PastPapersPage />;
 }

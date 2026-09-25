@@ -8,7 +8,6 @@
     "build": "next build",
     "build:papers": "node scripts/buildPastPapers.js",
     "start": "next start",
-    "sync": "node scripts/syncTimetable.mjs",
     "lint": "eslint"
   },
   "dependencies": {
