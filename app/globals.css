@@ -846,24 +846,54 @@ body {
   line-height: 1.4;
 }
 
-.repo-credit-callout {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 12px;
-  background: rgba(79, 70, 229, 0.05);
-  border: 1px solid rgba(79, 70, 229, 0.15);
-  border-radius: var(--r-m);
-  font-size: 11.5px;
-  color: var(--ink-2);
-  line-height: 1.45;
-  margin-bottom: 16px;
+/* ─── Feedback Category Pills ────────────────────────────────────────────── */
+.feedback-type-group {
+  margin-bottom: 14px;
 }
 
-.repo-credit-icon {
-  color: #6366f1;
-  font-size: 13px;
-  flex-shrink: 0;
+.feedback-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.feedback-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: var(--r-m);
+  border: 1px solid var(--line);
+  background: var(--raised);
+  color: var(--ink-2);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  outline: none;
+}
+
+.feedback-pill:hover {
+  background: var(--surface);
+  color: var(--ink-1);
+  border-color: #cbd5e1;
+}
+
+.feedback-pill.active {
+  background: rgba(79, 70, 229, 0.08);
+  border-color: var(--indigo);
+  color: var(--indigo);
+  font-weight: 700;
+}
+
+.feedback-pill-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.feedback-pill-label {
+  line-height: 1;
 }
 
 .repo-form-group {
@@ -1092,4 +1122,169 @@ body {
 
 .feedback-pill-label {
   white-space: nowrap;
+}
+
+/* ─── Topbar Contributors Button ────────────────────────────────────────── */
+.topbar-contributors-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 28px;
+  padding: 0 10px 0 8px;
+  border-radius: var(--r-full);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-2);
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  white-space: nowrap;
+}
+
+.topbar-contributors-btn:hover {
+  background: var(--raised);
+  border-color: #cbd5e1;
+  color: var(--ink-1);
+  transform: translateY(-0.5px);
+}
+
+.topbar-contributors-btn:active {
+  transform: translateY(0);
+}
+
+/* ─── Leaderboard Table Styles ───────────────────────────────────────────── */
+.lb-table-wrapper {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-l);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.lb-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13.5px;
+}
+
+.lb-th {
+  padding: 12px 18px;
+  background: var(--raised);
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lb-th-rank {
+  width: 56px;
+  text-align: center;
+}
+
+.lb-th-url {
+  text-align: left;
+}
+
+.lb-th-papers {
+  width: 140px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.lb-tr {
+  border-bottom: 1px solid var(--line);
+  transition: background 0.1s ease;
+}
+
+.lb-tr:last-child {
+  border-bottom: none;
+}
+
+.lb-tr:hover {
+  background: #fafafa;
+}
+
+.lb-td {
+  padding: 13px 18px;
+  vertical-align: middle;
+}
+
+.lb-td-rank {
+  text-align: center;
+}
+
+.lb-rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--raised);
+  color: var(--ink-2);
+}
+
+.lb-rank-badge.rank-1 {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+  font-weight: 800;
+}
+
+.lb-rank-badge.rank-2 {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  font-weight: 800;
+}
+
+.lb-rank-badge.rank-3 {
+  background: #ffedd5;
+  color: #c2410c;
+  border: 1px solid #fed7aa;
+  font-weight: 800;
+}
+
+.lb-url-text {
+  font-family: var(--font-mono, monospace);
+  font-size: 12.5px;
+  color: var(--ink-2);
+  word-break: break-all;
+  user-select: text;
+  display: inline-block;
+}
+
+.lb-td-papers {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.lb-papers-val {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: var(--indigo);
+  letter-spacing: -0.2px;
+}
+
+@media (max-width: 640px) {
+  .lb-th, .lb-td {
+    padding: 10px 12px;
+  }
+  .lb-th-papers, .lb-td-papers {
+    padding-right: 14px;
+    width: 100px;
+  }
+  .lb-url-text {
+    font-size: 11.5px;
+  }
 }

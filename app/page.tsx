@@ -1,5 +1,5 @@
-import PastPapersPage from '@/app/past-papers/page';
+import PastPapersView from '@/components/PastPapersView';
 
 export default function Home() {
-  return <PastPapersPage />;
+  return <PastPapersView />;
 }

@@ -9,9 +9,7 @@ interface SubmitRepoModalProps {
 
 export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProps) {
   const [repoUrl, setRepoUrl] = useState('');
-  const [ownerName, setOwnerName] = useState('');
-
-  const [errors, setErrors] = useState<{ repoUrl?: string; ownerName?: string }>({});
+  const [errors, setErrors] = useState<{ repoUrl?: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -40,7 +38,7 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
   if (!isOpen) return null;
 
   const validate = () => {
-    const errs: { repoUrl?: string; ownerName?: string } = {};
+    const errs: { repoUrl?: string } = {};
 
     const cleanUrl = repoUrl.trim();
     if (!cleanUrl) {
@@ -51,13 +49,6 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
       if (!urlPattern.test(cleanUrl) && !genericUrlPattern.test(cleanUrl)) {
         errs.repoUrl = 'Please enter a valid Git repository URL (e.g. https://github.com/username/past-papers)';
       }
-    }
-
-    const cleanOwner = ownerName.trim();
-    if (!cleanOwner) {
-      errs.ownerName = 'Your name or handle is required for credit attribution';
-    } else if (cleanOwner.length < 2) {
-      errs.ownerName = 'Name must be at least 2 characters';
     }
 
     setErrors(errs);
@@ -80,8 +71,7 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
         },
         body: JSON.stringify({
           repoUrl: repoUrl.trim(),
-          ownerName: ownerName.trim(),
-          source: 'FastiFlex Web App',
+          source: 'FastianHub Web App',
           submittedAt: new Date().toISOString(),
         }),
       });
@@ -92,9 +82,7 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
       }
 
       setIsSuccess(true);
-      // Clear inputs
       setRepoUrl('');
-      setOwnerName('');
     } catch (err: any) {
       setSubmitError(err.message || 'Network error occurred. Please try again later.');
     } finally {
@@ -126,7 +114,7 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
                 Contribute Repository
               </h2>
               <p className="repo-modal-sub">
-                Share past papers or notes repository for attribution and indexing.
+                Share a past papers or notes repository for indexing.
               </p>
             </div>
           </div>
@@ -154,7 +142,7 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
               Submission Received!
             </h3>
             <p style={{ fontSize: 13, color: 'var(--ink-2)', lineHeight: 1.5, maxWidth: 360, margin: '0 auto 20px' }}>
-              Thank you for contributing! Your repository link has been received and will be reviewed and indexed on FastiFlex with full credit to your name.
+              Thank you for contributing! Your repository link has been received and will be reviewed and indexed on FastianHub.
             </p>
             <button
               type="button"
@@ -177,14 +165,6 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
                 <span>{submitError}</span>
               </div>
             )}
-
-            {/* Credit Notice Callout */}
-            <div className="repo-credit-callout">
-              <span className="repo-credit-icon">★</span>
-              <span>
-                <strong>Contributor Recognition:</strong> You will be credited as the archive owner across FastiFlex.
-              </span>
-            </div>
 
             {/* Field: Repo URL */}
             <div className="repo-form-group">
@@ -213,32 +193,6 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
               {errors.repoUrl && <p className="repo-field-error">{errors.repoUrl}</p>}
             </div>
 
-            {/* Field: Owner / Contributor Name */}
-            <div className="repo-form-group">
-              <label htmlFor="owner-name-input" className="repo-form-label">
-                Your Name / Handle for Credit <span className="req-star">*</span>
-              </label>
-              <div className="repo-input-wrap">
-                <svg className="repo-field-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <input
-                  id="owner-name-input"
-                  type="text"
-                  className={`repo-input ${errors.ownerName ? 'error' : ''}`}
-                  placeholder="e.g. Ali Ahmed (@aliahmed)"
-                  value={ownerName}
-                  onChange={(e) => {
-                    setOwnerName(e.target.value);
-                    if (errors.ownerName) setErrors({ ...errors, ownerName: undefined });
-                  }}
-                  disabled={isSubmitting}
-                />
-              </div>
-              {errors.ownerName && <p className="repo-field-error">{errors.ownerName}</p>}
-            </div>
-
             {/* Actions */}
             <div className="repo-modal-actions">
               <button
@@ -257,17 +211,11 @@ export default function SubmitRepoModal({ isOpen, onClose }: SubmitRepoModalProp
               >
                 {isSubmitting ? (
                   <>
-                    <span className="repo-spinner" />
+                    <span className="spinner-sm" />
                     <span>Submitting...</span>
                   </>
                 ) : (
-                  <>
-                    <span>Submit for Credit</span>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
-                      <line x1="5" y1="12" x2="19" y2="12" />
-                      <polyline points="12 5 19 12 12 19" />
-                    </svg>
-                  </>
+                  <span>Submit Repository</span>
                 )}
               </button>
             </div>

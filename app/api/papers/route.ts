@@ -41,7 +41,7 @@ export async function GET(req: NextRequest) {
   try {
     const upstreamRes = await fetch(targetUrl, {
       headers: {
-        'User-Agent': 'FastiFlex',
+        'User-Agent': 'FastianHub',
       },
       next: { revalidate: 86400 }, // Cache on server for 24h
     });

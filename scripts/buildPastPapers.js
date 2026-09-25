@@ -24,7 +24,7 @@ function fetchWithRetry(url, retries = 3, delay = 1500) {
         url,
         {
           headers: {
-            'User-Agent': 'FastiFlex-BuildScript',
+            'User-Agent': 'FastianHub-BuildScript',
             'Accept': 'application/vnd.github.v3+json'
           },
           timeout: 15000
@@ -32,7 +32,7 @@ function fetchWithRetry(url, retries = 3, delay = 1500) {
         (res) => {
           if (finished) return;
           if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-            return https.get(res.headers.location, { headers: { 'User-Agent': 'FastiFlex-BuildScript' } }, (res2) => {
+            return https.get(res.headers.location, { headers: { 'User-Agent': 'FastianHub-BuildScript' } }, (res2) => {
               if (finished) return;
               let body = '';
               res2.on('data', chunk => body += chunk);

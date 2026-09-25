@@ -1,0 +1,62 @@
+[
+  {
+    "id": "lahore-saleha",
+    "name": "Saleha Muzammil",
+    "handle": "saleha-muzammil",
+    "profileUrl": "https://github.com/saleha-muzammil",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/84681153?v=4",
+    "campus": "FAST Lahore",
+    "campusId": "lahore",
+    "impact": "FAST Lahore — 120+ courses, terminal finals, midterms & lab tasks",
+    "sourceName": "saleha-muzammil/Academic-Time-Machine",
+    "sourceUrl": "https://github.com/saleha-muzammil/Academic-Time-Machine",
+    "paperCount": 6146,
+    "dateAdded": "2023-06-03",
+    "verified": true
+  },
+  {
+    "id": "isb-pastpapers",
+    "name": "nuces-isb-past-papers",
+    "handle": "nuces-isb-past-papers",
+    "profileUrl": "https://github.com/nuces-isb-past-papers",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/166195412?v=4",
+    "campus": "FAST Islamabad",
+    "campusId": "islamabad",
+    "impact": "FAST Islamabad — Semesters 1–8 past papers & course outlines",
+    "sourceName": "nuces-isb-past-papers/fsc-past-papers",
+    "sourceUrl": "https://github.com/nuces-isb-past-papers/fsc-past-papers",
+    "paperCount": 504,
+    "dateAdded": "2024-04-06",
+    "verified": true
+  },
+  {
+    "id": "karachi-usama",
+    "name": "Mohammad Usama",
+    "handle": "codewith-usama",
+    "profileUrl": "https://github.com/codewith-usama",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/99090844?v=4",
+    "campus": "FAST Karachi",
+    "campusId": "karachi",
+    "impact": "FAST Karachi — Past exams, quizzes, mids & bachelor courses",
+    "sourceName": "codewith-usama/PastPaper-FAST-NUCES",
+    "sourceUrl": "https://github.com/codewith-usama/PastPaper-FAST-NUCES",
+    "paperCount": 154,
+    "dateAdded": "2023-02-19",
+    "verified": true
+  },
+  {
+    "id": "cfd-hammad",
+    "name": "Hammad Malik",
+    "handle": "malikhacks",
+    "profileUrl": "https://github.com/malikhacks",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/97965176?v=4",
+    "campus": "FAST CFD",
+    "campusId": "cfd",
+    "impact": "FAST CFD — Chiniot-Faisalabad exams, lab tasks & lecture slides",
+    "sourceName": "malikhacks/FAST-NUCES-CFD",
+    "sourceUrl": "https://github.com/malikhacks/FAST-NUCES-CFD",
+    "paperCount": 115,
+    "dateAdded": "2026-09-24",
+    "verified": true
+  }
+]

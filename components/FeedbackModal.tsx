@@ -18,7 +18,6 @@ const FEEDBACK_TYPES: Array<{ id: FeedbackType; label: string; icon: string; des
 export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
   const [feedbackType, setFeedbackType] = useState<FeedbackType>('suggestion');
   const [message, setMessage] = useState('');
-  const [contact, setContact] = useState('');
 
   const [errors, setErrors] = useState<{ message?: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -81,8 +80,7 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
         body: JSON.stringify({
           feedbackType: typeMeta,
           message: message.trim(),
-          contact: contact.trim() || 'Anonymous',
-          source: 'FastiFlex Feedback & Tool Requests',
+          source: 'FastianHub Feedback & Tool Requests',
           submittedAt: new Date().toISOString(),
         }),
       });
@@ -94,7 +92,6 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
 
       setIsSuccess(true);
       setMessage('');
-      setContact('');
     } catch (err: any) {
       setSubmitError(err.message || 'Network error occurred. Please try again later.');
     } finally {
@@ -110,7 +107,7 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
         return 'e.g. Filter courses by exam year or term, quick batch download, outline preview...';
       case 'feedback':
       default:
-        return 'Tell us what you think of FastiFlex, what works well, or what we can improve...';
+        return 'Tell us what you think of FastianHub, what works well, or what we can improve...';
     }
   };
 
@@ -166,7 +163,7 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
               Submission Received!
             </h3>
             <p style={{ fontSize: 13, color: 'var(--ink-2)', lineHeight: 1.5, maxWidth: 360, margin: '0 auto 20px' }}>
-              Thank you for contributing your ideas! We read every suggestion and tool request as we build the next FastiFlex tools.
+              Thank you for contributing your ideas! We read every suggestion and tool request as we build the next FastianHub tools.
             </p>
             <button
               type="button"
@@ -190,22 +187,17 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
               </div>
             )}
 
-            {/* Type Selector Pills: Suggestion, Feedback, Request Tool */}
-            <div style={{ marginBottom: 14 }}>
-              <label className="repo-form-label">
-                Select Option
-              </label>
-              <div className="feedback-pills-grid">
+            {/* Category / Type Selector */}
+            <div className="feedback-type-group">
+              <label className="repo-form-label">Select Category</label>
+              <div className="feedback-pills">
                 {FEEDBACK_TYPES.map((t) => (
                   <button
                     key={t.id}
                     type="button"
-                    className={`feedback-pill-btn ${feedbackType === t.id ? 'active' : ''}`}
-                    onClick={() => {
-                      setFeedbackType(t.id);
-                      if (errors.message) setErrors({});
-                    }}
-                    disabled={isSubmitting}
+                    className={`feedback-pill ${feedbackType === t.id ? 'active' : ''}`}
+                    onClick={() => setFeedbackType(t.id)}
+                    title={t.desc}
                   >
                     <span className="feedback-pill-icon">{t.icon}</span>
                     <span className="feedback-pill-label">{t.label}</span>
@@ -240,28 +232,6 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
               {errors.message && <p className="repo-field-error">{errors.message}</p>}
             </div>
 
-            {/* Field: Contact / Name (Optional) */}
-            <div className="repo-form-group">
-              <label htmlFor="feedback-contact-input" className="repo-form-label">
-                Your Name or Email <span style={{ color: 'var(--ink-3)', fontWeight: 400 }}>(Optional)</span>
-              </label>
-              <div className="repo-input-wrap">
-                <svg className="repo-field-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <input
-                  id="feedback-contact-input"
-                  type="text"
-                  className="repo-input"
-                  placeholder="e.g. Ali Ahmed or ali@example.com"
-                  value={contact}
-                  onChange={(e) => setContact(e.target.value)}
-                  disabled={isSubmitting}
-                />
-              </div>
-            </div>
-
             {/* Actions */}
             <div className="repo-modal-actions">
               <button
@@ -280,17 +250,11 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
               >
                 {isSubmitting ? (
                   <>
-                    <span className="repo-spinner" />
+                    <span className="spinner-sm" />
                     <span>Sending...</span>
                   </>
                 ) : (
-                  <>
-                    <span>Submit</span>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
-                      <line x1="22" y1="2" x2="11" y2="13" />
-                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                    </svg>
-                  </>
+                  <span>Send Message</span>
                 )}
               </button>
             </div>
