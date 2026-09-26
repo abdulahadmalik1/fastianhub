@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { isSiteIndexable, SITE_NAME, SITE_URL } from '@/lib/site-config';
 import { HOME_DESCRIPTION, HOME_TITLE } from '@/lib/seo';
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.variable}>
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   );

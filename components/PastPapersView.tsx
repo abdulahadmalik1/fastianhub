@@ -9,6 +9,7 @@ import FeedbackModal from './FeedbackModal';
 import CourseCard from './CourseCard';
 import CourseDetailsSheet from './CourseDetailsSheet';
 import Icon from './Icon';
+import UserCount from './UserCount';
 import { CampusId, CourseGroup, CampusMetadata, PaperFile, toCourseSlug } from '@/lib/papers';
 import { campusOptions, type SupportedCampusId } from '@/lib/campuses';
 
@@ -161,7 +162,7 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
     <main className="container" id="browse">
       <section className="hero" aria-labelledby="page-title">
         <div><p className="eyebrow"><span /> BY FASTIANS, FOR FASTIANS</p><h1 id="page-title">{view === 'saved' ? <>Your courses.<br /><em>Right here.</em></> : <>Less searching.<br /><em>More studying.</em></>}</h1></div>
-        <div className="hero-aside"><p>{view === 'saved' ? 'The courses you’ve saved, ready for your next study session.' : 'Past papers, a little less panic.'}</p><p>{view === 'saved' ? 'Saved on this device. No sign-up needed.' : 'Find your course. Pick a paper. You’ve got this.'}</p><span className="archive-note"><Icon name="book" size={16} /> The FAST NUCES past-paper collection</span></div>
+        <div className="hero-aside"><p>{view === 'saved' ? 'The courses you’ve saved, ready for your next study session.' : 'Past papers, a little less panic.'}</p><p>{view === 'saved' ? 'Saved on this device. No sign-up needed.' : 'Find your course. Pick a paper. You’ve got this.'}</p><span className="archive-note"><Icon name="book" size={16} /> The FAST NUCES past-paper collection</span><UserCount /></div>
       </section>
       <section className="browse-controls" aria-label="Find courses">
         <div className="search-filter-row">
