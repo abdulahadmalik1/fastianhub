@@ -913,7 +913,10 @@ async function main() {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  fs.writeFileSync(existingPath, JSON.stringify(outputPayload, null, 2), 'utf-8');
+  // This snapshot is bundled for browsers. Upstream locations stay in the
+  // build script and server-side paper proxy, never in the public archive.
+  const serverOnlyFields = new Set(['repo', 'rawBase', 'downloadUrl']);
+  fs.writeFileSync(existingPath, JSON.stringify(outputPayload, (key, value) => serverOnlyFields.has(key) ? undefined : value, 2), 'utf-8');
 
   console.log(`[buildPastPapers] SUCCESS! Generated 4-campus past papers archive:`);
   console.log(`  - FAST Islamabad: ${islamabadCampusData.totalFiles} files`);

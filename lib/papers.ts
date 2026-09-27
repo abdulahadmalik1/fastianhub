@@ -5,7 +5,6 @@ export interface PaperFile {
   subPath?: string;
   title: string;
   path: string;
-  downloadUrl: string;
   size: number;
   fileType: string;
   campus?: CampusId;
