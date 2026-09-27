@@ -5,8 +5,8 @@ import { campusOptions } from '@/lib/campuses';
 import { pageMetadata } from '@/lib/seo';
 import { SITE_NAME, SITE_URL } from '@/lib/site-config';
 
-const title = 'Our Story: Wondar.site & FAST Past Papers | FastianHub';
-const description = 'Why we built FastianHub after using Wondar.site for FAST NUCES past papers. Find campus resources for sessionals, final exams, quizzes and study preparation.';
+const title = 'Our Story: wondar.site & FAST Past Papers | FastianHub';
+const description = 'Why we built FastianHub after using wondar.site for FAST NUCES past papers. Find campus resources for sessionals, final exams, quizzes and study preparation.';
 const url = `${SITE_URL}/motivation`;
 
 export const metadata = pageMetadata(title, description, '/motivation');
@@ -38,8 +38,8 @@ export default function MotivationPage() {
       <div className="story-layout">
         <article className="story-copy" aria-label="The story behind FastianHub">
           <section aria-labelledby="wondar-inspiration">
-            <h2 id="wondar-inspiration">The inspiration: Wondar.site</h2>
-            <p>Before building FastianHub, we used Wondar.site to find FAST NUCES past papers. It was one of our favourite resources when an exam was approaching: a place to look for earlier papers and get a clearer idea of what to practise.</p>
+            <h2 id="wondar-inspiration">The inspiration: wondar.site</h2>
+            <p>Before building FastianHub, we used wondar.site to find FAST NUCES past papers. It was one of our favourite resources when an exam was approaching: a place to look for earlier papers and get a clearer idea of what to practise.</p>
             <p>That experience showed us how much a student-built resource can help. When a familiar collection becomes difficult to reach, students end up searching again through old links, shared folders and group messages. We wanted to make that search a little easier for the next Fastian.</p>
           </section>
           <section aria-labelledby="papers-purpose">
@@ -58,8 +58,8 @@ export default function MotivationPage() {
             <p>You can meet them on our <Link href="/credits">Credits page</Link>, or use the contribution option on the homepage to suggest another collection. The aim is to keep useful material within reach as new students arrive and courses change.</p>
           </section>
           <section className="story-welcome" aria-labelledby="wondar-visitors">
-            <h2 id="wondar-visitors">Looking for Wondar.site past papers?</h2>
-            <p>If your search brought you here, start with your campus and explore the papers available on FastianHub. We are an independent student project, unaffiliated with Wondar.site or FAST-NUCES. This is our own community archive, and we do not claim to have every resource previously available on Wondar.</p>
+            <h2 id="wondar-visitors">Looking for wondar.site past papers?</h2>
+            <p>If your search brought you here, start with your campus and explore the papers available on FastianHub. We are an independent student project, unaffiliated with wondar.site or FAST-NUCES. This is our own community archive, and we do not claim to have every resource previously available on wondar.</p>
             <Link href="/" className="primary-button">Browse past papers <Icon name="arrow" size={18} /></Link>
           </section>
         </article>

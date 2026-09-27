@@ -58,7 +58,7 @@ for (const path of routes) {
   if (path === '/') assert.ok(html.includes('href="/motivation"'), 'Crawlable footer link to our motivation');
   if (path === '/motivation') {
     assert.equal(schemas.find(schema => schema['@type'] === 'AboutPage')?.url, canonical);
-    assert.ok(html.includes('Looking for Wondar.site past papers?'), 'Visible story content');
+    assert.ok(html.includes('Looking for wondar.site past papers?'), 'Visible story content');
     assert.ok(tags(html, 'a').some(link => link.href === '/' && link.class?.split(' ').includes('primary-button')), 'Return to the papers browser');
     for (const campus of campusOptions) assert.ok(html.includes(`href="/campus/${campus.slug}"`), `Working campus path: ${campus.slug}`);
   }
