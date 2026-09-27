@@ -6,7 +6,7 @@ import { pageMetadata } from '@/lib/seo';
 import { SITE_NAME, SITE_URL } from '@/lib/site-config';
 
 const title = 'Our Story: wondar.site & FAST Past Papers | FastianHub';
-const description = 'Why we built FastianHub after using wondar.site for FAST NUCES past papers. Find campus resources for sessionals, final exams, quizzes and study preparation.';
+const description = 'Looking for wondar.site past papers? Browse FAST NUCES past papers, sessionals, finals and quizzes on FastianHub. Choose your campus and course to find papers.';
 const url = `${SITE_URL}/motivation`;
 
 export const metadata = pageMetadata(title, description, '/motivation');
@@ -33,7 +33,8 @@ export default function MotivationPage() {
       <section className="story-intro" aria-labelledby="story-title">
         <p className="eyebrow"><span /> OUR MOTIVATION</p>
         <h1 id="story-title">Why we built<br /><em>FastianHub.</em></h1>
-        <p className="story-lead">A familiar search before an exam. A collection that helped. And a reason to make useful study resources easier to find.</p>
+        <p className="story-lead">{description}</p>
+        <Link href="/" className="primary-button">Browse past papers <Icon name="arrow" size={18} /></Link>
       </section>
       <div className="story-layout">
         <article className="story-copy" aria-label="The story behind FastianHub">
