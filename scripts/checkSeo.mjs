@@ -22,7 +22,7 @@ assert.equal(isSiteIndexable({ NODE_ENV: 'production', VERCEL_ENV: 'production' 
 assert.equal(isSiteIndexable({ NODE_ENV: 'production', SITE_INDEXABLE: 'false' }), false);
 assert.equal(isSiteIndexable({ NODE_ENV: 'production' }), true);
 
-const routes = ['/', '/credits', ...campusOptions.map(campus => `/campus/${campus.slug}`)];
+const routes = ['/', '/credits', '/motivation', ...campusOptions.map(campus => `/campus/${campus.slug}`)];
 const titles = new Set();
 const descriptions = new Set();
 for (const path of routes) {
@@ -50,11 +50,18 @@ for (const path of routes) {
   assert.equal(response.headers.get('x-robots-tag')?.includes('noindex') || false, !indexable);
   assert.equal([...html.matchAll(/<h1\b/g)].length, 1, `One original H1: ${path}`);
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)].map(match => JSON.parse(match[1]));
-  if (path !== '/credits') {
+  if (path !== '/credits' && path !== '/motivation') {
     assert.equal(schemas.find(schema => schema['@type'] === 'CollectionPage')?.url, canonical);
     assert.equal([...html.matchAll(/<article class="course-card">/g)].length, 12, `Prerendered courses: ${path}`);
   }
   if (path === '/') assert.equal(schemas.find(schema => schema['@type'] === 'WebSite')?.name, 'FastianHub');
+  if (path === '/') assert.ok(html.includes('href="/motivation"'), 'Crawlable footer link to our motivation');
+  if (path === '/motivation') {
+    assert.equal(schemas.find(schema => schema['@type'] === 'AboutPage')?.url, canonical);
+    assert.ok(html.includes('Looking for Wondar.site past papers?'), 'Visible story content');
+    assert.ok(tags(html, 'a').some(link => link.href === '/' && link.class?.split(' ').includes('primary-button')), 'Return to the papers browser');
+    for (const campus of campusOptions) assert.ok(html.includes(`href="/campus/${campus.slug}"`), `Working campus path: ${campus.slug}`);
+  }
   const campus = campusOptions.find(campus => path === `/campus/${campus.slug}`);
   if (campus) {
     assert.ok(html.includes(`<option value="${campus.id}" selected="">`), `Initial campus: ${path}`);

@@ -5,7 +5,7 @@ Canonical domain: **https://fastianhub.com**.
 ## Local validation completed
 
 - Production build and TypeScript checks passed; ESLint passed.
-- All six canonical pages, campus-specific initial rendering, JSON-LD, Open Graph/Twitter metadata, sitemap, robots rules, alias/www redirects and unknown-campus 404 behavior passed automated HTTP checks.
+- Canonical pages, campus-specific initial rendering, JSON-LD, Open Graph/Twitter metadata, sitemap, robots rules, alias/www redirects and unknown-campus 404 behavior passed automated HTTP checks.
 - A separate non-indexable build passed the staging checks; the final build was restored to production indexing.
 - Real PDF previews and downloads passed for one sample from each of the four campuses.
 - Browser checks confirmed campus switching, search, semester filtering, course drawers and saved-course persistence. A Lahore landing URL correctly took precedence over a saved Karachi preference.
@@ -47,12 +47,14 @@ The build refreshes the archive using the existing pipeline. If GitHub is unreac
 ## After the domain is live
 
 1. Verify the domain in [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters/).
-2. Submit `https://fastianhub.com/sitemap.xml` to both. The sitemap currently contains the homepage, credits, and the four campus pages.
+2. Submit `https://fastianhub.com/sitemap.xml` to both. The sitemap currently contains the homepage, credits, motivation, and the four campus pages.
 3. Run the production SEO check above. Inspect the homepage and each campus URL in Search Console; request indexing and verify Google can render them.
 4. Check one paper preview and download from each campus, bookmark persistence, search, filters, and the two existing submission forms. Form submissions require an intentional manual test because they send a message to the owner.
 5. Monitor indexing, campus query impressions/clicks, and field Core Web Vitals after traffic arrives. Search visibility requires ongoing useful archives and relevant links; technical SEO cannot promise a position or permanent immunity to search changes.
 
 ## Campus URLs and maintenance
+
+The `/motivation` page shares the project's story, including the founder's experience using Wondar.site, and links to the campus collections. It has an independent canonical URL, `AboutPage` structured data, and a visible footer link labelled "Our motivation". Its copy does not claim Wondar permanently closed, moved to FastianHub, or transferred its archive. Keep the story accurate as the project develops; no ranking or traffic-transfer promise is made.
 
 | Campus | Canonical path |
 | --- | --- |

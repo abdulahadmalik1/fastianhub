@@ -180,7 +180,7 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
       </section>
       <aside className="community-note"><span className="community-icon"><Icon name="heart" size={22} /></span><div><h2>Good notes deserve good company.</h2><p>Have a past-paper collection? Help the next Fastian out.</p></div><button className="text-button" onClick={() => setModal('contribute')}>Contribute papers <Icon name="arrow" size={18} /></button></aside>
     </main>
-    <footer className="container site-footer"><p>Made for the days before the exam.</p><nav aria-label="Community links"><Link href="/credits">Credits</Link><button onClick={() => setModal('feedback')}>Feedback</button><a href="#browse">Back to top ↑</a></nav></footer>
+    <footer className="container site-footer"><p>Made for the days before the exam.</p><nav aria-label="Community links"><Link href="/credits">Credits</Link><Link href="/motivation">Our motivation</Link><button onClick={() => setModal('feedback')}>Feedback</button><a href="#browse">Back to top ↑</a></nav></footer>
     <nav className="mobile-nav" aria-label="Main navigation">{navigation}</nav>
     <span className="sr-only" role="status">{announcement}</span>
     {selectedCourse && <CourseDetailsSheet key={`${selectedCourse.campus}:${selectedCourse.course}`} course={selectedCourse} campusShortName={campusOptions.find(campus => campus.id === activeCampus)?.name || activeCampus} activeCampus={activeCampus} isBookmarked={isSaved(selectedCourse.course)} onClose={closeCourse} onToggleBookmark={toggleBookmark} />}

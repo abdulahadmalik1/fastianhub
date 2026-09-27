@@ -110,7 +110,7 @@ h1 em { color: var(--accent); font-weight: 400; }
 .community-note p { font-size: 12px; color: var(--ink-2); margin-top: 5px; }
 .community-note .text-button { font-size: 12px; }
 .site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; padding-top: 25px; padding-bottom: 24px; font-size: 11px; color: var(--ink-2); }
-.site-footer nav { display: flex; gap: 20px; }
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 0 20px; }
 .site-footer a, .site-footer button { display: inline-flex; align-items: center; min-height: 44px; border: 0; background: none; padding: 0; font-size: 12px; color: var(--ink-2); }
 /* Native dialogs provide focus containment, Escape, and an inert page behind them. */
 .dialog { border: 1px solid var(--line); background: var(--surface); color: var(--ink-1); padding: 0; max-height: 92dvh; width: calc(100% - 24px); max-width: 500px; border-radius: 18px; box-shadow: 0 24px 90px #132b2a26; }
@@ -170,6 +170,33 @@ h1 em { color: var(--accent); font-weight: 400; }
 .spinner-sm { width: 15px; height: 15px; border: 2px solid #ffffff55; border-top-color: white; border-radius: 50%; animation: spin .7s linear infinite; }
 .credits-intro { padding: 45px 0 30px; max-width: 640px; }
 .credits-intro p:last-child { color: var(--ink-2); margin-top: 20px; }
+.story-page { padding-bottom: 0; }
+.story-intro { max-width: 740px; padding: 42px 0 34px; }
+.story-lead { max-width: 560px; margin-top: 22px; color: var(--ink-2); font-size: 16px; line-height: 1.8; }
+.story-layout { display: grid; align-items: start; gap: 32px; padding-bottom: 36px; border-bottom: 1px solid var(--line); }
+.story-copy { min-width: 0; }
+.story-copy > section + section { margin-top: 32px; }
+.story-copy h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 25px; font-weight: 400; line-height: 1.3; letter-spacing: -.45px; margin-bottom: 14px; }
+.story-copy p { color: var(--ink-2); font-size: 14px; line-height: 1.9; }
+.story-copy p + p { margin-top: 14px; }
+.story-copy p a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.story-welcome { padding-top: 28px; border-top: 1px solid var(--line); }
+.story-welcome .primary-button { margin-top: 22px; }
+.story-campus-panel { padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--raised); }
+.story-campus-panel .community-icon { display: inline-flex; color: var(--accent); margin-bottom: 14px; }
+.story-campus-panel h2 { font-size: 20px; font-weight: 600; letter-spacing: -.5px; }
+.story-campus-panel > p { color: var(--ink-2); font-size: 13px; line-height: 1.7; margin-top: 8px; }
+.story-campus-panel nav { margin-top: 18px; }
+.story-campus-panel nav a { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 70px; padding-block: 14px; border-top: 1px solid var(--line); font-size: 14px; font-weight: 550; }
+.story-campus-panel nav small { display: block; margin-top: 3px; color: var(--ink-2); font-size: 11px; font-weight: 400; }
+.story-campus-panel > .text-button { margin-top: 12px; padding-inline: 0; color: var(--accent); }
+.story-campus-panel nav a:hover { color: var(--accent); }
+@media (min-width: 900px) {
+  .story-intro { padding-top: 56px; padding-bottom: 46px; }
+  .story-layout { grid-template-columns: minmax(0, 720px) minmax(260px, 320px); gap: 64px; }
+  .story-copy h2 { font-size: 29px; }
+  .story-copy p { font-size: 15px; }
+}
 .credits-grid { display: grid; gap: 16px; margin-bottom: 36px; }
 .credit-card { padding: 24px; background: white; border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
 .credit-card h2 { font-size: 19px; margin: 15px 0 8px; }
