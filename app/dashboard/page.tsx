@@ -4,12 +4,18 @@ import StructuredData from '@/components/StructuredData';
 import { pageMetadata } from '@/lib/seo';
 import { isSiteIndexable, SITE_NAME, SITE_URL } from '@/lib/site-config';
 
-const DASHBOARD_TITLE = 'FAST Student Dashboard | Saved Courses & Papers | FastianHub';
-const DASHBOARD_DESCRIPTION = 'Keep your FAST NUCES courses, past papers, quizzes and notes together. Sign in with Google to save your course list and access it on any device.';
+const DASHBOARD_TITLE = 'FAST NUCES Student Dashboard | Past Papers & Courses | FastianHub';
+const DASHBOARD_DESCRIPTION = 'Keep FAST NUCES courses, past papers, quizzes, notes, and study resources in one place. Sign in to save your courses and study across every campus.';
 const DASHBOARD_URL = `${SITE_URL}/dashboard`;
 
 export const metadata: Metadata = {
   ...pageMetadata(DASHBOARD_TITLE, DASHBOARD_DESCRIPTION, '/dashboard'),
+  keywords: [
+    'FAST NUCES student dashboard',
+    'FAST NUCES past papers',
+    'FAST courses and notes',
+    'FAST quizzes and study resources',
+  ],
   // Index the public sign-in page only on the production site.
   robots: isSiteIndexable()
     ? {
