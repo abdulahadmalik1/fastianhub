@@ -6,6 +6,17 @@ service cloud.firestore {
       allow get: if true;
       allow list, create, update, delete: if false;
     }
+    // A student can access only their own dashboard; collection listing is denied.
+    match /studentDashboards/{userId} {
+      allow get, delete: if request.auth != null && request.auth.uid == userId;
+      allow create, update: if request.auth != null && request.auth.uid == userId
+        && request.resource.data.keys().hasAll(['courseIds', 'updatedAt'])
+        && request.resource.data.keys().hasOnly(['courseIds', 'updatedAt'])
+        && request.resource.data.courseIds is list
+        && request.resource.data.courseIds.size() <= 50
+        && request.resource.data.updatedAt == request.time;
+      allow list: if false;
+    }
     // All other documents remain inaccessible to web/mobile clients by default.
     match /{document=**} {
       allow read, write: if false;

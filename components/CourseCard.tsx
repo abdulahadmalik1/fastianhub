@@ -10,7 +10,6 @@ export default function CourseCard({ course, isBookmarked, onOpen, onToggleBookm
     <h3><button className="course-open" onClick={() => onOpen(course)}>{course.course}<span className="sr-only"> — browse papers</span></button></h3>
     <p className="course-types">{categories.join(' · ')}</p>
     <div className="course-card-bottom">
-      <span className="file-count"><Icon name="file" size={15} /> {course.fileCount} {course.fileCount === 1 ? 'file' : 'files'}</span>
       <button className={`save-button${isBookmarked ? ' is-saved' : ''}`} aria-pressed={isBookmarked} aria-label={`${isBookmarked ? 'Unsave' : 'Save'} ${course.course}`} onClick={() => onToggleBookmark(course.course)}><Icon name="bookmark" size={16} filled={isBookmarked} />{isBookmarked ? 'Saved' : 'Save'}</button>
       <span className="card-arrow"><Icon name="arrow" size={20} /></span>
     </div>

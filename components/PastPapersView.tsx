@@ -10,11 +10,11 @@ import CourseCard from './CourseCard';
 import CourseDetailsSheet from './CourseDetailsSheet';
 import Icon from './Icon';
 import UserCount from './UserCount';
-import { CampusId, CourseGroup, CampusMetadata, PaperFile, toCourseSlug } from '@/lib/papers';
+import { CampusId, CourseGroup, CampusMetadata, toCourseSlug } from '@/lib/papers';
+import { isVisiblePaperFile } from '@/lib/paper-visibility.mjs';
 import { campusOptions, type SupportedCampusId } from '@/lib/campuses';
 
 const campuses = pastPapersData.campuses as unknown as Record<CampusId, CampusMetadata>;
-const cleanFiles = (files: PaperFile[]) => files.filter(file => !/^readme/i.test(file.fileName) && !/\.md$/i.test(file.fileName) && file.fileName !== '.gitkeep');
 
 export default function PastPapersView({ initialCampus }: { initialCampus?: SupportedCampusId }) {
   const router = useRouter();
@@ -50,13 +50,13 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
     const courses: CourseGroup[] = [];
     for (const semester of campus.semesters) {
       for (const course of semester.courses) {
-        const files = cleanFiles(course.files);
+        const files = course.files.filter(isVisiblePaperFile);
         if (files.length) courses.push({ course: course.course, semesterLabel: `Semester ${semester.semester}`, semesterNum: semester.semester, fileCount: files.length, files, campus: activeCampus });
       }
     }
     for (const group of campus.outlines || []) {
       for (const course of group.courses) {
-        const files = cleanFiles(course.files);
+        const files = course.files.filter(isVisiblePaperFile);
         if (files.length) courses.push({ course: `${course.course} (${group.group})`, semesterLabel: `Outlines · ${group.group}`, semesterNum: 'outlines', fileCount: files.length, files, campus: activeCampus });
       }
     }
@@ -148,8 +148,8 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
     return () => { if (frame !== undefined) cancelAnimationFrame(frame); };
   }, [allCourses]);
   const navigation = <>
-    <button className={view === 'browse' ? 'nav-item active' : 'nav-item'} aria-current={view === 'browse' ? 'page' : undefined} onClick={() => switchView('browse')}><Icon name="book" size={19} />Past papers</button>
     <button className={view === 'saved' ? 'nav-item active' : 'nav-item'} aria-current={view === 'saved' ? 'page' : undefined} onClick={() => switchView('saved')}><Icon name="bookmark" size={18} />Saved courses{savedCount > 0 && <span className="nav-count">{savedCount}</span>}</button>
+    <Link href="/dashboard" className="dashboard-entry"><Icon name="bookmark" size={16} /><span>My dashboard</span></Link>
   </>;
 
   return <div className="app-shell">
@@ -157,12 +157,11 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
     <header className="site-header"><div className="container header-inner">
       <Link href="/" className="brand" aria-label="FastianHub home"><span className="brand-mark"><Icon name="book" size={22} /></span><span>Fastian<span className="brand-light">Hub</span><small>THE STUDENT ARCHIVE</small></span></Link>
       <nav className="desktop-nav" aria-label="Main navigation">{navigation}</nav>
-      <span className="header-note">A little help for your next exam.</span>
     </div></header>
     <main className="container" id="browse">
       <section className="hero" aria-labelledby="page-title">
         <div><p className="eyebrow"><span /> BY FASTIANS, FOR FASTIANS</p><h1 id="page-title">{view === 'saved' ? <>Your courses.<br /><em>Right here.</em></> : <>Less searching.<br /><em>More studying.</em></>}</h1></div>
-        <div className="hero-aside"><p>{view === 'saved' ? 'The courses you’ve saved, ready for your next study session.' : 'Past papers, a little less panic.'}</p><p>{view === 'saved' ? 'Saved on this device. No sign-up needed.' : 'Find your course. Pick a paper. You’ve got this.'}</p><span className="archive-note"><Icon name="book" size={16} /> The FAST NUCES past-paper collection</span><UserCount /></div>
+        <div className="hero-aside"><UserCount /></div>
       </section>
       <section className="browse-controls" aria-label="Find courses">
         <div className="search-filter-row">
@@ -175,7 +174,12 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
         <div className="semester-filters" role="group" aria-label="Semester filter"><span className="filter-label">Semester</span>{semesterOptions.map(option => <button key={option.value} className={`filter-chip${selectedFilter === option.value ? ' active' : ''}`} aria-pressed={selectedFilter === option.value} onClick={() => { setSelectedFilter(option.value); setVisibleCount(12); }}>{option.value === 'all' ? 'All' : option.label.replace('Semester', 'Sem')}</button>)}</div>
       </section>
       <section className="courses-section" aria-labelledby="courses-title">
-        <div className="section-heading"><div><h2 id="courses-title">{view === 'saved' ? 'Saved courses' : selectedFilter === 'all' ? 'Explore courses' : selectedFilter === 'outlines' ? 'Course outlines' : `Semester ${selectedFilter}`} <span className="result-count">{filteredCourses.length}</span></h2><p aria-live="polite">{searchQuery ? `Results for “${searchQuery}”` : view === 'saved' ? 'A shortcut to the courses you come back to.' : 'A head start for whatever’s next.'}</p></div>{(searchQuery || selectedFilter !== 'all') ? <button className="text-button" onClick={resetFilters}>Clear filters</button> : <span className="campus-caption"><Icon name="pin" size={15} />{campusOptions.find(campus => campus.id === activeCampus)?.name}</span>}</div>
+        <h2 id="courses-title" className="sr-only">{view === 'saved' ? 'Saved courses' : selectedFilter === 'all' ? 'Explore courses' : selectedFilter === 'outlines' ? 'Course outlines' : `Semester ${selectedFilter}`}</h2>
+        <p className="sr-only" aria-live="polite">{filteredCourses.length} {filteredCourses.length === 1 ? 'course' : 'courses'}{searchQuery ? ` matching “${searchQuery}”` : ''}</p>
+        {(view === 'saved' || searchQuery || selectedFilter !== 'all') && <div className="courses-toolbar">
+          {view === 'saved' && <button className="text-button back-to-courses" onClick={() => switchView('browse')}>Back to all courses</button>}
+          {(searchQuery || selectedFilter !== 'all') && <button className="text-button" onClick={resetFilters}>Clear filters</button>}
+        </div>}
         {filteredCourses.length ? <><div className="course-grid">{filteredCourses.slice(0, visibleCount).map(course => <CourseCard key={`${course.semesterNum}:${course.course}`} course={course} isBookmarked={isSaved(course.course)} onOpen={openCourse} onToggleBookmark={toggleBookmark} />)}</div><div className="load-more"><p>Showing {Math.min(visibleCount, filteredCourses.length)} of {filteredCourses.length} courses</p>{visibleCount < filteredCourses.length && <button className="secondary-button" onClick={() => setVisibleCount(count => count + 12)}>Show more courses <Icon name="arrow" size={17} /></button>}</div></> : <div className="empty-state"><span className="empty-icon"><Icon name={view === 'saved' ? 'bookmark' : 'search'} size={28} /></span><h3>{view === 'saved' && !savedCount ? 'Keep your courses close.' : 'No courses found.'}</h3><p>{view === 'saved' && !savedCount ? 'Tap Save on a course to find it here next time.' : 'Try another course name, semester, or campus.'}</p><button className="primary-button" onClick={() => { resetFilters(); if (view === 'saved') setView('browse'); }}>{view === 'saved' ? 'Browse courses' : 'Clear filters'}</button></div>}
       </section>
       <aside className="community-note"><span className="community-icon"><Icon name="heart" size={22} /></span><div><h2>Good notes deserve good company.</h2><p>Have a past-paper collection? Help the next Fastian out.</p></div><button className="text-button" onClick={() => setModal('contribute')}>Contribute papers <Icon name="arrow" size={18} /></button></aside>

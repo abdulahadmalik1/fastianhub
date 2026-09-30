@@ -2,7 +2,7 @@ import { getApps, initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
 // Public web-app identifiers. Firestore rules, not this configuration, control access.
-const app = getApps().find(app => app.name === 'fastianhub-public-stats') ?? initializeApp({
+export const app = getApps().find(app => app.name === 'fastianhub-public-stats') ?? initializeApp({
   apiKey: 'AIzaSyARvrR-awLlbacaU60xSs_3tqEIy1osC1w',
   authDomain: 'fastiflex.firebaseapp.com',
   projectId: 'fastiflex',
