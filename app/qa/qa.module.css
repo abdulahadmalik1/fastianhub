@@ -1,0 +1,145 @@
+.page { padding-bottom: 0; }
+.main { max-width: 700px; }
+
+/* ── Intro ─────────────────────────────────── */
+.intro { padding: 44px 0 32px; }
+.intro h1 { overflow-wrap: anywhere; }
+.lead { max-width: 540px; margin-top: 16px; color: var(--ink-2); font-size: 14px; line-height: 1.8; }
+.guarantee {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 6px 14px 6px 10px;
+  background: var(--accent-soft);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent-dark, #1a3d28);
+  letter-spacing: -.1px;
+}
+.guaranteeDot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ── Ask box ───────────────────────────────── */
+.ask { padding: 28px 32px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.ask h2 { font-size: 16px; font-weight: 600; letter-spacing: -.25px; }
+.hint { margin-top: 5px; color: var(--ink-3); font-size: 12px; line-height: 1.6; }
+.textarea { display: block; width: 100%; min-height: 116px; margin-top: 16px; padding: 13px 15px; resize: vertical; border: 1px solid #cdd7c8; border-radius: 10px; background: var(--page); color: var(--ink-1); font-size: 15px; line-height: 1.7; transition: border-color .15s, box-shadow .15s; }
+.textarea::placeholder { color: var(--ink-3); opacity: 1; }
+.textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px #245b4215; }
+.textarea:disabled { opacity: .6; }
+.formFooter { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-top: 12px; }
+.count { color: var(--ink-3); font-size: 11px; font-variant-numeric: tabular-nums; }
+.honeypot { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.error { margin-top: 10px; font-size: 12px; color: #873426; }
+.success { display: flex; align-items: flex-start; gap: 8px; margin-top: 12px; font-size: 12px; line-height: 1.7; color: var(--accent); }
+.success svg { margin-top: 2px; flex-shrink: 0; }
+
+/* ── Answers section ───────────────────────── */
+.answers { margin: 44px 0 60px; }
+
+.answersHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.answersHeading h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: -.4px;
+}
+.count2 {
+  font-size: 11px;
+  color: var(--ink-3);
+  letter-spacing: .3px;
+}
+
+/* ── Question cards ────────────────────────── */
+.threadList { display: flex; flex-direction: column; gap: 10px; }
+
+.thread {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--ink-1);
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.thread:hover {
+  border-color: #b3c9ac;
+  box-shadow: 0 4px 20px #1f3b2014;
+  transform: translateY(-2px);
+}
+
+.threadDot {
+  flex-shrink: 0;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: .3;
+  transition: opacity .2s;
+}
+.thread:hover .threadDot { opacity: 1; }
+
+.threadTitle {
+  overflow-wrap: anywhere;
+  min-width: 0;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--ink-1);
+}
+
+.thread:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  .thread, .threadDot, .threadChevron { transition: none; }
+  .thread:hover { transform: none; }
+}
+
+.threadChevron {
+  flex-shrink: 0;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--raised);
+  color: var(--ink-3);
+  display: grid;
+  place-items: center;
+  transition: background .2s, color .2s;
+}
+.thread:hover .threadChevron {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ── State ─────────────────────────────────── */
+.state { padding: 32px 0; font-size: 13px; color: var(--ink-2); line-height: 1.8; }
+
+/* ── Footer ────────────────────────────────── */
+.footer { border-top: 1px solid var(--line); }
+.footer a { gap: 8px; }
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 639px) {
+  .intro { padding: 32px 0 24px; }
+  .intro h1 { font-size: 40px; }
+  .lead { font-size: 13px; margin-top: 12px; }
+  .ask { padding: 20px 18px; }
+  .answers { margin: 36px 0 48px; }
+  .answersHeading h2 { font-size: 22px; }
+  .thread { padding: 17px 18px; }
+  .threadTitle { font-size: 13px; }
+  .threadDot { display: none; }
+}

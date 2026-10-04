@@ -10,9 +10,11 @@ import CourseCard from './CourseCard';
 import CourseDetailsSheet from './CourseDetailsSheet';
 import Icon from './Icon';
 import UserCount from './UserCount';
+import QABanner from './QABanner';
 import { CampusId, CourseGroup, CampusMetadata, toCourseSlug } from '@/lib/papers';
 import { isVisiblePaperFile } from '@/lib/paper-visibility.mjs';
 import { campusOptions, type SupportedCampusId } from '@/lib/campuses';
+import navigationStyles from './ArchiveNavigation.module.css';
 
 const campuses = pastPapersData.campuses as unknown as Record<CampusId, CampusMetadata>;
 
@@ -150,6 +152,7 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
   const navigation = <>
     <button className={view === 'saved' ? 'nav-item active' : 'nav-item'} aria-current={view === 'saved' ? 'page' : undefined} onClick={() => switchView('saved')}><Icon name="bookmark" size={18} />Saved courses{savedCount > 0 && <span className="nav-count">{savedCount}</span>}</button>
     <Link href="/dashboard" className="dashboard-entry"><Icon name="bookmark" size={16} /><span>My dashboard</span></Link>
+    <Link href="/qa" className="nav-item">Q&amp;A</Link>
   </>;
 
   return <div className="app-shell">
@@ -158,9 +161,10 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
       <Link href="/" className="brand" aria-label="FastianHub home"><span className="brand-mark"><Icon name="book" size={22} /></span><span>Fastian<span className="brand-light">Hub</span><small>THE STUDENT ARCHIVE</small></span></Link>
       <nav className="desktop-nav" aria-label="Main navigation">{navigation}</nav>
     </div></header>
+    <QABanner />
     <main className="container" id="browse">
       <section className="hero" aria-labelledby="page-title">
-        <div><p className="eyebrow"><span /> BY FASTIANS, FOR FASTIANS</p><h1 id="page-title">{view === 'saved' ? <>Your courses.<br /><em>Right here.</em></> : <>Less searching.<br /><em>More studying.</em></>}</h1></div>
+        <div><h1 id="page-title">{view === 'saved' ? <>Your courses.<br /><em>Right here.</em></> : <>Less searching.<br /><em>More studying.</em></>}</h1></div>
         <div className="hero-aside"><UserCount /></div>
       </section>
       <section className="browse-controls" aria-label="Find courses">
@@ -171,7 +175,7 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
             <label className="select-field mobile-semester"><span>Semester</span><select aria-label="Semester" value={selectedFilter} onChange={event => { setSelectedFilter(event.target.value); setVisibleCount(12); }}>{semesterOptions.map(option => <option key={option.value} value={option.value}>{option.label}</option>)}</select></label>
           </div>
         </div>
-        <div className="semester-filters" role="group" aria-label="Semester filter"><span className="filter-label">Semester</span>{semesterOptions.map(option => <button key={option.value} className={`filter-chip${selectedFilter === option.value ? ' active' : ''}`} aria-pressed={selectedFilter === option.value} onClick={() => { setSelectedFilter(option.value); setVisibleCount(12); }}>{option.value === 'all' ? 'All' : option.label.replace('Semester', 'Sem')}</button>)}</div>
+        <div className="semester-filters" role="group" aria-label="Semester filter">{semesterOptions.map(option => <button key={option.value} className={`filter-chip${selectedFilter === option.value ? ' active' : ''}`} aria-pressed={selectedFilter === option.value} onClick={() => { setSelectedFilter(option.value); setVisibleCount(12); }}>{option.value === 'all' ? 'All' : option.label.replace('Semester', 'Sem')}</button>)}</div>
       </section>
       <section className="courses-section" aria-labelledby="courses-title">
         <h2 id="courses-title" className="sr-only">{view === 'saved' ? 'Saved courses' : selectedFilter === 'all' ? 'Explore courses' : selectedFilter === 'outlines' ? 'Course outlines' : `Semester ${selectedFilter}`}</h2>
@@ -180,12 +184,11 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
           {view === 'saved' && <button className="text-button back-to-courses" onClick={() => switchView('browse')}>Back to all courses</button>}
           {(searchQuery || selectedFilter !== 'all') && <button className="text-button" onClick={resetFilters}>Clear filters</button>}
         </div>}
-        {filteredCourses.length ? <><div className="course-grid">{filteredCourses.slice(0, visibleCount).map(course => <CourseCard key={`${course.semesterNum}:${course.course}`} course={course} isBookmarked={isSaved(course.course)} onOpen={openCourse} onToggleBookmark={toggleBookmark} />)}</div><div className="load-more"><p>Showing {Math.min(visibleCount, filteredCourses.length)} of {filteredCourses.length} courses</p>{visibleCount < filteredCourses.length && <button className="secondary-button" onClick={() => setVisibleCount(count => count + 12)}>Show more courses <Icon name="arrow" size={17} /></button>}</div></> : <div className="empty-state"><span className="empty-icon"><Icon name={view === 'saved' ? 'bookmark' : 'search'} size={28} /></span><h3>{view === 'saved' && !savedCount ? 'Keep your courses close.' : 'No courses found.'}</h3><p>{view === 'saved' && !savedCount ? 'Tap Save on a course to find it here next time.' : 'Try another course name, semester, or campus.'}</p><button className="primary-button" onClick={() => { resetFilters(); if (view === 'saved') setView('browse'); }}>{view === 'saved' ? 'Browse courses' : 'Clear filters'}</button></div>}
+        {filteredCourses.length ? <><div className="course-grid">{filteredCourses.slice(0, visibleCount).map(course => <CourseCard key={`${course.semesterNum}:${course.course}`} course={course} isBookmarked={isSaved(course.course)} onOpen={openCourse} onToggleBookmark={toggleBookmark} />)}</div><div className="load-more">{visibleCount < filteredCourses.length && <button className="secondary-button" onClick={() => setVisibleCount(count => count + 12)}>Show more courses <Icon name="arrow" size={17} /></button>}</div></> : <div className="empty-state"><span className="empty-icon"><Icon name={view === 'saved' ? 'bookmark' : 'search'} size={28} /></span><h3>{view === 'saved' && !savedCount ? 'Keep your courses close.' : 'No courses found.'}</h3><p>{view === 'saved' && !savedCount ? 'Tap Save on a course to find it here next time.' : 'Try another course name, semester, or campus.'}</p><button className="primary-button" onClick={() => { resetFilters(); if (view === 'saved') setView('browse'); }}>{view === 'saved' ? 'Browse courses' : 'Clear filters'}</button></div>}
       </section>
-      <aside className="community-note"><span className="community-icon"><Icon name="heart" size={22} /></span><div><h2>Good notes deserve good company.</h2><p>Have a past-paper collection? Help the next Fastian out.</p></div><button className="text-button" onClick={() => setModal('contribute')}>Contribute papers <Icon name="arrow" size={18} /></button></aside>
     </main>
-    <footer className="container site-footer"><p>Made for the days before the exam.</p><nav aria-label="Community links"><Link href="/credits">Credits</Link><Link href="/motivation">Our motivation</Link><button onClick={() => setModal('feedback')}>Feedback</button><a href="#browse">Back to top ↑</a></nav></footer>
-    <nav className="mobile-nav" aria-label="Main navigation">{navigation}</nav>
+    <footer className="container site-footer"><p>Made for the days before the exam.</p><nav aria-label="Community links"><Link href="/credits">Credits</Link><Link href="/motivation">Our motivation</Link><button onClick={() => setModal('feedback')}>Feedback</button><button onClick={() => setModal('contribute')}>Contribute papers</button></nav></footer>
+    <nav className={`mobile-nav ${navigationStyles.withQuestions}`} aria-label="Main navigation">{navigation}</nav>
     <span className="sr-only" role="status">{announcement}</span>
     {selectedCourse && <CourseDetailsSheet key={`${selectedCourse.campus}:${selectedCourse.course}`} course={selectedCourse} campusShortName={campusOptions.find(campus => campus.id === activeCampus)?.name || activeCampus} activeCampus={activeCampus} isBookmarked={isSaved(selectedCourse.course)} onClose={closeCourse} onToggleBookmark={toggleBookmark} />}
     {modal === 'contribute' && <SubmitRepoModal isOpen onClose={() => setModal(null)} />}

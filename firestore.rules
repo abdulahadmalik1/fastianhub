@@ -17,6 +17,21 @@ service cloud.firestore {
         && request.resource.data.updatedAt == request.time;
       allow list: if false;
     }
+    // Anonymous Q&A. Answers are added only through Firebase Console / IAM.
+    match /questions/{questionId} {
+      allow create: if request.resource.data.keys().hasAll(['question', 'answer', 'createdAt'])
+        && request.resource.data.keys().hasOnly(['question', 'answer', 'createdAt'])
+        && request.resource.data.question is string
+        && request.resource.data.question.size() > 0
+        && request.resource.data.question.size() <= 500
+        && request.resource.data.question.matches('[\\s\\S]*[^\\s][\\s\\S]*')
+        && request.resource.data.answer == ''
+        && request.resource.data.createdAt is timestamp
+        && request.resource.data.createdAt == request.time;
+      // This exact constraint is also used by the public answered-only query.
+      allow read: if resource.data.answer > '';
+      allow update, delete: if false;
+    }
     // All other documents remain inaccessible to web/mobile clients by default.
     match /{document=**} {
       allow read, write: if false;

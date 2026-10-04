@@ -1,0 +1,4 @@
+@media (max-width: 639px) {
+  .withQuestions { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 4px; }
+  .withQuestions > * { padding-inline: 8px; gap: 6px; }
+}

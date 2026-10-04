@@ -1,0 +1,89 @@
+.banner {
+  background: #f0f5ed;
+  border-bottom: 1px solid #dce6d6;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 9px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* "New" pill badge */
+.badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .45; }
+}
+
+.text {
+  flex: 1;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #4a5c50;
+  min-width: 0;
+}
+
+.cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #c6d9bf;
+  transition: background .15s, border-color .15s;
+}
+.cta:hover { background: #eaf2e5; border-color: #b0c9a8; text-decoration: none; }
+
+.close {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: none;
+  background: none;
+  color: #7a9080;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.close:hover { background: #ddebd6; color: var(--accent); }
+
+@media (max-width: 639px) {
+  .inner { padding: 9px 16px; gap: 8px; }
+  .text { font-size: 12px; }
+  .badge { font-size: 9px; padding: 2px 7px; }
+}
