@@ -97,10 +97,13 @@ export default async function QAPage() {
             <p className={styles.state}>No answered questions yet. Ask above!</p>
           ) : (
             <div className={styles.threadList}>
-              {questions.map(item => (
-                <Link key={item.id} href={qaPath(item.id)} prefetch={false} className={styles.thread}>
+              {questions.map((item, index) => (
+                <Link key={item.id} href={qaPath(item.id)} prefetch={false} className={`${styles.thread}${index === 0 ? ` ${styles.threadNew}` : ''}`}>
                   <span className={styles.threadDot} aria-hidden="true" />
-                  <span className={styles.threadTitle}>{item.question}</span>
+                  <span className={styles.threadTitle}>
+                    {index === 0 && <span className={styles.newBadge}>New answer</span>}
+                    {item.question}
+                  </span>
                   <span className={styles.threadChevron} aria-hidden="true">
                     <Icon name="arrow" size={14} />
                   </span>

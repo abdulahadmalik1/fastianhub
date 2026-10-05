@@ -103,6 +103,28 @@
   color: var(--ink-1);
 }
 
+.threadNew {
+  background: #fffdf9;
+  border-color: #ecdbc4;
+}
+.threadNew .threadDot { background: #c69558; opacity: 1; }
+.threadNew:hover { border-color: #c69558; }
+
+.newBadge {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: #f6dfbd;
+  color: #784b20;
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: .3px;
+}
+
 .thread:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   .thread, .threadDot, .threadChevron { transition: none; }
