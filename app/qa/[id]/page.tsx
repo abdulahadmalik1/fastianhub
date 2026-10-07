@@ -60,19 +60,6 @@ export async function generateMetadata({
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
-function formatDate(iso: string): string {
-  try {
-    return new Date(iso).toLocaleDateString('en-PK', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      timeZone: 'Asia/Karachi',
-    });
-  } catch {
-    return '';
-  }
-}
-
 function linkifyAnswer(text: string) {
   const parts: React.ReactNode[] = [];
   const urls = /https?:\/\/[^\s<>"']+/g;
@@ -196,26 +183,22 @@ export default async function AnswerPage({
         <article className={styles.article}>
 
           {/* ── Question header ───────────────────────────────────────────── */}
+          <div className={styles.conversation}>
           <div className={styles.articleHeader}>
-            <span className={styles.tag}>Student Q&amp;A</span>
+            <span className={styles.tag}><Icon name="message" size={14} /> Student question</span>
             <h1 id="question" className={styles.question}>{item.question}</h1>
           </div>
 
-          {/* ── Answer divider ────────────────────────────────────────────── */}
-          <h2 className={styles.divider} id="answer">Answer</h2>
-
-          {/* ── Last updated ─────────────────────────────────────────────── */}
-          <p className={styles.lastUpdated}>
-            Curated by FastianHub
-            {item.updatedAt && <> · Updated <time dateTime={item.updatedAt}>{formatDate(item.updatedAt)}</time></>}
-          </p>
-
           {/* ── Answer body ───────────────────────────────────────────────── */}
-          <div className={styles.answerBody}>
+          <section className={styles.answerSection} aria-labelledby="answer">
+            <h2 id="answer" className="sr-only">Answer</h2>
+            <div className={styles.answerBody}>
             {paragraphs.map((para, i) => (
-              <p key={i}>{linkifyAnswer(para)}</p>
+              /^\d+[.)]\s+[^\n]{1,100}$/.test(para.trim())
+                ? <h3 key={i}>{linkifyAnswer(para)}</h3>
+                : <p key={i}>{linkifyAnswer(para)}</p>
             ))}
-          </div>
+            </div>
 
           {references.length > 0 && (
             <section className={styles.references} aria-labelledby="references-title">
@@ -226,16 +209,21 @@ export default async function AnswerPage({
               </ul>
             </section>
           )}
+          </section>
+          </div>
 
           {/* ── Related questions ─────────────────────────────────────────── */}
           {related.length > 0 && (
             <section className={styles.relatedSection} aria-labelledby="related-title">
-              <h2 id="related-title" className={styles.relatedHeading}>Related questions</h2>
+              <div className={styles.relatedHeader}>
+                <h2 id="related-title" className={styles.relatedHeading}>Keep exploring</h2>
+                <Link href="/qa" prefetch={false} className={styles.allQuestions}>All questions <Icon name="arrow" size={14} /></Link>
+              </div>
               <ul className={styles.relatedList} role="list">
                 {related.map(q => (
                   <li key={q.id}>
                     <Link href={qaPath(q.id)} prefetch={false} className={styles.relatedLink}>
-                      <span className={styles.relatedDot} aria-hidden="true" />
+                      <span className={styles.relatedIcon} aria-hidden="true"><Icon name="message" size={16} /></span>
                       <span>{q.question}</span>
                       <span className={styles.relatedArrow} aria-hidden="true">
                         <Icon name="arrow" size={13} />
@@ -246,14 +234,6 @@ export default async function AnswerPage({
               </ul>
             </section>
           )}
-
-          {/* ── Footer CTA ───────────────────────────────────────────────── */}
-          <div className={styles.footer}>
-            <Link href="/qa" prefetch={false} className={styles.backBtn}>
-              <span className={styles.backArrow}><Icon name="arrow" size={14} /></span>
-              All questions
-            </Link>
-          </div>
 
         </article>
       </main>
