@@ -10,18 +10,11 @@ const eventTime = new Intl.DateTimeFormat('en-GB', {
 
 export function slackPayload(event: PageEvent) {
   const time = `${eventTime.format(event.timestamp)} PKT`;
-  const text = `Website activity\nProject: ${SITE_NAME}\nEvent type: Page view\nPage: ${event.page}\nTime: ${time}`;
+  const text = `${SITE_NAME} · Page view\nPage: ${event.page}\n${time}`;
   return {
     text,
     // Plain text prevents paths from injecting Slack mentions or formatting.
-    blocks: [
-      { type: 'header', text: { type: 'plain_text', text: '👀 Website activity', emoji: true } },
-      { type: 'section', fields: [
-        { type: 'plain_text', text: `Project: ${SITE_NAME}` },
-        { type: 'plain_text', text: 'Event type: Page view' },
-      ] },
-      { type: 'section', text: { type: 'plain_text', text: `Page: ${event.page}\nTime: ${time}` } },
-    ],
+    blocks: [{ type: 'section', text: { type: 'plain_text', text, emoji: false } }],
     unfurl_links: false,
     unfurl_media: false,
   };
