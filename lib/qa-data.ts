@@ -49,13 +49,11 @@ export async function fetchAnsweredQuestions(fetcher: typeof fetch = fetch): Pro
         where: { fieldFilter: { field: { fieldPath: 'answer' }, op: 'GREATER_THAN', value: { stringValue: '' } } },
       },
     }),
-    cache: 'force-cache',
-    next: { revalidate: 3600, tags: ['qa-answers'] },
+    cache: 'no-store',
     signal: AbortSignal.timeout(15000),
   });
 
-  // Let ISR retain the last successful page on outages. Returning []/null here
-  // would publish a false empty archive, drop sitemap URLs, or create false 404s.
+  // Never turn a failed read into an empty archive or a false 404.
   if (!response.ok) throw new Error(`Unable to load published Q&A (HTTP ${response.status}).`);
 
   const rows: { document?: FirestoreDocument; error?: unknown }[] = await response.json();

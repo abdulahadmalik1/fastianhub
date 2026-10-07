@@ -4,8 +4,8 @@ import { isSiteIndexable, SITE_URL } from '@/lib/site-config';
 import { getAnsweredQuestions } from '@/lib/qa-server';
 import { qaPath } from '@/lib/qa-content';
 
-// Rebuild the sitemap hourly so new answered questions appear promptly.
-export const revalidate = 3600;
+// Keep the existing entries, but include newly published Q&A pages immediately.
+export const dynamic = 'force-dynamic';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   if (!isSiteIndexable()) return [];

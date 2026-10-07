@@ -2,7 +2,7 @@ import 'server-only';
 import { cache } from 'react';
 import { fetchAnsweredQuestions } from './qa-data';
 
-// React deduplicates metadata/page calls; fetch's Data Cache persists for an hour.
+// React deduplicates metadata/page calls within a single server request.
 export const getAnsweredQuestions = cache(fetchAnsweredQuestions);
 
 export const getAnsweredQuestion = cache(async (id: string) => {

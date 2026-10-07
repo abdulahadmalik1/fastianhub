@@ -11,16 +11,8 @@ import { SITE_URL } from '@/lib/site-config';
 import { qaReferences } from '@/lib/qa-references';
 import styles from './answer.module.css';
 
-// ── ISR: rebuild every hour ────────────────────────────────────────────────────
-export const revalidate = 3600;
-// Cache newly answered URLs on first visit as well as the build-time paths.
-export const dynamic = 'force-static';
-
-// ── Pre-render all answered questions at build time ────────────────────────────
-export async function generateStaticParams() {
-  const questions = await getAnsweredQuestions();
-  return questions.map(q => ({ id: q.id }));
-}
+// Answers and metadata must reflect Firebase Console edits on the next visit.
+export const dynamic = 'force-dynamic';
 
 // ── Metadata ───────────────────────────────────────────────────────────────────
 export async function generateMetadata({
@@ -77,6 +69,23 @@ function formatDate(iso: string): string {
   } catch {
     return '';
   }
+}
+
+function linkifyAnswer(text: string) {
+  const parts: React.ReactNode[] = [];
+  const urls = /https?:\/\/[^\s<>"']+/g;
+  let cursor = 0;
+
+  for (const match of text.matchAll(urls)) {
+    const start = match.index;
+    const url = match[0].replace(/[.,!?;:]+$/, '');
+    parts.push(text.slice(cursor, start));
+    parts.push(<a key={start} href={url}>{url}</a>);
+    cursor = start + url.length;
+  }
+
+  parts.push(text.slice(cursor));
+  return parts;
 }
 
 // ── Page ───────────────────────────────────────────────────────────────────────
@@ -201,7 +210,7 @@ export default async function AnswerPage({
           {/* ── Answer body ───────────────────────────────────────────────── */}
           <div className={styles.answerBody}>
             {paragraphs.map((para, i) => (
-              <p key={i}>{para}</p>
+              <p key={i}>{linkifyAnswer(para)}</p>
             ))}
           </div>
 

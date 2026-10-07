@@ -2,14 +2,14 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Icon from '@/components/Icon';
 import QAForm from './QAForm';
+import QAThreadList from './QAThreadList';
 import { getAnsweredQuestions } from '@/lib/qa-server';
 import { qaPath, serializeJsonLd } from '@/lib/qa-content';
 import { SITE_URL } from '@/lib/site-config';
 import styles from './qa.module.css';
 
-// Rebuild this page at most once per hour so the thread list stays fresh
-// without a full deploy. ISR means Google always gets pre-rendered HTML.
-export const revalidate = 3600;
+// Read fresh published answers for every request. Open tabs receive live updates.
+export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'FAST-NUCES Student Q&A: GPA, Attendance & Exams | FastianHub',
@@ -84,34 +84,8 @@ export default async function QAPage() {
         {/* ── Ask form (client component — interactive) ── */}
         <QAForm />
 
-        {/* ── Answered questions (server-rendered — fully indexable) ─── */}
-        <section className={styles.answers} aria-labelledby="answers-title">
-          <div className={styles.answersHeading}>
-            <h2 id="answers-title">Answered questions</h2>
-            {questions.length > 0 && (
-              <span className={styles.count2}>{questions.length} threads</span>
-            )}
-          </div>
-
-          {questions.length === 0 ? (
-            <p className={styles.state}>No answered questions yet. Ask above!</p>
-          ) : (
-            <div className={styles.threadList}>
-              {questions.map((item, index) => (
-                <Link key={item.id} href={qaPath(item.id)} prefetch={false} className={`${styles.thread}${index === 0 ? ` ${styles.threadNew}` : ''}`}>
-                  <span className={styles.threadDot} aria-hidden="true" />
-                  <span className={styles.threadTitle}>
-                    {index === 0 && <span className={styles.newBadge}>New answer</span>}
-                    {item.question}
-                  </span>
-                  <span className={styles.threadChevron} aria-hidden="true">
-                    <Icon name="arrow" size={14} />
-                  </span>
-                </Link>
-              ))}
-            </div>
-          )}
-        </section>
+        {/* ── Fresh server HTML for crawlers, live updates for open tabs ── */}
+        <QAThreadList initialQuestions={questions.map(({ id, question, createdAt }) => ({ id, question, createdAt }))} />
       </main>
 
       <footer className={`container site-footer ${styles.footer}`}>
