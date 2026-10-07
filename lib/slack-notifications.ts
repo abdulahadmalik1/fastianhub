@@ -14,8 +14,7 @@ export function slackPayload(event: PageEvent) {
   const text = `${SITE_NAME} · Page view\nPage: ${event.page}\n${time}`;
   return {
     text,
-    // Plain text prevents paths from injecting Slack mentions or formatting.
-    blocks: [{ type: 'section', text: { type: 'plain_text', text, emoji: false } }],
+    blocks: [{ type: 'section', text: { type: 'mrkdwn', text: `*${SITE_NAME} · Page view*\n*Page:* \`${event.page}\`\n*Viewed:* ${time}` } }],
     unfurl_links: false,
     unfurl_media: false,
   };
@@ -25,7 +24,7 @@ export function slackQuestionPayload(event: QuestionEvent) {
   const time = `${eventTime.format(event.timestamp)} PKT`;
   const question = event.question.replace(/[\r\n]+/g, ' ').trim();
   const text = `${SITE_NAME} · New question\nProject: ${event.project}\nQuestion: ${question}\nSubmitted: ${time}`;
-  return { text, blocks: [{ type: 'section', text: { type: 'plain_text', text, emoji: false } }], unfurl_links: false, unfurl_media: false };
+  return { text, blocks: [{ type: 'section', text: { type: 'mrkdwn', text: `*${SITE_NAME} · New question*\n*Project:* ${event.project}\n*Question:* ${question}\n*Submitted:* ${time}` } }], unfurl_links: false, unfurl_media: false };
 }
 
 async function sendSlackPayload(webhook: string, payload: ReturnType<typeof slackPayload>, label: string) {
