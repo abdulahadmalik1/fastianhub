@@ -28,7 +28,7 @@ export function slackQuestionPayload(event: QuestionEvent) {
   return { text, blocks: [{ type: 'section', text: { type: 'plain_text', text, emoji: false } }], unfurl_links: false, unfurl_media: false };
 }
 
-export async function sendSlackPageEvent(webhook: string, event: PageEvent) {
+async function sendSlackPayload(webhook: string, payload: ReturnType<typeof slackPayload>, label: string) {
   const deadline = Date.now() + 45_000;
   for (let attempt = 0; attempt < 3; attempt++) {
     let delay = 1000 * 2 ** attempt;
@@ -36,13 +36,13 @@ export async function sendSlackPageEvent(webhook: string, event: PageEvent) {
       const response = await fetch(webhook, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(slackPayload(event)),
+        body: JSON.stringify(payload),
         signal: AbortSignal.timeout(8000),
         redirect: 'error',
       });
       if (response.ok) return;
       if (response.status !== 429 && response.status < 500) {
-        console.error('Slack page notification rejected:', response.status);
+        console.error(`Slack ${label} notification rejected:`, response.status);
         return;
       }
       const retryAfter = Number(response.headers.get('retry-after'));
@@ -55,11 +55,13 @@ export async function sendSlackPageEvent(webhook: string, event: PageEvent) {
     if (attempt === 2 || Date.now() + delay + 8000 > deadline) break;
     await new Promise(resolve => setTimeout(resolve, delay));
   }
-  console.error('Slack page notification failed after bounded retries.');
+  console.error(`Slack ${label} notification failed after bounded retries.`);
+}
+
+export async function sendSlackPageEvent(webhook: string, event: PageEvent) {
+  await sendSlackPayload(webhook, slackPayload(event), 'page');
 }
 
 export async function sendSlackQuestionEvent(webhook: string, event: QuestionEvent) {
-  try {
-    await fetch(webhook, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(slackQuestionPayload(event)), signal: AbortSignal.timeout(8000), redirect: 'error' });
-  } catch { /* Notifications must never affect question submission. */ }
+  await sendSlackPayload(webhook, slackQuestionPayload(event) as ReturnType<typeof slackPayload>, 'question');
 }
