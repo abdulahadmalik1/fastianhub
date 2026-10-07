@@ -158,7 +158,7 @@ export default function QAForm() {
           ref={questionRef}
           id="question"
           name="question"
-          rows={4}
+          rows={3}
           maxLength={QUESTION_LIMIT}
           className={styles.textarea}
           placeholder="Ask anything about FAST-NUCES…"

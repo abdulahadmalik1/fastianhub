@@ -84,6 +84,11 @@ export default async function QAPage() {
         {/* ── Ask form (client component — interactive) ── */}
         <QAForm />
 
+        <a href="#answered-questions" className={styles.browseQuestions}>
+          Browse questions &amp; answers
+          <span aria-hidden="true"><Icon name="arrow" size={15} /></span>
+        </a>
+
         {/* ── Fresh server HTML for crawlers, live updates for open tabs ── */}
         <QAThreadList initialQuestions={questions.map(({ id, question, createdAt }) => ({ id, question, createdAt }))} />
       </main>

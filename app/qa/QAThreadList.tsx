@@ -81,7 +81,7 @@ export default function QAThreadList({ initialQuestions }: { initialQuestions: Q
   }, []);
 
   return (
-    <section className={styles.answers} aria-labelledby="answers-title">
+    <section id="answered-questions" className={styles.answers} aria-labelledby="answers-title" tabIndex={-1}>
       <div className={styles.answersHeading}>
         <h2 id="answers-title">Answered questions</h2>
         {questions.length > 0 && <span className={styles.count2}>{questions.length} threads</span>}
