@@ -25,7 +25,10 @@ export async function POST(request: Request) {
     return new Response(null, { status: 400 });
   }
   if (!event || typeof event !== 'object' || !('type' in event) || !('page' in event)
-    || (event.type !== 'visit' && event.type !== 'view')
+    || event.type !== 'view'
+    || !('timestamp' in event) || typeof event.timestamp !== 'number'
+    || !Number.isFinite(event.timestamp) || event.timestamp <= 0
+    || event.timestamp > 8.64e15
     || typeof event.page !== 'string' || !event.page.startsWith('/')
     || event.page.length > 2048 || /[\r\n\u0000-\u001f]/.test(event.page)) {
     return new Response(null, { status: 400 });
@@ -33,7 +36,7 @@ export async function POST(request: Request) {
 
   const webhook = process.env.SLACK_WEBHOOK_URL;
   if (!webhook) return new Response(null, { status: 503 });
-  const pageEvent: PageEvent = { type: event.type, page: event.page };
+  const pageEvent: PageEvent = { type: event.type, page: event.page, timestamp: event.timestamp };
   after(() => sendSlackPageEvent(webhook, pageEvent));
   return new Response(null, { status: 202 });
 }

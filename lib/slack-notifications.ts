@@ -1,14 +1,27 @@
 import { SITE_NAME } from './site-config';
 
-export type PageEvent = { type: 'visit' | 'view'; page: string };
+export type PageEvent = { type: 'view'; page: string; timestamp: number };
+
+const eventTime = new Intl.DateTimeFormat('en-GB', {
+  timeZone: 'Asia/Karachi',
+  dateStyle: 'medium',
+  timeStyle: 'medium',
+});
 
 export function slackPayload(event: PageEvent) {
-  const type = event.type === 'visit' ? 'New visit + Page view' : 'Page view';
-  const text = `Project: ${SITE_NAME}\nType: ${type}\nPage: ${event.page}`;
+  const time = `${eventTime.format(event.timestamp)} PKT`;
+  const text = `Website activity\nProject: ${SITE_NAME}\nEvent type: Page view\nPage: ${event.page}\nTime: ${time}`;
   return {
     text,
     // Plain text prevents paths from injecting Slack mentions or formatting.
-    blocks: [{ type: 'section', text: { type: 'plain_text', text, emoji: true } }],
+    blocks: [
+      { type: 'header', text: { type: 'plain_text', text: '👀 Website activity', emoji: true } },
+      { type: 'section', fields: [
+        { type: 'plain_text', text: `Project: ${SITE_NAME}` },
+        { type: 'plain_text', text: 'Event type: Page view' },
+      ] },
+      { type: 'section', text: { type: 'plain_text', text: `Page: ${event.page}\nTime: ${time}` } },
+    ],
     unfurl_links: false,
     unfurl_media: false,
   };
