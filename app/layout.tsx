@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import { Suspense } from 'react';
+import SlackPageTracker from '@/components/SlackPageTracker';
 import './globals.css';
 import { isSiteIndexable, SITE_NAME, SITE_URL } from '@/lib/site-config';
 import { HOME_DESCRIPTION, HOME_TITLE } from '@/lib/seo';
@@ -42,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <Analytics />
+        <Suspense fallback={null}><SlackPageTracker /></Suspense>
       </body>
     </html>
   );
