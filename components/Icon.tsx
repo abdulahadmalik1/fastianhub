@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
-export type IconName = 'book' | 'bookmark' | 'search' | 'arrow' | 'close' | 'pin' | 'file' | 'download' | 'external' | 'check' | 'heart';
+export type IconName = 'book' | 'bookmark' | 'search' | 'arrow' | 'close' | 'pin' | 'file' | 'download' | 'external' | 'check' | 'heart' | 'message' | 'chevron';
 const paths: Record<IconName, ReactNode> = {
+  message: <path d="M5 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-6 3V6a2 2 0 0 1 2-2Z" />,
+  chevron: <path d="m7 10 5 5 5-5" />,
   book: <><path d="M12 6c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Z" /><path d="M12 6v15M6 9h3M15 9h3" /></>,
   bookmark: <path d="M6 4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17l-6-4-6 4V4Z" />,
   search: <><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4.5 4.5" /></>,

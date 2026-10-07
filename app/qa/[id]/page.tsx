@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Icon from '@/components/Icon';
+import QAAnswerRead from '@/components/QAAnswerRead';
+import { answerVersion } from '@/lib/qa-read-state';
 import {
   getAnsweredQuestion,
   getAnsweredQuestions,
@@ -156,6 +158,7 @@ export default async function AnswerPage({
 
   return (
     <div className={`app-shell ${styles.page}`}>
+      <QAAnswerRead id={id} version={answerVersion(item.answer)} />
       <a className="skip-link" href="#answer-content">Skip to answer</a>
 
       {/* JSON-LD structured data */}

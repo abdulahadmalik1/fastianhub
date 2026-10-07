@@ -11,6 +11,7 @@ import CourseDetailsSheet from './CourseDetailsSheet';
 import Icon from './Icon';
 import UserCount from './UserCount';
 import QABanner from './QABanner';
+import DashboardLink from './DashboardLink';
 import { CampusId, CourseGroup, CampusMetadata, toCourseSlug } from '@/lib/papers';
 import { isVisiblePaperFile } from '@/lib/paper-visibility.mjs';
 import { campusOptions, type SupportedCampusId } from '@/lib/campuses';
@@ -151,7 +152,7 @@ export default function PastPapersView({ initialCampus }: { initialCampus?: Supp
   }, [allCourses]);
   const navigation = <>
     <button className={view === 'saved' ? 'nav-item active' : 'nav-item'} aria-current={view === 'saved' ? 'page' : undefined} onClick={() => switchView('saved')}><Icon name="bookmark" size={18} />Saved courses{savedCount > 0 && <span className="nav-count">{savedCount}</span>}</button>
-    <Link href="/dashboard" className="dashboard-entry"><Icon name="bookmark" size={16} /><span>My dashboard</span></Link>
+    <DashboardLink />
     <Link href="/qa" className="nav-item">Q&amp;A</Link>
   </>;
 

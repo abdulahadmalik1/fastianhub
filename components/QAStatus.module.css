@@ -1,0 +1,33 @@
+.panel { width: min(100%, 460px); margin: -10px 0 22px; scroll-margin-top: 20px; }
+.heading { display: flex; align-items: center; gap: 8px; min-height: 34px; max-width: 100%; padding: 4px 0; border: 0; background: transparent; color: var(--ink-3); text-align: left; cursor: pointer; }
+.heading:hover .label { color: var(--accent); }
+.label { color: var(--ink-1); font-size: 12px; font-weight: 550; }
+.summary, .ready { display: inline-flex; align-items: center; gap: 7px; color: var(--ink-3); font-size: 11px; }
+.summary::before { content: ''; width: 3px; height: 3px; border-radius: 50%; background: #a9b4a7; }
+.ready { color: var(--accent); font-weight: 600; }
+.ready::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+.chevron { display: inline-flex; transition: transform .15s; }
+.chevronOpen { transform: rotate(180deg); }
+.list { margin-top: 7px; padding: 4px 10px 6px 12px; border: 1px solid var(--line); border-radius: 10px; background: color-mix(in srgb, var(--surface) 72%, var(--page)); }
+.rows { display: grid; gap: 2px; max-height: 252px; overflow-y: auto; }
+.row { min-width: 0; }
+.row + .row { border-top: 1px solid var(--line); }
+.row:has(.answer:hover) { background: var(--accent-soft); border-radius: 6px; }
+.answer, .pending { display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 16px; min-width: 0; padding: 9px 4px; }
+.question { color: var(--ink-1); font-size: 12px; line-height: 1.55; overflow-wrap: anywhere; }
+.answer:hover .question { text-decoration: underline; text-underline-offset: 3px; }
+.status, .read, .newAnswer { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; }
+.status { color: var(--ink-3); }
+.read, .newAnswer { color: var(--accent); }
+.newAnswer { font-weight: 600; }
+.browse { display: inline-flex; align-items: center; gap: 6px; min-height: 28px; margin-top: 4px; color: var(--ink-3); font-size: 11px; }
+.browse:hover { color: var(--accent); }
+.navUnread:global(.dashboard-entry) { border-color: #b8cbb3; background: var(--accent-soft); }
+.navUnread:global(.dashboard-entry):hover { border-color: var(--accent); }
+.navLabel { white-space: nowrap; }
+.navReply { display: none; }
+@media (max-width: 639px) {
+  .panel { margin-top: -8px; margin-bottom: 16px; }
+  .answer, .pending { align-items: flex-start; flex-direction: column; gap: 3px; }
+}
+@media (prefers-reduced-motion: reduce) { .chevron { transition: none; } }

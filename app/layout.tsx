@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import { Suspense } from 'react';
 import SlackPageTracker from '@/components/SlackPageTracker';
+import QAUpdatesProvider from '@/components/QAUpdatesProvider';
 import './globals.css';
 import { isSiteIndexable, SITE_NAME, SITE_URL } from '@/lib/site-config';
 import { HOME_DESCRIPTION, HOME_TITLE } from '@/lib/seo';
@@ -42,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        {children}
+        <QAUpdatesProvider>{children}</QAUpdatesProvider>
         <Analytics />
         <Suspense fallback={null}><SlackPageTracker /></Suspense>
       </body>

@@ -28,8 +28,31 @@ service cloud.firestore {
         && request.resource.data.answer == ''
         && request.resource.data.createdAt is timestamp
         && request.resource.data.createdAt == request.time;
-      // This exact constraint is also used by the public answered-only query.
-      allow read: if resource.data.answer > '';
+      // Public queries can see only published answers. A signed-in student may
+      // also read their own pending question through its exact document path.
+      allow get: if resource.data.answer > ''
+        || (request.auth != null
+          && exists(/databases/$(database)/documents/qaTracking/$(request.auth.uid)/questions/$(questionId)));
+      allow list: if resource.data.answer > '';
+      allow update, delete: if false;
+    }
+    // Email stays in a private companion record, never in the public question.
+    match /qaTracking/{userId}/questions/{questionId} {
+      allow get, list: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null
+        && request.auth.uid == userId
+        && request.auth.token.email is string
+        && request.resource.data.keys().hasAll(['email', 'question', 'createdAt'])
+        && request.resource.data.keys().hasOnly(['email', 'question', 'createdAt'])
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.email.size() <= 254
+        && request.resource.data.question is string
+        && request.resource.data.question.size() > 0
+        && request.resource.data.question.size() <= 500
+        && request.resource.data.createdAt == request.time
+        && getAfter(/databases/$(database)/documents/questions/$(questionId)).data.question == request.resource.data.question
+        && getAfter(/databases/$(database)/documents/questions/$(questionId)).data.answer == ''
+        && getAfter(/databases/$(database)/documents/questions/$(questionId)).data.createdAt == request.time;
       allow update, delete: if false;
     }
     // All other documents remain inaccessible to web/mobile clients by default.
