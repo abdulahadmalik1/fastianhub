@@ -128,6 +128,10 @@ export default function QAForm() {
         });
       }
       await batch.commit();
+      void fetch('/api/slack/track', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, keepalive: true,
+        body: JSON.stringify({ type: 'question', project: 'FastianHub', question: cleanQuestion, timestamp: Date.now() }),
+      }).catch(() => { /* Slack notification must never affect submission. */ });
       setQuestion('');
       setSubmitted(true);
     } catch (error) {

@@ -1,6 +1,7 @@
 import { SITE_NAME } from './site-config';
 
 export type PageEvent = { type: 'view'; page: string; timestamp: number };
+export type QuestionEvent = { type: 'question'; project: string; question: string; timestamp: number };
 
 const eventTime = new Intl.DateTimeFormat('en-GB', {
   timeZone: 'Asia/Karachi',
@@ -18,6 +19,13 @@ export function slackPayload(event: PageEvent) {
     unfurl_links: false,
     unfurl_media: false,
   };
+}
+
+export function slackQuestionPayload(event: QuestionEvent) {
+  const time = `${eventTime.format(event.timestamp)} PKT`;
+  const question = event.question.replace(/[\r\n]+/g, ' ').trim();
+  const text = `${SITE_NAME} · New question\nProject: ${event.project}\nQuestion: ${question}\nSubmitted: ${time}`;
+  return { text, blocks: [{ type: 'section', text: { type: 'plain_text', text, emoji: false } }], unfurl_links: false, unfurl_media: false };
 }
 
 export async function sendSlackPageEvent(webhook: string, event: PageEvent) {
@@ -48,4 +56,10 @@ export async function sendSlackPageEvent(webhook: string, event: PageEvent) {
     await new Promise(resolve => setTimeout(resolve, delay));
   }
   console.error('Slack page notification failed after bounded retries.');
+}
+
+export async function sendSlackQuestionEvent(webhook: string, event: QuestionEvent) {
+  try {
+    await fetch(webhook, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(slackQuestionPayload(event)), signal: AbortSignal.timeout(8000), redirect: 'error' });
+  } catch { /* Notifications must never affect question submission. */ }
 }
